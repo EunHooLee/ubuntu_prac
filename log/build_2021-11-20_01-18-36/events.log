@@ -1,0 +1,89 @@
+[0.000000] (-) TimerEvent: {}
+[0.004091] (-) JobUnselected: {'identifier': 'tutorial_interfaces'}
+[0.004412] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict([('tutorial_interfaces', '/home/leh/test_ws/install/tutorial_interfaces')])}
+[0.004647] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[0.096190] (-) TimerEvent: {}
+[0.197099] (-) TimerEvent: {}
+[0.297824] (-) TimerEvent: {}
+[0.398542] (-) TimerEvent: {}
+[0.499294] (-) TimerEvent: {}
+[0.600006] (-) TimerEvent: {}
+[0.700768] (-) TimerEvent: {}
+[0.801399] (-) TimerEvent: {}
+[0.902078] (-) TimerEvent: {}
+[1.002745] (-) TimerEvent: {}
+[1.103443] (-) TimerEvent: {}
+[1.204219] (-) TimerEvent: {}
+[1.304926] (-) TimerEvent: {}
+[1.405691] (-) TimerEvent: {}
+[1.482447] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/leh/test_ws/build/py_pubsub/build', 'install', '--prefix', '/home/leh/test_ws/install/py_pubsub', '--record', '/home/leh/test_ws/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/leh/test_ws/src/py_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/leh', 'USER': 'leh', 'SSH_CLIENT': '14.47.121.124 56996 22', 'LC_TIME': 'ko_KR.UTF-8', 'LD_LIBRARY_PATH': '/home/leh/test_ws/install/tutorial_interfaces/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib', 'SHLVL': '1', 'HOME': '/home/leh', 'OLDPWD': '/home/leh/test_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ko_KR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LC_TERMINAL_VERSION': '3.4.12', '_colcon_cd_root': '/home/leh/ros2_install', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'leh', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '4', 'TERM': 'xterm-256color', 'PATH': '/home/leh/.local/bin:/opt/ros/dashing/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/leh/test_ws/install/tutorial_interfaces:/opt/ros/dashing', 'LC_NAME': 'ko_KR.UTF-8', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_TERMINAL': 'iTerm2', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/leh/test_ws/build/py_pubsub', 'SSH_CONNECTION': '14.47.121.124 56996 172.30.1.23 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LC_NUMERIC': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/leh/test_ws/install/tutorial_interfaces'}, 'shell': False}
+[1.505908] (-) TimerEvent: {}
+[1.606807] (-) TimerEvent: {}
+[1.707524] (-) TimerEvent: {}
+[1.808290] (-) TimerEvent: {}
+[1.909007] (-) TimerEvent: {}
+[2.009741] (-) TimerEvent: {}
+[2.110449] (-) TimerEvent: {}
+[2.211142] (-) TimerEvent: {}
+[2.311894] (-) TimerEvent: {}
+[2.412941] (-) TimerEvent: {}
+[2.513650] (-) TimerEvent: {}
+[2.614352] (-) TimerEvent: {}
+[2.637535] (py_pubsub) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[2.638412] (py_pubsub) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[2.639121] (py_pubsub) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[2.639630] (py_pubsub) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[2.714523] (-) TimerEvent: {}
+[2.814893] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[2.815591] (-) TimerEvent: {}
+[2.817827] (py_pubsub) StdoutLine: {'line': b'creating ../../build/py_pubsub/py_pubsub.egg-info\n'}
+[2.818683] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[2.819422] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[2.820056] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[2.820740] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[2.821216] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[2.821836] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[2.831690] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[2.836821] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[2.837555] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[2.838246] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[2.838770] (py_pubsub) StdoutLine: {'line': b'creating /home/leh/test_ws/build/py_pubsub/build\n'}
+[2.839265] (py_pubsub) StdoutLine: {'line': b'creating /home/leh/test_ws/build/py_pubsub/build/lib\n'}
+[2.839756] (py_pubsub) StdoutLine: {'line': b'creating /home/leh/test_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[2.840244] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publisher_member_function.py -> /home/leh/test_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[2.840856] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/__init__.py -> /home/leh/test_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[2.841463] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/subscriber_member_function.py -> /home/leh/test_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[2.841942] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[2.842390] (py_pubsub) StderrLine: {'line': b'/home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[2.842845] (py_pubsub) StderrLine: {'line': b'  setuptools.SetuptoolsDeprecationWarning,\n'}
+[2.843378] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[2.848119] (py_pubsub) StdoutLine: {'line': b'creating /home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub\n'}
+[2.849118] (py_pubsub) StdoutLine: {'line': b'copying /home/leh/test_ws/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub\n'}
+[2.849952] (py_pubsub) StdoutLine: {'line': b'copying /home/leh/test_ws/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub\n'}
+[2.850539] (py_pubsub) StdoutLine: {'line': b'copying /home/leh/test_ws/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub\n'}
+[2.851558] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-36.pyc\n'}
+[2.852673] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub/__init__.py to __init__.cpython-36.pyc\n'}
+[2.853405] (py_pubsub) StderrLine: {'line': b'  File "/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub/publisher_member_function.py", line 2\n'}
+[2.854222] (py_pubsub) StderrLine: {'line': b'    import rclpy.node import Node\n'}
+[2.855020] (py_pubsub) StderrLine: {'line': b'                           ^\n'}
+[2.855576] (py_pubsub) StderrLine: {'line': b'SyntaxError: invalid syntax\n'}
+[2.856275] (py_pubsub) StderrLine: {'line': b'\n'}
+[2.856861] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-36.pyc\n'}
+[2.857451] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[2.860294] (py_pubsub) StdoutLine: {'line': b'creating /home/leh/test_ws/install/py_pubsub/share/ament_index\n'}
+[2.861300] (py_pubsub) StdoutLine: {'line': b'creating /home/leh/test_ws/install/py_pubsub/share/ament_index/resource_index\n'}
+[2.862157] (py_pubsub) StdoutLine: {'line': b'creating /home/leh/test_ws/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[2.862772] (py_pubsub) StdoutLine: {'line': b'copying resource/py_pubsub -> /home/leh/test_ws/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[2.863695] (py_pubsub) StdoutLine: {'line': b'copying package.xml -> /home/leh/test_ws/install/py_pubsub/share/py_pubsub\n'}
+[2.864390] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.872100] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub-0.0.0-py3.6.egg-info\n'}
+[2.876255] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[2.915821] (-) TimerEvent: {}
+[2.973385] (py_pubsub) StdoutLine: {'line': b'Installing listener script to /home/leh/test_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.974202] (py_pubsub) StdoutLine: {'line': b'Installing talker script to /home/leh/test_ws/install/py_pubsub/lib/py_pubsub\n'}
+[2.975091] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/leh/test_ws/build/py_pubsub/install.log'\n"}
+[3.016102] (-) TimerEvent: {}
+[3.075690] (py_pubsub) CommandEnded: {'returncode': 0}
+[3.116751] (-) TimerEvent: {}
+[3.133396] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[3.136373] (-) EventReactorShutdown: {}

@@ -1,0 +1,31 @@
+[1.486s] Invoking command in '/home/leh/test_ws/src/py_pubsub': PYTHONPATH=/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/leh/test_ws/build/py_pubsub/build install --prefix /home/leh/test_ws/install/py_pubsub --record /home/leh/test_ws/build/py_pubsub/install.log --single-version-externally-managed
+[2.637s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.638s]   % (opt, underscore_opt)
+[2.639s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[2.639s]   % (opt, underscore_opt)
+[2.796s] running egg_info
+[2.800s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[2.801s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[2.802s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[2.802s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[2.803s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[2.809s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[2.815s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[2.816s] running build
+[2.817s] running build_py
+[2.817s] copying py_pubsub/publisher_member_function.py -> /home/leh/test_ws/build/py_pubsub/build/lib/py_pubsub
+[2.818s] running install
+[2.818s] /home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.819s]   setuptools.SetuptoolsDeprecationWarning,
+[2.820s] running install_lib
+[2.823s] copying /home/leh/test_ws/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub
+[2.825s] byte-compiling /home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-36.pyc
+[2.827s] running install_data
+[2.829s] running install_egg_info
+[2.835s] removing '/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub-0.0.0-py3.6.egg-info' (and everything under it)
+[2.836s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub-0.0.0-py3.6.egg-info
+[2.840s] running install_scripts
+[2.929s] Installing listener script to /home/leh/test_ws/install/py_pubsub/lib/py_pubsub
+[2.930s] Installing talker script to /home/leh/test_ws/install/py_pubsub/lib/py_pubsub
+[2.931s] writing list of installed files to '/home/leh/test_ws/build/py_pubsub/install.log'
+[3.031s] Invoked command in '/home/leh/test_ws/src/py_pubsub' returned '0': PYTHONPATH=/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/leh/test_ws/build/py_pubsub/build install --prefix /home/leh/test_ws/install/py_pubsub --record /home/leh/test_ws/build/py_pubsub/install.log --single-version-externally-managed
