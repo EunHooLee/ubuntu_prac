@@ -1,0 +1,367 @@
+[1.462s] Invoking command in '/home/leh/test_ws/src/py_pubsub': AMENT_PREFIX_PATH=/home/leh/test_ws/install/py_pubsub:/home/leh/test_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces LD_LIBRARY_PATH=/home/leh/test_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/leh/test_ws/build/py_pubsub/pytest.xml --junit-prefix=py_pubsub -o cache_dir=/home/leh/test_ws/build/py_pubsub/.pytest_cache PYTHONPATH=/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[3.127s] [1m============================= test session starts ==============================[0m
+[3.127s] platform linux -- Python 3.6.9, pytest-3.3.2, py-1.5.2, pluggy-0.6.0
+[3.128s] rootdir: /home/leh/test_ws/src/py_pubsub, inifile:
+[3.129s] plugins: ament-xmllint-0.7.12, ament-pep257-0.7.12, ament-lint-0.7.12, ament-flake8-0.7.12, ament-copyright-0.7.12, cov-2.5.1, colcon-core-0.6.1
+[3.140s] [1m
+[3.227s] collecting 0 items                                                             [0m[1m
+[3.473s] collecting 1 item                                                              [0m[1m
+[3.732s] collecting 2 items                                                             [0m[1m
+[3.733s] collecting 3 items                                                             [0m[1m
+[3.733s] collected 3 items                                                              [0m
+[3.734s] 
+[3.898s] test/test_copyright.py F[36m                                                 [ 33%][0m
+[4.512s] test/test_flake8.py F[36m                                                    [ 66%][0m
+[4.656s] test/test_pep257.py .[36m                                                    [100%][0m
+[4.661s] 
+[4.665s] ------- generated xml file: /home/leh/test_ws/build/py_pubsub/pytest.xml -------
+[4.666s] =================================== FAILURES ===================================
+[4.667s] [31m[1m________________________________ test_copyright ________________________________[0m
+[4.668s] [1m[31mtest/test_copyright.py[0m:23: in test_copyright
+[4.668s] [1m    assert rc == 0, 'Found errors'[0m
+[4.669s] [1m[31mE   AssertionError: Found errors[0m
+[4.669s] [1m[31mE   assert 1 == 0[0m
+[4.670s] ----------------------------- Captured stderr call -----------------------------
+[4.670s] py_pubsub/publisher_member_function.py: could not find copyright notice
+[4.671s] py_pubsub/subscriber_member_function.py: could not find copyright notice
+[4.671s] 2 errors, checked 6 files
+[4.672s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[4.672s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[4.673s] [1m    assert rc == 0, 'Found errors'[0m
+[4.674s] [1m[31mE   AssertionError: Found errors[0m
+[4.674s] [1m[31mE   assert 1 == 0[0m
+[4.675s] ----------------------------- Captured stdout call -----------------------------
+[4.676s] 
+[4.676s] ./py_pubsub/publisher_member_function.py:6:1: E302 expected 2 blank lines, found 1
+[4.677s] class MinimalPublisher(Node):
+[4.677s] ^
+[4.678s] 
+[4.678s] ./py_pubsub/publisher_member_function.py:7:1: W293 blank line contains whitespace
+[4.679s]     
+[4.680s] ^
+[4.680s] 
+[4.681s] ./py_pubsub/publisher_member_function.py:10:52: E231 missing whitespace after ','
+[4.681s]         self.publisher_ = self.create_publisher(Num,'topic',10)
+[4.682s]                                                    ^
+[4.683s] 
+[4.683s] ./py_pubsub/publisher_member_function.py:10:60: E231 missing whitespace after ','
+[4.684s]         self.publisher_ = self.create_publisher(Num,'topic',10)
+[4.684s]                                                            ^
+[4.685s] 
+[4.686s] ./py_pubsub/publisher_member_function.py:12:52: E231 missing whitespace after ','
+[4.686s]         self.timer = self.create_timer(timer_period,self.timer_callback)
+[4.687s]                                                    ^
+[4.687s] 
+[4.688s] ./py_pubsub/publisher_member_function.py:20:18: E225 missing whitespace around operator
+[4.690s]         self.i +=1
+[4.690s]                  ^
+[4.691s] 
+[4.691s] ./py_pubsub/publisher_member_function.py:21:1: E302 expected 2 blank lines, found 0
+[4.692s] def main(args = None):
+[4.693s] ^
+[4.693s] 
+[4.694s] ./py_pubsub/publisher_member_function.py:21:14: E251 unexpected spaces around keyword / parameter equals
+[4.694s] def main(args = None):
+[4.695s]              ^
+[4.696s] 
+[4.696s] ./py_pubsub/publisher_member_function.py:21:16: E251 unexpected spaces around keyword / parameter equals
+[4.697s] def main(args = None):
+[4.697s]                ^
+[4.698s] 
+[4.699s] ./py_pubsub/publisher_member_function.py:22:20: E251 unexpected spaces around keyword / parameter equals
+[4.699s]     rclpy.init(args = args)
+[4.700s]                    ^
+[4.700s] 
+[4.701s] ./py_pubsub/publisher_member_function.py:22:22: E251 unexpected spaces around keyword / parameter equals
+[4.701s]     rclpy.init(args = args)
+[4.702s]                      ^
+[4.703s] 
+[4.703s] ./py_pubsub/publisher_member_function.py:31:1: E305 expected 2 blank lines after class or function definition, found 1
+[4.704s] if __name__ == '__main__':
+[4.704s] ^
+[4.705s] 
+[4.705s] ./py_pubsub/subscriber_member_function.py:6:1: E302 expected 2 blank lines, found 1
+[4.706s] class MinimalSubscriber(Node):
+[4.706s] ^
+[4.707s] 
+[4.707s] ./py_pubsub/subscriber_member_function.py:10:57: E231 missing whitespace after ','
+[4.708s]         self.subscription = self.create_subscription(Num,'topic',self.listener_callback,10)
+[4.708s]                                                         ^
+[4.709s] 
+[4.709s] ./py_pubsub/subscriber_member_function.py:10:65: E231 missing whitespace after ','
+[4.710s]         self.subscription = self.create_subscription(Num,'topic',self.listener_callback,10)
+[4.711s]                                                                 ^
+[4.711s] 
+[4.712s] ./py_pubsub/subscriber_member_function.py:10:88: E231 missing whitespace after ','
+[4.712s]         self.subscription = self.create_subscription(Num,'topic',self.listener_callback,10)
+[4.713s]                                                                                        ^
+[4.713s] 
+[4.714s] ./py_pubsub/subscriber_member_function.py:13:31: E231 missing whitespace after ','
+[4.715s]     def listener_callback(self,msg):
+[4.715s]                               ^
+[4.716s] 
+[4.716s] ./py_pubsub/subscriber_member_function.py:16:1: E302 expected 2 blank lines, found 1
+[4.717s] def main(args = None):
+[4.718s] ^
+[4.718s] 
+[4.719s] ./py_pubsub/subscriber_member_function.py:16:14: E251 unexpected spaces around keyword / parameter equals
+[4.719s] def main(args = None):
+[4.720s]              ^
+[4.720s] 
+[4.721s] ./py_pubsub/subscriber_member_function.py:16:16: E251 unexpected spaces around keyword / parameter equals
+[4.721s] def main(args = None):
+[4.722s]                ^
+[4.723s] 
+[4.723s] ./py_pubsub/subscriber_member_function.py:17:20: E251 unexpected spaces around keyword / parameter equals
+[4.724s]     rclpy.init(args = args)
+[4.724s]                    ^
+[4.725s] 
+[4.726s] ./py_pubsub/subscriber_member_function.py:17:22: E251 unexpected spaces around keyword / parameter equals
+[4.726s]     rclpy.init(args = args)
+[4.727s]                      ^
+[4.727s] 
+[4.728s] ./py_pubsub/subscriber_member_function.py:26:1: E305 expected 2 blank lines after class or function definition, found 1
+[4.728s] if __name__ == '__main__':
+[4.729s] ^
+[4.730s] 
+[4.730s] 1     E225 missing whitespace around operator
+[4.731s] 7     E231 missing whitespace after ','
+[4.731s] 8     E251 unexpected spaces around keyword / parameter equals
+[4.732s] 4     E302 expected 2 blank lines, found 1
+[4.732s] 2     E305 expected 2 blank lines after class or function definition, found 1
+[4.733s] 1     W293 blank line contains whitespace
+[4.733s] 
+[4.734s] 7 files checked
+[4.734s] 23 errors
+[4.735s] 
+[4.736s] 'E'-type errors: 22
+[4.736s] 'W'-type errors: 1
+[4.737s] 
+[4.737s] Checked files:
+[4.738s] 
+[4.738s] * ./setup.py
+[4.739s] * ./py_pubsub/publisher_member_function.py
+[4.740s] * ./py_pubsub/__init__.py
+[4.740s] * ./py_pubsub/subscriber_member_function.py
+[4.741s] * ./test/test_pep257.py
+[4.741s] * ./test/test_copyright.py
+[4.742s] * ./test/test_flake8.py
+[4.742s] ------------------------------ Captured log call -------------------------------
+[4.743s] manager.py                 210 DEBUG    Registered option "Option(-v, --verbose, action=count, default=0, dest=verbose, type=None, callback=None, help=Print more information about what is happening in flake8. This option is repeatable and will increase verbosity each time it is repeated., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.743s] manager.py                 210 DEBUG    Registered option "Option(-q, --quiet, action=count, default=0, dest=quiet, type=None, callback=None, help=Report only file names, or nothing. This option is repeatable., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.744s] manager.py                 210 DEBUG    Registered option "Option(None, --count, action=store_true, default=None, dest=count, type=None, callback=None, help=Print total number of errors and warnings to standard error and set the exit code to 1 if total is not empty., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.744s] manager.py                 210 DEBUG    Registered option "Option(None, --diff, action=store_true, default=None, dest=diff, type=None, callback=None, help=Report changes only within line number ranges in the unified diff provided on standard in by the user., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.745s] manager.py                 210 DEBUG    Registered option "Option(None, --exclude, action=None, default=.svn,CVS,.bzr,.hg,.git,__pycache__,.tox,.eggs,*.egg, dest=exclude, type=None, callback=None, help=Comma-separated list of files or directories to exclude. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=patterns)".
+[4.746s] manager.py                 210 DEBUG    Registered option "Option(None, --filename, action=None, default=*.py, dest=filename, type=None, callback=None, help=Only check for filenames matching the patterns in this comma-separated list. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=patterns)".
+[4.746s] manager.py                 210 DEBUG    Registered option "Option(None, --stdin-display-name, action=None, default=stdin, dest=stdin_display_name, type=None, callback=None, help=The name used when reporting errors from code passed via stdin. This is useful for editors piping the file contents to flake8. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.747s] manager.py                 210 DEBUG    Registered option "Option(None, --format, action=None, default=default, dest=format, type=None, callback=None, help=Format errors according to the chosen formatter., callback=None, callback_args=None, callback_kwargs=None, metavar=format)".
+[4.747s] manager.py                 210 DEBUG    Registered option "Option(None, --hang-closing, action=store_true, default=None, dest=hang_closing, type=None, callback=None, help=Hang closing bracket instead of matching indentation of opening bracket's line., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.748s] manager.py                 210 DEBUG    Registered option "Option(None, --ignore, action=None, default=E121,E123,E126,E226,E24,E704,W503,W504, dest=ignore, type=None, callback=None, help=Comma-separated list of errors and warnings to ignore (or skip). For example, ``--ignore=E4,E51,W234``. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=errors)".
+[4.749s] manager.py                 210 DEBUG    Registered option "Option(None, --max-line-length, action=None, default=79, dest=max_line_length, type=int, callback=None, help=Maximum allowed line length for the entirety of this run. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=n)".
+[4.749s] manager.py                 210 DEBUG    Registered option "Option(None, --select, action=None, default=E,F,W,C90, dest=select, type=None, callback=None, help=Comma-separated list of errors and warnings to enable. For example, ``--select=E4,E51,W234``. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=errors)".
+[4.750s] manager.py                 210 DEBUG    Registered option "Option(None, --disable-noqa, action=store_true, default=False, dest=disable_noqa, type=None, callback=None, help=Disable the effect of "# noqa". This will report errors on lines with "# noqa" at the end., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.750s] manager.py                 210 DEBUG    Registered option "Option(None, --show-source, action=store_true, default=None, dest=show_source, type=None, callback=None, help=Show the source generate each error or warning., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.751s] manager.py                 210 DEBUG    Registered option "Option(None, --statistics, action=store_true, default=None, dest=statistics, type=None, callback=None, help=Count errors and warnings., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.752s] manager.py                 210 DEBUG    Registered option "Option(None, --enable-extensions, action=None, default=, dest=enable_extensions, type=string, callback=None, help=Enable plugins and extensions that are otherwise disabled by default, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.752s] manager.py                 210 DEBUG    Registered option "Option(None, --exit-zero, action=store_true, default=None, dest=exit_zero, type=None, callback=None, help=Exit with status code "0" even if there are errors., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.753s] manager.py                 210 DEBUG    Registered option "Option(None, --install-hook, action=callback, default=None, dest=install_hook, type=choice, callback=<function install at 0x7f7f43eb70>, help=Install a hook that is run prior to a commit for the supported version control system., callback=<function install at 0x7f7f43eb70>, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.753s] manager.py                 210 DEBUG    Registered option "Option(-j, --jobs, action=None, default=auto, dest=jobs, type=string, callback=None, help=Number of subprocesses to use to run checks in parallel. This is ignored on Windows. The default, "auto", will auto-detect the number of processors available to use. (Default: %default), callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.754s] manager.py                 210 DEBUG    Registered option "Option(None, --output-file, action=None, default=None, dest=output_file, type=string, callback=None, help=Redirect report to a file., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.755s] manager.py                 210 DEBUG    Registered option "Option(None, --tee, action=store_true, default=False, dest=tee, type=None, callback=None, help=Write to stdout and output-file., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.755s] manager.py                 210 DEBUG    Registered option "Option(None, --append-config, action=append, default=None, dest=append_config, type=None, callback=None, help=Provide extra config files to parse in addition to the files found by Flake8 by default. These files are the last ones read and so they take the highest precedence when multiple files provide the same option., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.756s] manager.py                 210 DEBUG    Registered option "Option(None, --config, action=None, default=None, dest=config, type=None, callback=None, help=Path to the config file that will be the authoritative config source. This will cause Flake8 to ignore all other configuration files., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.756s] manager.py                 210 DEBUG    Registered option "Option(None, --isolated, action=store_true, default=False, dest=isolated, type=None, callback=None, help=Ignore all found configuration files., callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.757s] manager.py                 210 DEBUG    Registered option "Option(None, --benchmark, action=store_true, default=False, dest=benchmark, type=None, callback=None, help=Print benchmark information about this run of Flake8, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.758s] manager.py                 210 DEBUG    Registered option "Option(None, --bug-report, action=callback, default=None, dest=bug_report, type=None, callback=<function print_information at 0x7f7f61a6a8>, help=Print information necessary when preparing a bug report, callback=<function print_information at 0x7f7f61a6a8>, callback_args=None, callback_kwargs={'option_manager': <flake8.options.manager.OptionManager object at 0x7f7f1fee48>}, metavar=None)".
+[4.758s] config.py                  128 DEBUG    Found local configuration files: ['/home/leh/test_ws/src/py_pubsub/setup.cfg']
+[4.759s] manager.py                 272 INFO     Loading entry-points for "flake8.extension".
+[4.759s] manager.py                 287 DEBUG    Loaded Plugin(name="C90", entry_point="C90 = mccabe:McCabeChecker") for plugin "C90".
+[4.760s] manager.py                 287 DEBUG    Loaded Plugin(name="F", entry_point="F = flake8.plugins.pyflakes:FlakesChecker") for plugin "F".
+[4.760s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.ambiguous_identifier", entry_point="pycodestyle.ambiguous_identifier = pycodestyle:ambiguous_identifier") for plugin "pycodestyle.ambiguous_identifier".
+[4.761s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.bare_except", entry_point="pycodestyle.bare_except = pycodestyle:bare_except") for plugin "pycodestyle.bare_except".
+[4.762s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.blank_lines", entry_point="pycodestyle.blank_lines = pycodestyle:blank_lines") for plugin "pycodestyle.blank_lines".
+[4.762s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.break_around_binary_operator", entry_point="pycodestyle.break_around_binary_operator = pycodestyle:break_around_binary_operator") for plugin "pycodestyle.break_around_binary_operator".
+[4.763s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.comparison_negative", entry_point="pycodestyle.comparison_negative = pycodestyle:comparison_negative") for plugin "pycodestyle.comparison_negative".
+[4.763s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.comparison_to_singleton", entry_point="pycodestyle.comparison_to_singleton = pycodestyle:comparison_to_singleton") for plugin "pycodestyle.comparison_to_singleton".
+[4.764s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.comparison_type", entry_point="pycodestyle.comparison_type = pycodestyle:comparison_type") for plugin "pycodestyle.comparison_type".
+[4.765s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.compound_statements", entry_point="pycodestyle.compound_statements = pycodestyle:compound_statements") for plugin "pycodestyle.compound_statements".
+[4.765s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.continued_indentation", entry_point="pycodestyle.continued_indentation = pycodestyle:continued_indentation") for plugin "pycodestyle.continued_indentation".
+[4.766s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.explicit_line_join", entry_point="pycodestyle.explicit_line_join = pycodestyle:explicit_line_join") for plugin "pycodestyle.explicit_line_join".
+[4.766s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.extraneous_whitespace", entry_point="pycodestyle.extraneous_whitespace = pycodestyle:extraneous_whitespace") for plugin "pycodestyle.extraneous_whitespace".
+[4.767s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.imports_on_separate_lines", entry_point="pycodestyle.imports_on_separate_lines = pycodestyle:imports_on_separate_lines") for plugin "pycodestyle.imports_on_separate_lines".
+[4.767s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.indentation", entry_point="pycodestyle.indentation = pycodestyle:indentation") for plugin "pycodestyle.indentation".
+[4.768s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.maximum_line_length", entry_point="pycodestyle.maximum_line_length = pycodestyle:maximum_line_length") for plugin "pycodestyle.maximum_line_length".
+[4.768s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.missing_whitespace", entry_point="pycodestyle.missing_whitespace = pycodestyle:missing_whitespace") for plugin "pycodestyle.missing_whitespace".
+[4.769s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.missing_whitespace_after_import_keyword", entry_point="pycodestyle.missing_whitespace_after_import_keyword = pycodestyle:missing_whitespace_after_import_keyword") for plugin "pycodestyle.missing_whitespace_after_import_keyword".
+[4.769s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.missing_whitespace_around_operator", entry_point="pycodestyle.missing_whitespace_around_operator = pycodestyle:missing_whitespace_around_operator") for plugin "pycodestyle.missing_whitespace_around_operator".
+[4.770s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.module_imports_on_top_of_file", entry_point="pycodestyle.module_imports_on_top_of_file = pycodestyle:module_imports_on_top_of_file") for plugin "pycodestyle.module_imports_on_top_of_file".
+[4.771s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_backticks", entry_point="pycodestyle.python_3000_backticks = pycodestyle:python_3000_backticks") for plugin "pycodestyle.python_3000_backticks".
+[4.771s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_has_key", entry_point="pycodestyle.python_3000_has_key = pycodestyle:python_3000_has_key") for plugin "pycodestyle.python_3000_has_key".
+[4.772s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_not_equal", entry_point="pycodestyle.python_3000_not_equal = pycodestyle:python_3000_not_equal") for plugin "pycodestyle.python_3000_not_equal".
+[4.772s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.python_3000_raise_comma", entry_point="pycodestyle.python_3000_raise_comma = pycodestyle:python_3000_raise_comma") for plugin "pycodestyle.python_3000_raise_comma".
+[4.773s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.tabs_obsolete", entry_point="pycodestyle.tabs_obsolete = pycodestyle:tabs_obsolete") for plugin "pycodestyle.tabs_obsolete".
+[4.773s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.tabs_or_spaces", entry_point="pycodestyle.tabs_or_spaces = pycodestyle:tabs_or_spaces") for plugin "pycodestyle.tabs_or_spaces".
+[4.774s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.trailing_blank_lines", entry_point="pycodestyle.trailing_blank_lines = pycodestyle:trailing_blank_lines") for plugin "pycodestyle.trailing_blank_lines".
+[4.774s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.trailing_whitespace", entry_point="pycodestyle.trailing_whitespace = pycodestyle:trailing_whitespace") for plugin "pycodestyle.trailing_whitespace".
+[4.775s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_comma", entry_point="pycodestyle.whitespace_around_comma = pycodestyle:whitespace_around_comma") for plugin "pycodestyle.whitespace_around_comma".
+[4.775s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_keywords", entry_point="pycodestyle.whitespace_around_keywords = pycodestyle:whitespace_around_keywords") for plugin "pycodestyle.whitespace_around_keywords".
+[4.776s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_named_parameter_equals", entry_point="pycodestyle.whitespace_around_named_parameter_equals = pycodestyle:whitespace_around_named_parameter_equals") for plugin "pycodestyle.whitespace_around_named_parameter_equals".
+[4.776s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_around_operator", entry_point="pycodestyle.whitespace_around_operator = pycodestyle:whitespace_around_operator") for plugin "pycodestyle.whitespace_around_operator".
+[4.777s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_before_comment", entry_point="pycodestyle.whitespace_before_comment = pycodestyle:whitespace_before_comment") for plugin "pycodestyle.whitespace_before_comment".
+[4.778s] manager.py                 287 DEBUG    Loaded Plugin(name="pycodestyle.whitespace_before_parameters", entry_point="pycodestyle.whitespace_before_parameters = pycodestyle:whitespace_before_parameters") for plugin "pycodestyle.whitespace_before_parameters".
+[4.778s] manager.py                 272 INFO     Loading entry-points for "flake8.listen".
+[4.779s] manager.py                 272 INFO     Loading entry-points for "flake8.report".
+[4.779s] manager.py                 287 DEBUG    Loaded Plugin(name="default", entry_point="default = flake8.formatting.default:Default") for plugin "default".
+[4.780s] manager.py                 287 DEBUG    Loaded Plugin(name="pylint", entry_point="pylint = flake8.formatting.default:Pylint") for plugin "pylint".
+[4.780s] manager.py                 287 DEBUG    Loaded Plugin(name="quiet-filename", entry_point="quiet-filename = flake8.formatting.default:FilenameOnly") for plugin "quiet-filename".
+[4.781s] manager.py                 287 DEBUG    Loaded Plugin(name="quiet-nothing", entry_point="quiet-nothing = flake8.formatting.default:Nothing") for plugin "quiet-nothing".
+[4.781s] manager.py                 176 INFO     Loading plugin "C90" from entry-point.
+[4.782s] manager.py                 176 INFO     Loading plugin "F" from entry-point.
+[4.782s] manager.py                 176 INFO     Loading plugin "pycodestyle.ambiguous_identifier" from entry-point.
+[4.783s] manager.py                 176 INFO     Loading plugin "pycodestyle.bare_except" from entry-point.
+[4.783s] manager.py                 176 INFO     Loading plugin "pycodestyle.blank_lines" from entry-point.
+[4.784s] manager.py                 176 INFO     Loading plugin "pycodestyle.break_around_binary_operator" from entry-point.
+[4.784s] manager.py                 176 INFO     Loading plugin "pycodestyle.comparison_negative" from entry-point.
+[4.785s] manager.py                 176 INFO     Loading plugin "pycodestyle.comparison_to_singleton" from entry-point.
+[4.785s] manager.py                 176 INFO     Loading plugin "pycodestyle.comparison_type" from entry-point.
+[4.786s] manager.py                 176 INFO     Loading plugin "pycodestyle.compound_statements" from entry-point.
+[4.786s] manager.py                 176 INFO     Loading plugin "pycodestyle.continued_indentation" from entry-point.
+[4.787s] manager.py                 176 INFO     Loading plugin "pycodestyle.explicit_line_join" from entry-point.
+[4.787s] manager.py                 176 INFO     Loading plugin "pycodestyle.extraneous_whitespace" from entry-point.
+[4.788s] manager.py                 176 INFO     Loading plugin "pycodestyle.imports_on_separate_lines" from entry-point.
+[4.789s] manager.py                 176 INFO     Loading plugin "pycodestyle.indentation" from entry-point.
+[4.790s] manager.py                 176 INFO     Loading plugin "pycodestyle.maximum_line_length" from entry-point.
+[4.790s] manager.py                 176 INFO     Loading plugin "pycodestyle.missing_whitespace" from entry-point.
+[4.791s] manager.py                 176 INFO     Loading plugin "pycodestyle.missing_whitespace_after_import_keyword" from entry-point.
+[4.791s] manager.py                 176 INFO     Loading plugin "pycodestyle.missing_whitespace_around_operator" from entry-point.
+[4.792s] manager.py                 176 INFO     Loading plugin "pycodestyle.module_imports_on_top_of_file" from entry-point.
+[4.792s] manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_backticks" from entry-point.
+[4.793s] manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_has_key" from entry-point.
+[4.793s] manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_not_equal" from entry-point.
+[4.794s] manager.py                 176 INFO     Loading plugin "pycodestyle.python_3000_raise_comma" from entry-point.
+[4.795s] manager.py                 176 INFO     Loading plugin "pycodestyle.tabs_obsolete" from entry-point.
+[4.795s] manager.py                 176 INFO     Loading plugin "pycodestyle.tabs_or_spaces" from entry-point.
+[4.796s] manager.py                 176 INFO     Loading plugin "pycodestyle.trailing_blank_lines" from entry-point.
+[4.796s] manager.py                 176 INFO     Loading plugin "pycodestyle.trailing_whitespace" from entry-point.
+[4.797s] manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_comma" from entry-point.
+[4.797s] manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_keywords" from entry-point.
+[4.798s] manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_named_parameter_equals" from entry-point.
+[4.798s] manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_around_operator" from entry-point.
+[4.799s] manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_before_comment" from entry-point.
+[4.799s] manager.py                 176 INFO     Loading plugin "pycodestyle.whitespace_before_parameters" from entry-point.
+[4.800s] manager.py                 176 INFO     Loading plugin "default" from entry-point.
+[4.800s] manager.py                 176 INFO     Loading plugin "pylint" from entry-point.
+[4.801s] manager.py                 176 INFO     Loading plugin "quiet-filename" from entry-point.
+[4.801s] manager.py                 176 INFO     Loading plugin "quiet-nothing" from entry-point.
+[4.802s] manager.py                 231 DEBUG    Registering options from plugin "C90" on OptionManager <flake8.options.manager.OptionManager object at 0x7f7f1fee48>
+[4.802s] manager.py                 210 DEBUG    Registered option "Option(None, --max-complexity, action=store, default=-1, dest=max_complexity, type=int, callback=None, help=McCabe complexity threshold, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.803s] manager.py                 219 DEBUG    Removing ['C90'] from the default ignore list
+[4.803s] manager.py                 225 DEBUG    Attempted to remove C90 from default ignore but it was not a member of the list.
+[4.804s] manager.py                 244 DEBUG    Extending default select list with ['C90']
+[4.804s] manager.py                 231 DEBUG    Registering options from plugin "F" on OptionManager <flake8.options.manager.OptionManager object at 0x7f7f1fee48>
+[4.805s] manager.py                 210 DEBUG    Registered option "Option(None, --builtins, action=None, default=None, dest=builtins, type=None, callback=None, help=define more built-ins, comma separated, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.805s] manager.py                 210 DEBUG    Registered option "Option(None, --doctests, action=store_true, default=False, dest=doctests, type=None, callback=None, help=check syntax of the doctests, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.806s] manager.py                 210 DEBUG    Registered option "Option(None, --include-in-doctest, action=None, default=, dest=include_in_doctest, type=string, callback=None, help=Run doctests only on these files, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.806s] manager.py                 210 DEBUG    Registered option "Option(None, --exclude-from-doctest, action=None, default=, dest=exclude_from_doctest, type=string, callback=None, help=Skip these files when running doctests, callback=None, callback_args=None, callback_kwargs=None, metavar=None)".
+[4.807s] manager.py                 219 DEBUG    Removing ['F'] from the default ignore list
+[4.807s] manager.py                 225 DEBUG    Attempted to remove F from default ignore but it was not a member of the list.
+[4.808s] manager.py                 244 DEBUG    Extending default select list with ['F']
+[4.809s] config.py                  294 DEBUG    Ignoring user and locally found configuration files. Reading only configuration from "/opt/ros/dashing/lib/python3.6/site-packages/ament_flake8/configuration/ament_flake8.ini" specified via --config by the user
+[4.809s] config.py                   85 DEBUG    Found cli configuration files: ['/opt/ros/dashing/lib/python3.6/site-packages/ament_flake8/configuration/ament_flake8.ini']
+[4.810s] config.py                  249 DEBUG    Parsing CLI configuration files.
+[4.810s] config.py                  195 DEBUG    Option "extend-ignore" is not registered. Ignoring.
+[4.811s] config.py                  195 DEBUG    Option "import-order-style" is not registered. Ignoring.
+[4.811s] config.py                  208 DEBUG    Option "max-line-length" returned value: 99
+[4.812s] config.py                  187 DEBUG    99 has been normalized to 99 for option "max_line_length"
+[4.812s] config.py                  208 DEBUG    Option "show-source" returned value: True
+[4.813s] config.py                  187 DEBUG    True has been normalized to True for option "show_source"
+[4.813s] config.py                  208 DEBUG    Option "statistics" returned value: True
+[4.814s] config.py                  187 DEBUG    True has been normalized to True for option "statistics"
+[4.814s] aggregator.py               52 DEBUG    Extended default ignore list: []
+[4.815s] aggregator.py               55 DEBUG    Merged default ignore list: ['E126', 'W503', 'E704', 'E226', 'W504', 'E121', 'E123', 'E24']
+[4.816s] aggregator.py               59 DEBUG    Extended default select list: ['C90', 'F']
+[4.816s] aggregator.py               73 DEBUG    Overriding default value of (79) for "max_line_length" with (99)
+[4.817s] aggregator.py               73 DEBUG    Overriding default value of (None) for "show_source" with (True)
+[4.817s] aggregator.py               73 DEBUG    Overriding default value of (None) for "statistics" with (True)
+[4.818s] manager.py                 208 DEBUG    Providing options to plugin "C90".
+[4.818s] manager.py                 208 DEBUG    Providing options to plugin "F".
+[4.819s] manager.py                 376 DEBUG    Retrieving plugin for "default".
+[4.819s] manager.py                 371 DEBUG    Checking for "default" in plugin type manager.
+[4.820s] manager.py                 376 DEBUG    Retrieving plugin for "default".
+[4.820s] checker.py                 341 INFO     Making checkers
+[4.821s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub" has not been excluded
+[4.821s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub" has not been excluded
+[4.822s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/resource" has not been excluded
+[4.823s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/py_pubsub" has not been excluded
+[4.823s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/test" has not been excluded
+[4.824s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/package.xml" has not been excluded
+[4.824s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/package.xml" has not been excluded
+[4.825s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/setup.cfg" has not been excluded
+[4.825s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/setup.cfg" has not been excluded
+[4.826s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/setup.py" has not been excluded
+[4.826s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/setup.py" has not been excluded
+[4.827s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/resource" has not been excluded
+[4.827s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/resource/py_pubsub" has not been excluded
+[4.828s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/py_pubsub" has not been excluded
+[4.828s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/py_pubsub" has not been excluded
+[4.829s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/py_pubsub/publisher_member_function.py" has not been excluded
+[4.829s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/publisher_member_function.py" has not been excluded
+[4.830s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/py_pubsub/__init__.py" has not been excluded
+[4.830s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/__init__.py" has not been excluded
+[4.831s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/py_pubsub/subscriber_member_function.py" has not been excluded
+[4.831s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/subscriber_member_function.py" has not been excluded
+[4.832s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/test" has not been excluded
+[4.832s] checker.py                 192 DEBUG    "__pycache__" has been excluded
+[4.833s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/test/test_pep257.py" has not been excluded
+[4.833s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/test_pep257.py" has not been excluded
+[4.834s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/test/test_copyright.py" has not been excluded
+[4.835s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/test_copyright.py" has not been excluded
+[4.836s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/test/test_flake8.py" has not been excluded
+[4.861s] checker.py                 198 DEBUG    "/home/leh/test_ws/src/py_pubsub/test_flake8.py" has not been excluded
+[4.861s] checker.py                 248 INFO     Checking 7 files
+[4.862s] application.py             311 INFO     Finished running
+[4.862s] application.py             339 INFO     Reporting errors
+[4.863s] style_guide.py             273 DEBUG    Deciding if "E302" should be reported
+[4.863s] style_guide.py             277 DEBUG    The user configured "E302" to be "Selected.Explicitly", "Selected.Implicitly"
+[4.864s] style_guide.py             312 DEBUG    "E302" will be "Decision.Selected"
+[4.864s] style_guide.py              95 DEBUG    Violation(code='E302', filename='./py_pubsub/publisher_member_function.py', line_number=6, column_number=1, text='expected 2 blank lines, found 1', physical_line='class MinimalPublisher(Node):\n') is not inline ignored
+[4.865s] style_guide.py             273 DEBUG    Deciding if "W293" should be reported
+[4.866s] style_guide.py             277 DEBUG    The user configured "W293" to be "Selected.Explicitly", "Selected.Implicitly"
+[4.866s] style_guide.py             312 DEBUG    "W293" will be "Decision.Selected"
+[4.867s] style_guide.py              95 DEBUG    Violation(code='W293', filename='./py_pubsub/publisher_member_function.py', line_number=7, column_number=1, text='blank line contains whitespace', physical_line='    \n') is not inline ignored
+[4.867s] style_guide.py             273 DEBUG    Deciding if "E231" should be reported
+[4.867s] style_guide.py             277 DEBUG    The user configured "E231" to be "Selected.Explicitly", "Selected.Implicitly"
+[4.868s] style_guide.py             312 DEBUG    "E231" will be "Decision.Selected"
+[4.868s] style_guide.py              95 DEBUG    Violation(code='E231', filename='./py_pubsub/publisher_member_function.py', line_number=10, column_number=52, text="missing whitespace after ','", physical_line="        self.publisher_ = self.create_publisher(Num,'topic',10)\n") is not inline ignored
+[4.869s] style_guide.py              95 DEBUG    Violation(code='E231', filename='./py_pubsub/publisher_member_function.py', line_number=10, column_number=60, text="missing whitespace after ','", physical_line="        self.publisher_ = self.create_publisher(Num,'topic',10)\n") is not inline ignored
+[4.869s] style_guide.py              95 DEBUG    Violation(code='E231', filename='./py_pubsub/publisher_member_function.py', line_number=12, column_number=52, text="missing whitespace after ','", physical_line='        self.timer = self.create_timer(timer_period,self.timer_callback)\n') is not inline ignored
+[4.870s] style_guide.py             273 DEBUG    Deciding if "E225" should be reported
+[4.870s] style_guide.py             277 DEBUG    The user configured "E225" to be "Selected.Explicitly", "Selected.Implicitly"
+[4.871s] style_guide.py             312 DEBUG    "E225" will be "Decision.Selected"
+[4.871s] style_guide.py              95 DEBUG    Violation(code='E225', filename='./py_pubsub/publisher_member_function.py', line_number=20, column_number=18, text='missing whitespace around operator', physical_line='        self.i +=1\n') is not inline ignored
+[4.871s] style_guide.py              95 DEBUG    Violation(code='E302', filename='./py_pubsub/publisher_member_function.py', line_number=21, column_number=1, text='expected 2 blank lines, found 0', physical_line='def main(args = None):\n') is not inline ignored
+[4.872s] style_guide.py             273 DEBUG    Deciding if "E251" should be reported
+[4.872s] style_guide.py             277 DEBUG    The user configured "E251" to be "Selected.Explicitly", "Selected.Implicitly"
+[4.873s] style_guide.py             312 DEBUG    "E251" will be "Decision.Selected"
+[4.873s] style_guide.py              95 DEBUG    Violation(code='E251', filename='./py_pubsub/publisher_member_function.py', line_number=21, column_number=14, text='unexpected spaces around keyword / parameter equals', physical_line='def main(args = None):\n') is not inline ignored
+[4.874s] style_guide.py              95 DEBUG    Violation(code='E251', filename='./py_pubsub/publisher_member_function.py', line_number=21, column_number=16, text='unexpected spaces around keyword / parameter equals', physical_line='def main(args = None):\n') is not inline ignored
+[4.874s] style_guide.py              95 DEBUG    Violation(code='E251', filename='./py_pubsub/publisher_member_function.py', line_number=22, column_number=20, text='unexpected spaces around keyword / parameter equals', physical_line='    rclpy.init(args = args)\n') is not inline ignored
+[4.874s] style_guide.py              95 DEBUG    Violation(code='E251', filename='./py_pubsub/publisher_member_function.py', line_number=22, column_number=22, text='unexpected spaces around keyword / parameter equals', physical_line='    rclpy.init(args = args)\n') is not inline ignored
+[4.875s] style_guide.py             273 DEBUG    Deciding if "E305" should be reported
+[4.875s] style_guide.py             277 DEBUG    The user configured "E305" to be "Selected.Explicitly", "Selected.Implicitly"
+[4.876s] style_guide.py             312 DEBUG    "E305" will be "Decision.Selected"
+[4.876s] style_guide.py              95 DEBUG    Violation(code='E305', filename='./py_pubsub/publisher_member_function.py', line_number=31, column_number=1, text='expected 2 blank lines after class or function definition, found 1', physical_line="if __name__ == '__main__':\n") is not inline ignored
+[4.877s] style_guide.py              95 DEBUG    Violation(code='E302', filename='./py_pubsub/subscriber_member_function.py', line_number=6, column_number=1, text='expected 2 blank lines, found 1', physical_line='class MinimalSubscriber(Node):\n') is not inline ignored
+[4.877s] style_guide.py              95 DEBUG    Violation(code='E231', filename='./py_pubsub/subscriber_member_function.py', line_number=10, column_number=57, text="missing whitespace after ','", physical_line="        self.subscription = self.create_subscription(Num,'topic',self.listener_callback,10)\n") is not inline ignored
+[4.877s] style_guide.py              95 DEBUG    Violation(code='E231', filename='./py_pubsub/subscriber_member_function.py', line_number=10, column_number=65, text="missing whitespace after ','", physical_line="        self.subscription = self.create_subscription(Num,'topic',self.listener_callback,10)\n") is not inline ignored
+[4.878s] style_guide.py              95 DEBUG    Violation(code='E231', filename='./py_pubsub/subscriber_member_function.py', line_number=10, column_number=88, text="missing whitespace after ','", physical_line="        self.subscription = self.create_subscription(Num,'topic',self.listener_callback,10)\n") is not inline ignored
+[4.878s] style_guide.py              95 DEBUG    Violation(code='E231', filename='./py_pubsub/subscriber_member_function.py', line_number=13, column_number=31, text="missing whitespace after ','", physical_line='    def listener_callback(self,msg):\n') is not inline ignored
+[4.879s] style_guide.py              95 DEBUG    Violation(code='E302', filename='./py_pubsub/subscriber_member_function.py', line_number=16, column_number=1, text='expected 2 blank lines, found 1', physical_line='def main(args = None):\n') is not inline ignored
+[4.879s] style_guide.py              95 DEBUG    Violation(code='E251', filename='./py_pubsub/subscriber_member_function.py', line_number=16, column_number=14, text='unexpected spaces around keyword / parameter equals', physical_line='def main(args = None):\n') is not inline ignored
+[4.880s] style_guide.py              95 DEBUG    Violation(code='E251', filename='./py_pubsub/subscriber_member_function.py', line_number=16, column_number=16, text='unexpected spaces around keyword / parameter equals', physical_line='def main(args = None):\n') is not inline ignored
+[4.880s] style_guide.py              95 DEBUG    Violation(code='E251', filename='./py_pubsub/subscriber_member_function.py', line_number=17, column_number=20, text='unexpected spaces around keyword / parameter equals', physical_line='    rclpy.init(args = args)\n') is not inline ignored
+[4.880s] style_guide.py              95 DEBUG    Violation(code='E251', filename='./py_pubsub/subscriber_member_function.py', line_number=17, column_number=22, text='unexpected spaces around keyword / parameter equals', physical_line='    rclpy.init(args = args)\n') is not inline ignored
+[4.881s] style_guide.py              95 DEBUG    Violation(code='E305', filename='./py_pubsub/subscriber_member_function.py', line_number=26, column_number=1, text='expected 2 blank lines after class or function definition, found 1', physical_line="if __name__ == '__main__':\n") is not inline ignored
+[4.881s] application.py             343 INFO     Found a total of 23 violations and reported 23
+[4.882s] [31m[1m====================== 2 failed, 1 passed in 1.54 seconds ======================[0m
+[4.883s] Invoked command in '/home/leh/test_ws/src/py_pubsub' returned '1': AMENT_PREFIX_PATH=/home/leh/test_ws/install/py_pubsub:/home/leh/test_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces LD_LIBRARY_PATH=/home/leh/test_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/leh/test_ws/build/py_pubsub/pytest.xml --junit-prefix=py_pubsub -o cache_dir=/home/leh/test_ws/build/py_pubsub/.pytest_cache PYTHONPATH=/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

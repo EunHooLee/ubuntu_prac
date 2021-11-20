@@ -1,0 +1,12 @@
+-- run_test.py: invoking following command in '/home/leh/test_ws/src/tutorial_interfaces':
+ - /opt/ros/dashing/bin/ament_lint_cmake --xunit-file /home/leh/test_ws/build/tutorial_interfaces/test_results/tutorial_interfaces/lint_cmake.xunit.xml
+
+CMakeLists.txt:27: Tab found; please use spaces [whitespace/tabs]
+CMakeLists.txt:28: Tab found; please use spaces [whitespace/tabs]
+
+
+2 errors
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/leh/test_ws/build/tutorial_interfaces/test_results/tutorial_interfaces/lint_cmake.xunit.xml'

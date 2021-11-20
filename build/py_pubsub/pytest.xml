@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="2" name="pytest" skips="0" tests="3" time="1.542"><testcase classname="py_pubsub.test.test_copyright" file="test/test_copyright.py" line="18" name="test_copyright" time="0.053884029388427734"><failure message="AssertionError: Found errors
+assert 1 == 0">test/test_copyright.py:23: in test_copyright
+    assert rc == 0, &apos;Found errors&apos;
+E   AssertionError: Found errors
+E   assert 1 == 0</failure><system-err>py_pubsub/publisher_member_function.py: could not find copyright notice
+py_pubsub/subscriber_member_function.py: could not find copyright notice
+2 errors, checked 6 files
+</system-err></testcase><testcase classname="py_pubsub.test.test_flake8" file="test/test_flake8.py" line="18" name="test_flake8" time="0.604870080947876"><failure message="AssertionError: Found errors
+assert 1 == 0">test/test_flake8.py:23: in test_flake8
+    assert rc == 0, &apos;Found errors&apos;
+E   AssertionError: Found errors
+E   assert 1 == 0</failure><system-out>
+./py_pubsub/publisher_member_function.py:6:1: E302 expected 2 blank lines, found 1
+class MinimalPublisher(Node):
+^
+
+./py_pubsub/publisher_member_function.py:7:1: W293 blank line contains whitespace
+    
+^
+
+./py_pubsub/publisher_member_function.py:10:52: E231 missing whitespace after &apos;,&apos;
+        self.publisher_ = self.create_publisher(Num,&apos;topic&apos;,10)
+                                                   ^
+
+./py_pubsub/publisher_member_function.py:10:60: E231 missing whitespace after &apos;,&apos;
+        self.publisher_ = self.create_publisher(Num,&apos;topic&apos;,10)
+                                                           ^
+
+./py_pubsub/publisher_member_function.py:12:52: E231 missing whitespace after &apos;,&apos;
+        self.timer = self.create_timer(timer_period,self.timer_callback)
+                                                   ^
+
+./py_pubsub/publisher_member_function.py:20:18: E225 missing whitespace around operator
+        self.i +=1
+                 ^
+
+./py_pubsub/publisher_member_function.py:21:1: E302 expected 2 blank lines, found 0
+def main(args = None):
+^
+
+./py_pubsub/publisher_member_function.py:21:14: E251 unexpected spaces around keyword / parameter equals
+def main(args = None):
+             ^
+
+./py_pubsub/publisher_member_function.py:21:16: E251 unexpected spaces around keyword / parameter equals
+def main(args = None):
+               ^
+
+./py_pubsub/publisher_member_function.py:22:20: E251 unexpected spaces around keyword / parameter equals
+    rclpy.init(args = args)
+                   ^
+
+./py_pubsub/publisher_member_function.py:22:22: E251 unexpected spaces around keyword / parameter equals
+    rclpy.init(args = args)
+                     ^
+
+./py_pubsub/publisher_member_function.py:31:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == &apos;__main__&apos;:
+^
+
+./py_pubsub/subscriber_member_function.py:6:1: E302 expected 2 blank lines, found 1
+class MinimalSubscriber(Node):
+^
+
+./py_pubsub/subscriber_member_function.py:10:57: E231 missing whitespace after &apos;,&apos;
+        self.subscription = self.create_subscription(Num,&apos;topic&apos;,self.listener_callback,10)
+                                                        ^
+
+./py_pubsub/subscriber_member_function.py:10:65: E231 missing whitespace after &apos;,&apos;
+        self.subscription = self.create_subscription(Num,&apos;topic&apos;,self.listener_callback,10)
+                                                                ^
+
+./py_pubsub/subscriber_member_function.py:10:88: E231 missing whitespace after &apos;,&apos;
+        self.subscription = self.create_subscription(Num,&apos;topic&apos;,self.listener_callback,10)
+                                                                                       ^
+
+./py_pubsub/subscriber_member_function.py:13:31: E231 missing whitespace after &apos;,&apos;
+    def listener_callback(self,msg):
+                              ^
+
+./py_pubsub/subscriber_member_function.py:16:1: E302 expected 2 blank lines, found 1
+def main(args = None):
+^
+
+./py_pubsub/subscriber_member_function.py:16:14: E251 unexpected spaces around keyword / parameter equals
+def main(args = None):
+             ^
+
+./py_pubsub/subscriber_member_function.py:16:16: E251 unexpected spaces around keyword / parameter equals
+def main(args = None):
+               ^
+
+./py_pubsub/subscriber_member_function.py:17:20: E251 unexpected spaces around keyword / parameter equals
+    rclpy.init(args = args)
+                   ^
+
+./py_pubsub/subscriber_member_function.py:17:22: E251 unexpected spaces around keyword / parameter equals
+    rclpy.init(args = args)
+                     ^
+
+./py_pubsub/subscriber_member_function.py:26:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == &apos;__main__&apos;:
+^
+
+1     E225 missing whitespace around operator
+7     E231 missing whitespace after &apos;,&apos;
+8     E251 unexpected spaces around keyword / parameter equals
+4     E302 expected 2 blank lines, found 1
+2     E305 expected 2 blank lines after class or function definition, found 1
+1     W293 blank line contains whitespace
+
+7 files checked
+23 errors
+
+&apos;E&apos;-type errors: 22
+&apos;W&apos;-type errors: 1
+
+Checked files:
+
+* ./setup.py
+* ./py_pubsub/publisher_member_function.py
+* ./py_pubsub/__init__.py
+* ./py_pubsub/subscriber_member_function.py
+* ./test/test_pep257.py
+* ./test/test_copyright.py
+* ./test/test_flake8.py
+</system-out></testcase><testcase classname="py_pubsub.test.test_pep257" file="test/test_pep257.py" line="18" name="test_pep257" time="0.13897705078125"><system-out>checking ./py_pubsub/__init__.py
+checking ./py_pubsub/publisher_member_function.py
+checking ./py_pubsub/subscriber_member_function.py
+checking ./setup.py
+checking ./test/test_copyright.py
+checking ./test/test_flake8.py
+checking ./test/test_pep257.py
+checking test/test_copyright.py
+checking test/test_flake8.py
+checking test/test_pep257.py
+No problems found
+</system-out></testcase></testsuite>
