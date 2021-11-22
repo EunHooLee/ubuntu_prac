@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/leh/test_ws/build/tutorial_interfaces
 include CMakeFiles/tutorial_interfaces.dir/progress.make
 
 CMakeFiles/tutorial_interfaces: /home/leh/test_ws/src/tutorial_interfaces/msg/Num.msg
+CMakeFiles/tutorial_interfaces: /home/leh/test_ws/src/tutorial_interfaces/msg/TwoIntegersArray.msg
 CMakeFiles/tutorial_interfaces: /home/leh/test_ws/src/tutorial_interfaces/srv/AddThreeInts.srv
 CMakeFiles/tutorial_interfaces: rosidl_cmake/srv/AddThreeInts_Request.msg
 CMakeFiles/tutorial_interfaces: rosidl_cmake/srv/AddThreeInts_Response.msg

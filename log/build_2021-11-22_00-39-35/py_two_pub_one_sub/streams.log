@@ -1,0 +1,47 @@
+[1.750s] Invoking command in '/home/leh/test_ws/src/py_two_pub_one_sub': PYTHONPATH=/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_two_pub_one_sub build --build-base /home/leh/test_ws/build/py_two_pub_one_sub/build install --prefix /home/leh/test_ws/install/py_two_pub_one_sub --record /home/leh/test_ws/build/py_two_pub_one_sub/install.log --single-version-externally-managed
+[3.029s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[3.030s]   % (opt, underscore_opt)
+[3.034s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[3.035s]   % (opt, underscore_opt)
+[3.222s] running egg_info
+[3.226s] creating ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info
+[3.227s] writing ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/PKG-INFO
+[3.227s] writing dependency_links to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/dependency_links.txt
+[3.228s] writing entry points to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/entry_points.txt
+[3.229s] writing requirements to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/requires.txt
+[3.230s] writing top-level names to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/top_level.txt
+[3.231s] writing manifest file '../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/SOURCES.txt'
+[3.242s] reading manifest file '../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/SOURCES.txt'
+[3.250s] writing manifest file '../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/SOURCES.txt'
+[3.252s] running build
+[3.254s] running build_py
+[3.255s] creating /home/leh/test_ws/build/py_two_pub_one_sub/build
+[3.256s] creating /home/leh/test_ws/build/py_two_pub_one_sub/build/lib
+[3.257s] creating /home/leh/test_ws/build/py_two_pub_one_sub/build/lib/py_two_pub_one_sub
+[3.258s] copying py_two_pub_one_sub/__init__.py -> /home/leh/test_ws/build/py_two_pub_one_sub/build/lib/py_two_pub_one_sub
+[3.259s] copying py_two_pub_one_sub/subscriber_actuator_function.py -> /home/leh/test_ws/build/py_two_pub_one_sub/build/lib/py_two_pub_one_sub
+[3.260s] copying py_two_pub_one_sub/publisher_sensor1_function.py -> /home/leh/test_ws/build/py_two_pub_one_sub/build/lib/py_two_pub_one_sub
+[3.261s] running install
+[3.263s] /home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.264s]   setuptools.SetuptoolsDeprecationWarning,
+[3.265s] running install_lib
+[3.266s] creating /home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub
+[3.267s] copying /home/leh/test_ws/build/py_two_pub_one_sub/build/lib/py_two_pub_one_sub/__init__.py -> /home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub
+[3.268s] copying /home/leh/test_ws/build/py_two_pub_one_sub/build/lib/py_two_pub_one_sub/subscriber_actuator_function.py -> /home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub
+[3.269s] copying /home/leh/test_ws/build/py_two_pub_one_sub/build/lib/py_two_pub_one_sub/publisher_sensor1_function.py -> /home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub
+[3.271s] byte-compiling /home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub/__init__.py to __init__.cpython-36.pyc
+[3.271s] byte-compiling /home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub/subscriber_actuator_function.py to subscriber_actuator_function.cpython-36.pyc
+[3.272s] byte-compiling /home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub/publisher_sensor1_function.py to publisher_sensor1_function.cpython-36.pyc
+[3.274s] running install_data
+[3.276s] creating /home/leh/test_ws/install/py_two_pub_one_sub/share/ament_index
+[3.276s] creating /home/leh/test_ws/install/py_two_pub_one_sub/share/ament_index/resource_index
+[3.277s] creating /home/leh/test_ws/install/py_two_pub_one_sub/share/ament_index/resource_index/packages
+[3.278s] copying resource/py_two_pub_one_sub -> /home/leh/test_ws/install/py_two_pub_one_sub/share/ament_index/resource_index/packages
+[3.279s] copying package.xml -> /home/leh/test_ws/install/py_two_pub_one_sub/share/py_two_pub_one_sub
+[3.279s] running install_egg_info
+[3.290s] Copying ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info to /home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub-0.0.0-py3.6.egg-info
+[3.297s] running install_scripts
+[3.404s] Installing actuator script to /home/leh/test_ws/install/py_two_pub_one_sub/lib/py_two_pub_one_sub
+[3.405s] Installing sensor1 script to /home/leh/test_ws/install/py_two_pub_one_sub/lib/py_two_pub_one_sub
+[3.406s] writing list of installed files to '/home/leh/test_ws/build/py_two_pub_one_sub/install.log'
+[3.516s] Invoked command in '/home/leh/test_ws/src/py_two_pub_one_sub' returned '0': PYTHONPATH=/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_two_pub_one_sub build --build-base /home/leh/test_ws/build/py_two_pub_one_sub/build install --prefix /home/leh/test_ws/install/py_two_pub_one_sub --record /home/leh/test_ws/build/py_two_pub_one_sub/install.log --single-version-externally-managed

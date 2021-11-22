@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tutorial_interfaces/msg/TwoIntegersArray.msg
+// generated code does not contain a copyright notice
+
+
+module tutorial_interfaces {
+  module msg {
+    typedef int64 int64__2[2];
+    struct TwoIntegersArray {
+      int64__2 two_integers_array;
+    };
+  };
+};

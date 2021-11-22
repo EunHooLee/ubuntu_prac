@@ -4,6 +4,7 @@
   "template_dir": "/opt/ros/dashing/share/rosidl_typesupport_fastrtps_cpp/resource",
   "idl_tuples": [
     "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Num.idl",
+    "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/TwoIntegersArray.idl",
     "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl"
   ],
   "target_dependencies": [
@@ -16,6 +17,7 @@
     "/opt/ros/dashing/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
     "/opt/ros/dashing/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
     "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Num.idl",
+    "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/TwoIntegersArray.idl",
     "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl"
   ]
 }

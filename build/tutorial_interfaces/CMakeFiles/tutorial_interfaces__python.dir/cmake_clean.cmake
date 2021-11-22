@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tutorial_interfaces__python.dir/rosidl_generator_py/tutorial_interfaces/msg/_num_s.c.o"
+  "CMakeFiles/tutorial_interfaces__python.dir/rosidl_generator_py/tutorial_interfaces/msg/_two_integers_array_s.c.o"
   "CMakeFiles/tutorial_interfaces__python.dir/rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints_s.c.o"
   "rosidl_generator_py/tutorial_interfaces/libtutorial_interfaces__python.pdb"
   "rosidl_generator_py/tutorial_interfaces/libtutorial_interfaces__python.so"

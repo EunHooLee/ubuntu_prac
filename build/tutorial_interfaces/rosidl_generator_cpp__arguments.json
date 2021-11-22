@@ -4,6 +4,7 @@
   "template_dir": "/opt/ros/dashing/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
     "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Num.idl",
+    "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/TwoIntegersArray.idl",
     "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl"
   ],
   "target_dependencies": [
@@ -18,6 +19,7 @@
     "/opt/ros/dashing/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/dashing/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
     "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Num.idl",
+    "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/TwoIntegersArray.idl",
     "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl"
   ]
 }

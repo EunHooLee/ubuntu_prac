@@ -1,0 +1,41 @@
+[0.066s] Invoking command in '/home/leh/test_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leh/test_ws/install/py_pubsub:/opt/ros/dashing /usr/bin/cmake --build /home/leh/test_ws/build/tutorial_interfaces -- -j4 -l4
+[0.156s] CMake Error at CMakeLists.txt:50:
+[0.157s]   Parse error.  Function missing ending ")".  Instead found unterminated
+[0.158s]   string with text "srv/AddThreeInts.srv)
+[0.158s] 
+[0.159s]   
+[0.159s] 
+[0.160s]   rosidl_generate_interfaces(${PROJECT_NAME}
+[0.161s] 
+[0.161s]     ${msg_files}
+[0.162s]     ${srv_files})
+[0.162s] 
+[0.163s]   
+[0.163s] 
+[0.164s]   
+[0.164s] 
+[0.165s]   if(BUILD_TESTING)
+[0.165s] 
+[0.166s]     find_package(ament_lint_auto REQUIRED)
+[0.166s]     # the following line skips the linter which checks for copyrights
+[0.167s]     # uncomment the line when a copyright and license is not present in all source files
+[0.167s]     #set(ament_cmake_copyright_FOUND TRUE)
+[0.168s]     # the following line skips cpplint (only works in a git repo)
+[0.168s]     # uncomment the line when this package is not in a git repo
+[0.169s]     #set(ament_cmake_cpplint_FOUND TRUE)
+[0.170s]     ament_lint_auto_find_test_dependencies()
+[0.171s] 
+[0.173s]   endif()
+[0.174s] 
+[0.176s]   
+[0.179s] 
+[0.181s]   ament_package()
+[0.182s] 
+[0.182s]   ".
+[0.184s] 
+[0.186s] 
+[0.187s] -- Configuring incomplete, errors occurred!
+[0.188s] See also "/home/leh/test_ws/build/tutorial_interfaces/CMakeFiles/CMakeOutput.log".
+[0.188s] Makefile:930: recipe for target 'cmake_check_build_system' failed
+[0.189s] make: *** [cmake_check_build_system] Error 1
+[0.190s] Invoked command in '/home/leh/test_ws/build/tutorial_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leh/test_ws/install/py_pubsub:/opt/ros/dashing /usr/bin/cmake --build /home/leh/test_ws/build/tutorial_interfaces -- -j4 -l4

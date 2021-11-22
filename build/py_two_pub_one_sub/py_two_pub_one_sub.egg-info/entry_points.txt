@@ -1,0 +1,5 @@
+[console_scripts]
+actuator = py_two_pub_one_sub.subscriber_actuator_function:main
+sensor1 = py_two_pub_one_sub.publisher_sensor1_function:main
+sensor2 = py_two_pub_one_sub.publisher_sensor2_function:main
+

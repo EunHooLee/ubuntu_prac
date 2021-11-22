@@ -66,12 +66,19 @@ rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__rosidl_typesupport_fa
 rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/dashing/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em
 rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/dashing/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em
 rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/tutorial_interfaces/msg/Num.idl
+rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/tutorial_interfaces/msg/TwoIntegersArray.idl
 rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leh/test_ws/build/tutorial_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
 	/usr/bin/python3 /opt/ros/dashing/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/leh/test_ws/build/tutorial_interfaces/rosidl_typesupport_fastrtps_c__arguments.json
 
 rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__type_support_c.cpp: rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp: rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp
 
 rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__rosidl_typesupport_fastrtps_c.h
@@ -103,9 +110,33 @@ CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesup
 CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__type_support_c.cpp.o.provides.build: CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__type_support_c.cpp.o
 
 
+CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o: CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leh/test_ws/build/tutorial_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o -c /home/leh/test_ws/build/tutorial_interfaces/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp
+
+CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leh/test_ws/build/tutorial_interfaces/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp > CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.i
+
+CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leh/test_ws/build/tutorial_interfaces/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp -o CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.s
+
+CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o.requires:
+
+.PHONY : CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o.requires
+
+CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o.provides: CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o.requires
+	$(MAKE) -f CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o.provides.build
+.PHONY : CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o.provides
+
+CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o.provides.build: CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o
+
+
 CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__type_support_c.cpp.o: CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__type_support_c.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leh/test_ws/build/tutorial_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leh/test_ws/build/tutorial_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__type_support_c.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__type_support_c.cpp.o -c /home/leh/test_ws/build/tutorial_interfaces/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__type_support_c.cpp
 
 CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__type_support_c.cpp.i: cmake_force
@@ -130,12 +161,14 @@ CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesup
 # Object files for target tutorial_interfaces__rosidl_typesupport_fastrtps_c
 tutorial_interfaces__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__type_support_c.cpp.o" \
+"CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o" \
 "CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__type_support_c.cpp.o"
 
 # External object files for target tutorial_interfaces__rosidl_typesupport_fastrtps_c
 tutorial_interfaces__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
 
 libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__type_support_c.cpp.o
+libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o
 libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__type_support_c.cpp.o
 libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make
 libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/dashing/lib/librcutils.so
@@ -160,7 +193,7 @@ libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so: /usr/lib/aarch64-linux
 libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so: /usr/lib/aarch64-linux-gnu/libcrypto.so
 libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/dashing/lib/libfastcdr.so.1.0.13
 libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leh/test_ws/build/tutorial_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leh/test_ws/build/tutorial_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +202,7 @@ CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/build: libtuto
 .PHONY : CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/build
 
 CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/requires: CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__type_support_c.cpp.o.requires
+CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/requires: CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o.requires
 CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/requires: CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__type_support_c.cpp.o.requires
 
 .PHONY : CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/requires
@@ -179,6 +213,8 @@ CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/clean:
 
 CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__type_support_c.cpp
+CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp
 CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__type_support_c.cpp
 	cd /home/leh/test_ws/build/tutorial_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leh/test_ws/src/tutorial_interfaces /home/leh/test_ws/src/tutorial_interfaces /home/leh/test_ws/build/tutorial_interfaces /home/leh/test_ws/build/tutorial_interfaces /home/leh/test_ws/build/tutorial_interfaces/CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=$(COLOR)

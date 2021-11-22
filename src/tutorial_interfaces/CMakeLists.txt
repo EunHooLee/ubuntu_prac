@@ -23,9 +23,16 @@ find_package(ament_cmake REQUIRED)
 
 find_package(rosidl_default_generators REQUIRED)
 
+set(msg_files
+  "msg/Num.msg"
+  "msg/TwoIntegersArray.msg")
+
+set(srv_files
+  "srv/AddThreeInts.srv")
+
 rosidl_generate_interfaces(${PROJECT_NAME}
-	"msg/Num.msg"
-	"srv/AddThreeInts.srv")
+  ${msg_files}
+  ${srv_files})
 
 
 if(BUILD_TESTING)

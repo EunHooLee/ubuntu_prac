@@ -56,6 +56,9 @@ include CMakeFiles/tutorial_interfaces__cpp.dir/progress.make
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/num__struct.hpp
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/num__traits.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__struct.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__traits.hpp
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints.hpp
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints__struct.hpp
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints__traits.hpp
@@ -72,6 +75,7 @@ rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: /opt/ros/dashing/share/ros
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: /opt/ros/dashing/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: /opt/ros/dashing/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: rosidl_adapter/tutorial_interfaces/msg/Num.idl
+rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: rosidl_adapter/tutorial_interfaces/msg/TwoIntegersArray.idl
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leh/test_ws/build/tutorial_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/dashing/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/leh/test_ws/build/tutorial_interfaces/rosidl_generator_cpp__arguments.json
@@ -81,6 +85,15 @@ rosidl_generator_cpp/tutorial_interfaces/msg/num__struct.hpp: rosidl_generator_c
 
 rosidl_generator_cpp/tutorial_interfaces/msg/num__traits.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/num__traits.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__struct.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__struct.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__traits.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__traits.hpp
 
 rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints.hpp
@@ -95,6 +108,9 @@ tutorial_interfaces__cpp: CMakeFiles/tutorial_interfaces__cpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/num__struct.hpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/num__traits.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__struct.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__traits.hpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints.hpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints__struct.hpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints__traits.hpp
