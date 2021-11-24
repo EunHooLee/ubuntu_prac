@@ -21,6 +21,7 @@ extern "C"
 typedef struct tutorial_interfaces__msg__Num
 {
   int64_t num;
+  int64_t three_integers_array[3];
 } tutorial_interfaces__msg__Num;
 
 // Struct for a sequence of tutorial_interfaces__msg__Num.

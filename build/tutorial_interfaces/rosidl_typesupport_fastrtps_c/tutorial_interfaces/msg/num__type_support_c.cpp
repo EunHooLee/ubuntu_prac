@@ -54,6 +54,13 @@ static bool _Num__cdr_serialize(
     cdr << ros_message->num;
   }
 
+  // Field name: three_integers_array
+  {
+    size_t size = 3;
+    auto array_ptr = ros_message->three_integers_array;
+    cdr.serializeArray(array_ptr, size);
+  }
+
   return true;
 }
 
@@ -69,6 +76,13 @@ static bool _Num__cdr_deserialize(
   // Field name: num
   {
     cdr >> ros_message->num;
+  }
+
+  // Field name: three_integers_array
+  {
+    size_t size = 3;
+    auto array_ptr = ros_message->three_integers_array;
+    cdr.deserializeArray(array_ptr, size);
   }
 
   return true;
@@ -92,6 +106,15 @@ size_t get_serialized_size_tutorial_interfaces__msg__Num(
   {
     size_t item_size = sizeof(ros_message->num);
     current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name three_integers_array
+  {
+    size_t array_size = 3;
+    auto array_ptr = ros_message->three_integers_array;
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -121,6 +144,13 @@ size_t max_serialized_size_tutorial_interfaces__msg__Num(
   // member: num
   {
     size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: three_integers_array
+  {
+    size_t array_size = 3;
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));

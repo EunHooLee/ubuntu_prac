@@ -19,6 +19,10 @@ tutorial_interfaces/msg/num__struct.h
 /home/leh/test_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces/msg/tutorial_interfaces/msg/num__struct.h
 tutorial_interfaces/msg/num__functions.h
 /home/leh/test_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces/msg/tutorial_interfaces/msg/num__functions.h
+rosidl_generator_c/primitives_sequence.h
+/home/leh/test_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces/msg/rosidl_generator_c/primitives_sequence.h
+rosidl_generator_c/primitives_sequence_functions.h
+/home/leh/test_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces/msg/rosidl_generator_c/primitives_sequence_functions.h
 
 /home/leh/test_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces/msg/_two_integers_array_s.c
 Python.h

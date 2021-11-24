@@ -25,7 +25,27 @@ namespace msg
 namespace rosidl_typesupport_introspection_cpp
 {
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Num_message_member_array[1] = {
+size_t size_function__Num__three_integers_array(const void * untyped_member)
+{
+  (void)untyped_member;
+  return 3;
+}
+
+const void * get_const_function__Num__three_integers_array(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::array<int64_t, 3> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__Num__three_integers_array(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::array<int64_t, 3> *>(untyped_member);
+  return &member[index];
+}
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Num_message_member_array[2] = {
   {
     "num",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
@@ -40,13 +60,28 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Num_message_m
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "three_integers_array",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    true,  // is array
+    3,  // array size
+    false,  // is upper bound
+    offsetof(tutorial_interfaces::msg::Num, three_integers_array),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__Num__three_integers_array,  // size() function pointer
+    get_const_function__Num__three_integers_array,  // get_const(index) function pointer
+    get_function__Num__three_integers_array,  // get(index) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Num_message_members = {
   "tutorial_interfaces::msg",  // message namespace
   "Num",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(tutorial_interfaces::msg::Num),
   Num_message_member_array  // message members
 };

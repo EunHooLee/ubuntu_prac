@@ -16,7 +16,7 @@ extern "C"
 {
 #endif
 
-static rosidl_typesupport_introspection_c__MessageMember Num__rosidl_typesupport_introspection_c__Num_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember Num__rosidl_typesupport_introspection_c__Num_message_member_array[2] = {
   {
     "num",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
@@ -31,13 +31,28 @@ static rosidl_typesupport_introspection_c__MessageMember Num__rosidl_typesupport
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "three_integers_array",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    true,  // is array
+    3,  // array size
+    false,  // is upper bound
+    offsetof(tutorial_interfaces__msg__Num, three_integers_array),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers Num__rosidl_typesupport_introspection_c__Num_message_members = {
   "tutorial_interfaces__msg",  // message namespace
   "Num",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(tutorial_interfaces__msg__Num),
   Num__rosidl_typesupport_introspection_c__Num_message_member_array  // message members
 };

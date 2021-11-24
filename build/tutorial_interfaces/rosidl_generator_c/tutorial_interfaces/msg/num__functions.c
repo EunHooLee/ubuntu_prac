@@ -16,6 +16,7 @@ tutorial_interfaces__msg__Num__init(tutorial_interfaces__msg__Num * msg)
     return false;
   }
   // num
+  // three_integers_array
   return true;
 }
 
@@ -26,6 +27,7 @@ tutorial_interfaces__msg__Num__fini(tutorial_interfaces__msg__Num * msg)
     return;
   }
   // num
+  // three_integers_array
 }
 
 tutorial_interfaces__msg__Num *

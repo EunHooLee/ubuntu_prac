@@ -16,6 +16,9 @@
 #include "tutorial_interfaces/msg/num__struct.h"
 #include "tutorial_interfaces/msg/num__functions.h"
 
+#include "rosidl_generator_c/primitives_sequence.h"
+#include "rosidl_generator_c/primitives_sequence_functions.h"
+
 
 ROSIDL_GENERATOR_C_EXPORT
 bool tutorial_interfaces__msg__num__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -61,6 +64,28 @@ bool tutorial_interfaces__msg__num__convert_from_py(PyObject * _pymsg, void * _r
     ros_message->num = PyLong_AsLongLong(field);
     Py_DECREF(field);
   }
+  {  // three_integers_array
+    PyObject * field = PyObject_GetAttrString(_pymsg, "three_integers_array");
+    if (!field) {
+      return false;
+    }
+    // TODO(dirk-thomas) use a better way to check the type before casting
+    assert(field->ob_type != NULL);
+    assert(field->ob_type->tp_name != NULL);
+    assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
+    PyArrayObject * seq_field = (PyArrayObject *)field;
+    Py_INCREF(seq_field);
+    assert(PyArray_NDIM(seq_field) == 1);
+    assert(PyArray_TYPE(seq_field) == NPY_INT64);
+    Py_ssize_t size = 3;
+    int64_t * dest = ros_message->three_integers_array;
+    for (Py_ssize_t i = 0; i < size; ++i) {
+      int64_t tmp = *(npy_int64 *)PyArray_GETPTR1(seq_field, i);
+      memcpy(&dest[i], &tmp, sizeof(int64_t));
+    }
+    Py_DECREF(seq_field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -93,6 +118,24 @@ PyObject * tutorial_interfaces__msg__num__convert_to_py(void * raw_ros_message)
         return NULL;
       }
     }
+  }
+  {  // three_integers_array
+    PyObject * field = NULL;
+    field = PyObject_GetAttrString(_pymessage, "three_integers_array");
+    if (!field) {
+      return NULL;
+    }
+    assert(field->ob_type != NULL);
+    assert(field->ob_type->tp_name != NULL);
+    assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
+    PyArrayObject * seq_field = (PyArrayObject *)field;
+    assert(PyArray_NDIM(seq_field) == 1);
+    assert(PyArray_TYPE(seq_field) == NPY_INT64);
+    assert(sizeof(npy_int64) == sizeof(int64_t));
+    npy_int64 * dst = (npy_int64 *)PyArray_GETPTR1(seq_field, 0);
+    int64_t * src = &(ros_message->three_integers_array[0]);
+    memcpy(dst, src, 3 * sizeof(int64_t));
+    Py_DECREF(field);
   }
 
   // ownership of _pymessage is transferred to the caller

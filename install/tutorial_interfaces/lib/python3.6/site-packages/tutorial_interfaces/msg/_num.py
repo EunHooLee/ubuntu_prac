@@ -5,6 +5,9 @@
 
 # Import statements for member types
 
+# Member 'three_integers_array'
+import numpy  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -54,14 +57,17 @@ class Num(metaclass=Metaclass_Num):
 
     __slots__ = [
         '_num',
+        '_three_integers_array',
     ]
 
     _fields_and_field_types = {
         'num': 'int64',
+        'three_integers_array': 'int64[3]',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('int64'),  # noqa: E501
+        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('int64'), 3),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -69,6 +75,11 @@ class Num(metaclass=Metaclass_Num):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.num = kwargs.get('num', int())
+        if 'three_integers_array' not in kwargs:
+            self.three_integers_array = numpy.zeros(3, dtype=numpy.int64)
+        else:
+            self.three_integers_array = numpy.array(kwargs.get('three_integers_array'), dtype=numpy.int64)
+            assert self.three_integers_array.shape == (3, )
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -101,6 +112,8 @@ class Num(metaclass=Metaclass_Num):
             return False
         if self.num != other.num:
             return False
+        if all(self.three_integers_array != other.three_integers_array):
+            return False
         return True
 
     @classmethod
@@ -122,3 +135,34 @@ class Num(metaclass=Metaclass_Num):
             assert value >= -9223372036854775808 and value < 9223372036854775808, \
                 "The 'num' field must be an integer in [-9223372036854775808, 9223372036854775807]"
         self._num = value
+
+    @property
+    def three_integers_array(self):
+        """Message field 'three_integers_array'."""
+        return self._three_integers_array
+
+    @three_integers_array.setter
+    def three_integers_array(self, value):
+        if isinstance(value, numpy.ndarray):
+            assert value.dtype == numpy.int64, \
+                "The 'three_integers_array' numpy.ndarray() must have the dtype of 'numpy.int64'"
+            assert value.size == 3, \
+                "The 'three_integers_array' numpy.ndarray() must have a size of 3"
+            self._three_integers_array = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 len(value) == 3 and
+                 all(isinstance(v, int) for v in value) and
+                 all(val >= -9223372036854775808 and val < 9223372036854775808 for val in value)), \
+                "The 'three_integers_array' field must be a set or sequence with length 3 and each value of type 'int' and each integer in [-9223372036854775808, 9223372036854775807]"
+        self._three_integers_array = numpy.array(value, dtype=numpy.int64)

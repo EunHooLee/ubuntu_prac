@@ -48,16 +48,18 @@ struct Num_
       rosidl_generator_cpp::MessageInitialization::ZERO == _init)
     {
       this->num = 0ll;
+      std::fill<typename std::array<int64_t, 3>::iterator, int64_t>(this->three_integers_array.begin(), this->three_integers_array.end(), 0ll);
     }
   }
 
   explicit Num_(const ContainerAllocator & _alloc, rosidl_generator_cpp::MessageInitialization _init = rosidl_generator_cpp::MessageInitialization::ALL)
+  : three_integers_array(_alloc)
   {
-    (void)_alloc;
     if (rosidl_generator_cpp::MessageInitialization::ALL == _init ||
       rosidl_generator_cpp::MessageInitialization::ZERO == _init)
     {
       this->num = 0ll;
+      std::fill<typename std::array<int64_t, 3>::iterator, int64_t>(this->three_integers_array.begin(), this->three_integers_array.end(), 0ll);
     }
   }
 
@@ -65,12 +67,21 @@ struct Num_
   using _num_type =
     int64_t;
   _num_type num;
+  using _three_integers_array_type =
+    std::array<int64_t, 3>;
+  _three_integers_array_type three_integers_array;
 
   // setters for named parameter idiom
   Type & set__num(
     const int64_t & _arg)
   {
     this->num = _arg;
+    return *this;
+  }
+  Type & set__three_integers_array(
+    const std::array<int64_t, 3> & _arg)
+  {
+    this->three_integers_array = _arg;
     return *this;
   }
 
@@ -117,6 +128,9 @@ struct Num_
   bool operator==(const Num_ & other) const
   {
     if (this->num != other.num) {
+      return false;
+    }
+    if (this->three_integers_array != other.three_integers_array) {
       return false;
     }
     return true;

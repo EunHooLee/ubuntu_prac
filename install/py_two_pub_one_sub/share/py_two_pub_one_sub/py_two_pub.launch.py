@@ -11,7 +11,7 @@ def generate_launch_description():
 
     sensor2_node = Node(
         package='py_two_pub_one_sub',
-        node_executable= 'sensor2'
+        node_executable= 'sensor2',
     )
 
     ld.add_action(sensor1_node)

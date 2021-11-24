@@ -3,6 +3,8 @@
 
 CMakeFiles/tutorial_interfaces__python.dir/rosidl_generator_py/tutorial_interfaces/msg/_num_s.c.o
  /home/leh/test_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces/msg/_num_s.c
+ /opt/ros/dashing/include/rosidl_generator_c/primitives_sequence.h
+ /opt/ros/dashing/include/rosidl_generator_c/primitives_sequence_functions.h
  /opt/ros/dashing/include/rosidl_generator_c/visibility_control.h
  /usr/include/python3.6m/Python.h
  /usr/include/python3.6m/abstract.h

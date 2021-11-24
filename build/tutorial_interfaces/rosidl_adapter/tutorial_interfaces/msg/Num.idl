@@ -5,8 +5,11 @@
 
 module tutorial_interfaces {
   module msg {
+    typedef int64 int64__3[3];
     struct Num {
       int64 num;
+
+      int64__3 three_integers_array;
     };
   };
 };
