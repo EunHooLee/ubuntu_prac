@@ -1,0 +1,355 @@
+[1.713s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.714s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f7de4ffd0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f7de4ffd0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f7dd99358>)
+[1.748s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.749s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.749s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.749s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.749s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.751s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.752s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/leh/test_ws'
+[1.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.754s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.754s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.754s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.754s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.811s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.812s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.813s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.814s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.816s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.822s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.822s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.822s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.822s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.824s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ignore'
+[1.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ignore_ament_install'
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['colcon_pkg']
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'colcon_pkg'
+[1.827s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['colcon_meta']
+[1.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'colcon_meta'
+[1.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['ros']
+[1.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ros'
+[1.842s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_pubsub' with type 'ros.ament_python' and name 'py_pubsub'
+[1.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_sign_srvcli) by extensions ['ignore', 'ignore_ament_install']
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_sign_srvcli) by extension 'ignore'
+[1.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_sign_srvcli) by extension 'ignore_ament_install'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_sign_srvcli) by extensions ['colcon_pkg']
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_sign_srvcli) by extension 'colcon_pkg'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_sign_srvcli) by extensions ['colcon_meta']
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_sign_srvcli) by extension 'colcon_meta'
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_sign_srvcli) by extensions ['ros']
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_sign_srvcli) by extension 'ros'
+[1.850s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_sign_srvcli' with type 'ros.ament_python' and name 'py_sign_srvcli'
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extensions ['ignore', 'ignore_ament_install']
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'ignore'
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'ignore_ament_install'
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extensions ['colcon_pkg']
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'colcon_pkg'
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extensions ['colcon_meta']
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'colcon_meta'
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extensions ['ros']
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_srvcli) by extension 'ros'
+[1.857s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_srvcli' with type 'ros.ament_python' and name 'py_srvcli'
+[1.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_two_pub_one_sub) by extensions ['ignore', 'ignore_ament_install']
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_two_pub_one_sub) by extension 'ignore'
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_two_pub_one_sub) by extension 'ignore_ament_install'
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_two_pub_one_sub) by extensions ['colcon_pkg']
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_two_pub_one_sub) by extension 'colcon_pkg'
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_two_pub_one_sub) by extensions ['colcon_meta']
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_two_pub_one_sub) by extension 'colcon_meta'
+[1.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_two_pub_one_sub) by extensions ['ros']
+[1.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_two_pub_one_sub) by extension 'ros'
+[1.864s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_two_pub_one_sub' with type 'ros.ament_python' and name 'py_two_pub_one_sub'
+[1.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.865s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'ignore'
+[1.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'ignore_ament_install'
+[1.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extensions ['colcon_pkg']
+[1.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'colcon_pkg'
+[1.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extensions ['colcon_meta']
+[1.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'colcon_meta'
+[1.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extensions ['ros']
+[1.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/tutorial_interfaces) by extension 'ros'
+[1.870s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tutorial_interfaces' with type 'ros.ament_cmake' and name 'tutorial_interfaces'
+[1.871s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.872s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.872s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.873s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.873s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.046s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_args' from command line to 'None'
+[2.046s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_target' from command line to 'None'
+[2.047s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.047s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[2.047s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[2.047s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[2.048s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[2.048s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[2.048s] Level 5:colcon.colcon_core.verb:set package 'tutorial_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.048s] DEBUG:colcon.colcon_core.verb:Building package 'tutorial_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leh/test_ws/build/tutorial_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leh/test_ws/install/tutorial_interfaces', 'merge_install': False, 'path': '/home/leh/test_ws/src/tutorial_interfaces', 'symlink_install': False, 'test_result_base': None}
+[2.071s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_args' from command line to 'None'
+[2.071s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_target' from command line to 'None'
+[2.071s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_clean_cache' from command line to 'False'
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_clean_first' from command line to 'False'
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_force_configure' from command line to 'False'
+[2.072s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'ament_cmake_args' from command line to 'None'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'catkin_cmake_args' from command line to 'None'
+[2.073s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.073s] DEBUG:colcon.colcon_core.verb:Building package 'py_pubsub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leh/test_ws/build/py_pubsub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leh/test_ws/install/py_pubsub', 'merge_install': False, 'path': '/home/leh/test_ws/src/py_pubsub', 'symlink_install': False, 'test_result_base': None}
+[2.096s] Level 5:colcon.colcon_core.verb:set package 'py_sign_srvcli' build argument 'cmake_args' from command line to 'None'
+[2.096s] Level 5:colcon.colcon_core.verb:set package 'py_sign_srvcli' build argument 'cmake_target' from command line to 'None'
+[2.097s] Level 5:colcon.colcon_core.verb:set package 'py_sign_srvcli' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.097s] Level 5:colcon.colcon_core.verb:set package 'py_sign_srvcli' build argument 'cmake_clean_cache' from command line to 'False'
+[2.097s] Level 5:colcon.colcon_core.verb:set package 'py_sign_srvcli' build argument 'cmake_clean_first' from command line to 'False'
+[2.097s] Level 5:colcon.colcon_core.verb:set package 'py_sign_srvcli' build argument 'cmake_force_configure' from command line to 'False'
+[2.097s] Level 5:colcon.colcon_core.verb:set package 'py_sign_srvcli' build argument 'ament_cmake_args' from command line to 'None'
+[2.098s] Level 5:colcon.colcon_core.verb:set package 'py_sign_srvcli' build argument 'catkin_cmake_args' from command line to 'None'
+[2.098s] Level 5:colcon.colcon_core.verb:set package 'py_sign_srvcli' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.098s] DEBUG:colcon.colcon_core.verb:Building package 'py_sign_srvcli' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leh/test_ws/build/py_sign_srvcli', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leh/test_ws/install/py_sign_srvcli', 'merge_install': False, 'path': '/home/leh/test_ws/src/py_sign_srvcli', 'symlink_install': False, 'test_result_base': None}
+[2.121s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'cmake_args' from command line to 'None'
+[2.121s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'cmake_target' from command line to 'None'
+[2.121s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.122s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'cmake_clean_cache' from command line to 'False'
+[2.122s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'cmake_clean_first' from command line to 'False'
+[2.122s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'cmake_force_configure' from command line to 'False'
+[2.122s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'ament_cmake_args' from command line to 'None'
+[2.122s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'catkin_cmake_args' from command line to 'None'
+[2.123s] Level 5:colcon.colcon_core.verb:set package 'py_srvcli' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.123s] DEBUG:colcon.colcon_core.verb:Building package 'py_srvcli' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leh/test_ws/build/py_srvcli', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leh/test_ws/install/py_srvcli', 'merge_install': False, 'path': '/home/leh/test_ws/src/py_srvcli', 'symlink_install': False, 'test_result_base': None}
+[2.146s] Level 5:colcon.colcon_core.verb:set package 'py_two_pub_one_sub' build argument 'cmake_args' from command line to 'None'
+[2.146s] Level 5:colcon.colcon_core.verb:set package 'py_two_pub_one_sub' build argument 'cmake_target' from command line to 'None'
+[2.147s] Level 5:colcon.colcon_core.verb:set package 'py_two_pub_one_sub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.147s] Level 5:colcon.colcon_core.verb:set package 'py_two_pub_one_sub' build argument 'cmake_clean_cache' from command line to 'False'
+[2.147s] Level 5:colcon.colcon_core.verb:set package 'py_two_pub_one_sub' build argument 'cmake_clean_first' from command line to 'False'
+[2.147s] Level 5:colcon.colcon_core.verb:set package 'py_two_pub_one_sub' build argument 'cmake_force_configure' from command line to 'False'
+[2.148s] Level 5:colcon.colcon_core.verb:set package 'py_two_pub_one_sub' build argument 'ament_cmake_args' from command line to 'None'
+[2.148s] Level 5:colcon.colcon_core.verb:set package 'py_two_pub_one_sub' build argument 'catkin_cmake_args' from command line to 'None'
+[2.148s] Level 5:colcon.colcon_core.verb:set package 'py_two_pub_one_sub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.149s] DEBUG:colcon.colcon_core.verb:Building package 'py_two_pub_one_sub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leh/test_ws/build/py_two_pub_one_sub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leh/test_ws/install/py_two_pub_one_sub', 'merge_install': False, 'path': '/home/leh/test_ws/src/py_two_pub_one_sub', 'symlink_install': False, 'test_result_base': None}
+[2.151s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.165s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.167s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leh/test_ws/src/tutorial_interfaces' with build type 'ament_cmake'
+[2.167s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leh/test_ws/src/tutorial_interfaces'
+[2.192s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.193s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.194s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.214s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[2.248s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leh/test_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_pubsub:/opt/ros/dashing /usr/bin/cmake --build /home/leh/test_ws/build/tutorial_interfaces -- -j4 -l4
+[3.249s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leh/test_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_pubsub:/opt/ros/dashing /usr/bin/cmake --build /home/leh/test_ws/build/tutorial_interfaces -- -j4 -l4
+[3.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leh/test_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_pubsub:/opt/ros/dashing /usr/bin/cmake --build /home/leh/test_ws/build/tutorial_interfaces --target install -- -j4 -l4
+[4.873s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tutorial_interfaces)
+[4.878s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leh/test_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_pubsub:/opt/ros/dashing /usr/bin/cmake --build /home/leh/test_ws/build/tutorial_interfaces --target install -- -j4 -l4
+[4.907s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/tutorial_interfaces' for CMake module files
+[4.911s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/tutorial_interfaces' for CMake config files
+[4.914s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'cmake_prefix_path')
+[4.918s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.ps1'
+[4.922s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.dsv'
+[4.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.sh'
+[4.931s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/tutorial_interfaces/lib'
+[4.932s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'ld_library_path_lib')
+[4.936s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.ps1'
+[4.938s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.dsv'
+[4.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.sh'
+[4.942s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/tutorial_interfaces/bin'
+[4.942s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/tutorial_interfaces/lib/pkgconfig/tutorial_interfaces.pc'
+[4.943s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages'
+[4.943s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'pythonpath')
+[4.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/pythonpath.ps1'
+[4.949s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/pythonpath.dsv'
+[4.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/pythonpath.sh'
+[4.957s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.ps1'
+[4.962s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv'
+[4.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.sh'
+[4.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.bash'
+[4.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.zsh'
+[4.980s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leh/test_ws/install/tutorial_interfaces/share/colcon-core/packages/tutorial_interfaces)
+[5.263s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tutorial_interfaces)
+[5.269s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/tutorial_interfaces' for CMake module files
+[5.273s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/tutorial_interfaces' for CMake config files
+[5.275s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'cmake_prefix_path')
+[5.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.ps1'
+[5.281s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.dsv'
+[5.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/cmake_prefix_path.sh'
+[5.286s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/tutorial_interfaces/lib'
+[5.287s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'ld_library_path_lib')
+[5.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.ps1'
+[5.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.dsv'
+[5.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/ld_library_path_lib.sh'
+[5.297s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/tutorial_interfaces/bin'
+[5.298s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/tutorial_interfaces/lib/pkgconfig/tutorial_interfaces.pc'
+[5.298s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages'
+[5.299s] Level 1:colcon.colcon_core.shell:create_environment_hook('tutorial_interfaces', 'pythonpath')
+[5.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/pythonpath.ps1'
+[5.305s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/pythonpath.dsv'
+[5.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/hook/pythonpath.sh'
+[5.313s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.ps1'
+[5.317s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv'
+[5.320s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.sh'
+[5.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.bash'
+[5.325s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.zsh'
+[5.328s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leh/test_ws/install/tutorial_interfaces/share/colcon-core/packages/tutorial_interfaces)
+[5.330s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/leh/test_ws/src/py_pubsub' with build type 'ament_python'
+[5.331s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pubsub', 'ament_prefix_path')
+[5.335s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.ps1'
+[5.340s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.dsv'
+[5.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.sh'
+[5.347s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.348s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.364s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[5.382s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/leh/test_ws/src/py_sign_srvcli' with build type 'ament_python'
+[5.383s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_sign_srvcli', 'ament_prefix_path')
+[5.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_sign_srvcli/share/py_sign_srvcli/hook/ament_prefix_path.ps1'
+[5.393s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/py_sign_srvcli/share/py_sign_srvcli/hook/ament_prefix_path.dsv'
+[5.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_sign_srvcli/share/py_sign_srvcli/hook/ament_prefix_path.sh'
+[5.403s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.406s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.425s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[5.448s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/leh/test_ws/src/py_srvcli' with build type 'ament_python'
+[5.450s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_srvcli', 'ament_prefix_path')
+[5.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_srvcli/share/py_srvcli/hook/ament_prefix_path.ps1'
+[5.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/py_srvcli/share/py_srvcli/hook/ament_prefix_path.dsv'
+[5.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_srvcli/share/py_srvcli/hook/ament_prefix_path.sh'
+[5.472s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.472s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.489s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[5.501s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/leh/test_ws/src/py_two_pub_one_sub' with build type 'ament_python'
+[5.504s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_two_pub_one_sub', 'ament_prefix_path')
+[5.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_two_pub_one_sub/share/py_two_pub_one_sub/hook/ament_prefix_path.ps1'
+[5.513s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/py_two_pub_one_sub/share/py_two_pub_one_sub/hook/ament_prefix_path.dsv'
+[5.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_two_pub_one_sub/share/py_two_pub_one_sub/hook/ament_prefix_path.sh'
+[5.522s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.522s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.543s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[7.253s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/leh/test_ws/src/py_pubsub'
+[7.258s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.258s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.274s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[8.829s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/leh/test_ws/src/py_sign_srvcli'
+[8.833s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.834s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.850s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[10.554s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/leh/test_ws/src/py_srvcli'
+[10.565s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.565s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.581s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[12.181s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/leh/test_ws/src/py_two_pub_one_sub'
+[12.189s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.190s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.204s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[12.232s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leh/test_ws/src/py_pubsub': PYTHONPATH=/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/leh/test_ws/build/py_pubsub/build install --prefix /home/leh/test_ws/install/py_pubsub --record /home/leh/test_ws/build/py_pubsub/install.log --single-version-externally-managed
+[12.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leh/test_ws/src/py_sign_srvcli': PYTHONPATH=/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_sign_srvcli build --build-base /home/leh/test_ws/build/py_sign_srvcli/build install --prefix /home/leh/test_ws/install/py_sign_srvcli --record /home/leh/test_ws/build/py_sign_srvcli/install.log --single-version-externally-managed
+[12.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leh/test_ws/src/py_srvcli': PYTHONPATH=/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/leh/test_ws/build/py_srvcli/build install --prefix /home/leh/test_ws/install/py_srvcli --record /home/leh/test_ws/build/py_srvcli/install.log --single-version-externally-managed
+[12.292s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leh/test_ws/src/py_two_pub_one_sub': PYTHONPATH=/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_two_pub_one_sub build --build-base /home/leh/test_ws/build/py_two_pub_one_sub/build install --prefix /home/leh/test_ws/install/py_two_pub_one_sub --record /home/leh/test_ws/build/py_two_pub_one_sub/install.log --single-version-externally-managed
+[14.339s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_pubsub' for CMake module files
+[14.341s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leh/test_ws/src/py_pubsub' returned '0': PYTHONPATH=/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/leh/test_ws/build/py_pubsub/build install --prefix /home/leh/test_ws/install/py_pubsub --record /home/leh/test_ws/build/py_pubsub/install.log --single-version-externally-managed
+[14.370s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_pubsub' for CMake config files
+[14.378s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_pubsub/lib'
+[14.383s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_pubsub/bin'
+[14.383s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_pubsub/lib/pkgconfig/py_pubsub.pc'
+[14.384s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages'
+[14.384s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pubsub', 'pythonpath')
+[14.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_pubsub/share/py_pubsub/hook/pythonpath.ps1'
+[14.402s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/py_pubsub/share/py_pubsub/hook/pythonpath.dsv'
+[14.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_pubsub/share/py_pubsub/hook/pythonpath.sh'
+[14.409s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(py_pubsub)
+[14.426s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_pubsub/share/py_pubsub/package.ps1'
+[14.429s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leh/test_ws/install/py_pubsub/share/py_pubsub/package.dsv'
+[14.432s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_pubsub/share/py_pubsub/package.sh'
+[14.435s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_pubsub/share/py_pubsub/package.bash'
+[14.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_pubsub/share/py_pubsub/package.zsh'
+[14.440s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leh/test_ws/install/py_pubsub/share/colcon-core/packages/py_pubsub)
+[14.454s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_sign_srvcli' for CMake module files
+[14.462s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leh/test_ws/src/py_sign_srvcli' returned '0': PYTHONPATH=/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_sign_srvcli build --build-base /home/leh/test_ws/build/py_sign_srvcli/build install --prefix /home/leh/test_ws/install/py_sign_srvcli --record /home/leh/test_ws/build/py_sign_srvcli/install.log --single-version-externally-managed
+[14.464s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_sign_srvcli' for CMake config files
+[14.469s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_sign_srvcli/lib'
+[14.470s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_sign_srvcli/bin'
+[14.470s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_sign_srvcli/lib/pkgconfig/py_sign_srvcli.pc'
+[14.471s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages'
+[14.471s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_sign_srvcli', 'pythonpath')
+[14.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_sign_srvcli/share/py_sign_srvcli/hook/pythonpath.ps1'
+[14.477s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/py_sign_srvcli/share/py_sign_srvcli/hook/pythonpath.dsv'
+[14.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_sign_srvcli/share/py_sign_srvcli/hook/pythonpath.sh'
+[14.481s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(py_sign_srvcli)
+[14.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_sign_srvcli/share/py_sign_srvcli/package.ps1'
+[14.489s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leh/test_ws/install/py_sign_srvcli/share/py_sign_srvcli/package.dsv'
+[14.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_sign_srvcli/share/py_sign_srvcli/package.sh'
+[14.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_sign_srvcli/share/py_sign_srvcli/package.bash'
+[14.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_sign_srvcli/share/py_sign_srvcli/package.zsh'
+[14.498s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leh/test_ws/install/py_sign_srvcli/share/colcon-core/packages/py_sign_srvcli)
+[14.505s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_two_pub_one_sub' for CMake module files
+[14.510s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_two_pub_one_sub' for CMake config files
+[14.515s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_two_pub_one_sub/lib'
+[14.516s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_two_pub_one_sub/bin'
+[14.517s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_two_pub_one_sub/lib/pkgconfig/py_two_pub_one_sub.pc'
+[14.517s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages'
+[14.518s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_two_pub_one_sub', 'pythonpath')
+[14.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_two_pub_one_sub/share/py_two_pub_one_sub/hook/pythonpath.ps1'
+[14.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leh/test_ws/src/py_two_pub_one_sub' returned '0': PYTHONPATH=/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_two_pub_one_sub build --build-base /home/leh/test_ws/build/py_two_pub_one_sub/build install --prefix /home/leh/test_ws/install/py_two_pub_one_sub --record /home/leh/test_ws/build/py_two_pub_one_sub/install.log --single-version-externally-managed
+[14.528s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/py_two_pub_one_sub/share/py_two_pub_one_sub/hook/pythonpath.dsv'
+[14.530s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_two_pub_one_sub/share/py_two_pub_one_sub/hook/pythonpath.sh'
+[14.532s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(py_two_pub_one_sub)
+[14.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_two_pub_one_sub/share/py_two_pub_one_sub/package.ps1'
+[14.540s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leh/test_ws/install/py_two_pub_one_sub/share/py_two_pub_one_sub/package.dsv'
+[14.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_two_pub_one_sub/share/py_two_pub_one_sub/package.sh'
+[14.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_two_pub_one_sub/share/py_two_pub_one_sub/package.bash'
+[14.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_two_pub_one_sub/share/py_two_pub_one_sub/package.zsh'
+[14.549s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leh/test_ws/install/py_two_pub_one_sub/share/colcon-core/packages/py_two_pub_one_sub)
+[14.556s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_srvcli' for CMake module files
+[14.565s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leh/test_ws/src/py_srvcli' returned '0': PYTHONPATH=/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/leh/test_ws/build/py_srvcli/build install --prefix /home/leh/test_ws/install/py_srvcli --record /home/leh/test_ws/build/py_srvcli/install.log --single-version-externally-managed
+[14.567s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_srvcli' for CMake config files
+[14.572s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_srvcli/lib'
+[14.573s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_srvcli/bin'
+[14.573s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_srvcli/lib/pkgconfig/py_srvcli.pc'
+[14.574s] Level 1:colcon.colcon_core.environment:checking '/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages'
+[14.574s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_srvcli', 'pythonpath')
+[14.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_srvcli/share/py_srvcli/hook/pythonpath.ps1'
+[14.580s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leh/test_ws/install/py_srvcli/share/py_srvcli/hook/pythonpath.dsv'
+[14.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leh/test_ws/install/py_srvcli/share/py_srvcli/hook/pythonpath.sh'
+[14.584s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(py_srvcli)
+[14.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_srvcli/share/py_srvcli/package.ps1'
+[14.592s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leh/test_ws/install/py_srvcli/share/py_srvcli/package.dsv'
+[14.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_srvcli/share/py_srvcli/package.sh'
+[14.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_srvcli/share/py_srvcli/package.bash'
+[14.598s] INFO:colcon.colcon_core.shell:Creating package script '/home/leh/test_ws/install/py_srvcli/share/py_srvcli/package.zsh'
+[14.600s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leh/test_ws/install/py_srvcli/share/colcon-core/packages/py_srvcli)
+[14.601s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[14.606s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[14.606s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[14.607s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[14.663s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[14.664s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[14.664s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[14.701s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[14.705s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leh/test_ws/install/local_setup.ps1'
+[14.711s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/leh/test_ws/install/_local_setup_util_ps1.py'
+[14.720s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leh/test_ws/install/setup.ps1'
+[14.737s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leh/test_ws/install/local_setup.sh'
+[14.741s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/leh/test_ws/install/_local_setup_util_sh.py'
+[14.743s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leh/test_ws/install/setup.sh'
+[14.760s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leh/test_ws/install/local_setup.bash'
+[14.764s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leh/test_ws/install/setup.bash'
+[14.781s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leh/test_ws/install/local_setup.zsh'
+[14.785s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leh/test_ws/install/setup.zsh'

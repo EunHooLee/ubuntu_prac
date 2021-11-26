@@ -1,0 +1,28 @@
+[7.091s] Invoking command in '/home/leh/test_ws/src/py_srvcli': PYTHONPATH=/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/leh/test_ws/build/py_srvcli/build install --prefix /home/leh/test_ws/install/py_srvcli --record /home/leh/test_ws/build/py_srvcli/install.log --single-version-externally-managed
+[8.738s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[8.739s]   % (opt, underscore_opt)
+[8.740s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[8.741s]   % (opt, underscore_opt)
+[9.123s] running egg_info
+[9.127s] writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO
+[9.131s] writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt
+[9.132s] writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt
+[9.133s] writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt
+[9.134s] writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt
+[9.151s] reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[9.159s] writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[9.161s] running build
+[9.161s] running build_py
+[9.163s] running install
+[9.164s] /home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[9.165s]   setuptools.SetuptoolsDeprecationWarning,
+[9.166s] running install_lib
+[9.174s] running install_data
+[9.177s] running install_egg_info
+[9.188s] removing '/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages/py_srvcli-0.0.0-py3.6.egg-info' (and everything under it)
+[9.193s] Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages/py_srvcli-0.0.0-py3.6.egg-info
+[9.199s] running install_scripts
+[9.336s] Installing client script to /home/leh/test_ws/install/py_srvcli/lib/py_srvcli
+[9.337s] Installing service script to /home/leh/test_ws/install/py_srvcli/lib/py_srvcli
+[9.338s] writing list of installed files to '/home/leh/test_ws/build/py_srvcli/install.log'
+[9.477s] Invoked command in '/home/leh/test_ws/src/py_srvcli' returned '0': PYTHONPATH=/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/leh/test_ws/build/py_srvcli/build install --prefix /home/leh/test_ws/install/py_srvcli --record /home/leh/test_ws/build/py_srvcli/install.log --single-version-externally-managed

@@ -1,0 +1,74 @@
+[0.000000] (-) TimerEvent: {}
+[0.002467] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.002862] (-) JobUnselected: {'identifier': 'py_srvcli'}
+[0.006725] (-) JobUnselected: {'identifier': 'py_two_pub_one_sub'}
+[0.007479] (-) JobUnselected: {'identifier': 'tutorial_interfaces'}
+[0.007742] (py_sign_srvcli) JobQueued: {'identifier': 'py_sign_srvcli', 'dependencies': OrderedDict([('tutorial_interfaces', '/home/leh/test_ws/install/tutorial_interfaces')])}
+[0.007969] (py_sign_srvcli) JobStarted: {'identifier': 'py_sign_srvcli'}
+[0.097386] (-) TimerEvent: {}
+[0.198473] (-) TimerEvent: {}
+[0.299190] (-) TimerEvent: {}
+[0.399969] (-) TimerEvent: {}
+[0.500794] (-) TimerEvent: {}
+[0.602784] (-) TimerEvent: {}
+[0.703518] (-) TimerEvent: {}
+[0.805842] (-) TimerEvent: {}
+[0.906585] (-) TimerEvent: {}
+[1.007396] (-) TimerEvent: {}
+[1.108185] (-) TimerEvent: {}
+[1.209018] (-) TimerEvent: {}
+[1.309849] (-) TimerEvent: {}
+[1.410593] (-) TimerEvent: {}
+[1.511351] (-) TimerEvent: {}
+[1.612505] (-) TimerEvent: {}
+[1.656822] (py_sign_srvcli) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_sign_srvcli', 'build', '--build-base', '/home/leh/test_ws/build/py_sign_srvcli/build', 'install', '--prefix', '/home/leh/test_ws/install/py_sign_srvcli', '--record', '/home/leh/test_ws/build/py_sign_srvcli/install.log', '--single-version-externally-managed'], 'cwd': '/home/leh/test_ws/src/py_sign_srvcli', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/leh', 'USER': 'leh', 'SSH_CLIENT': '14.47.121.124 51004 22', 'LC_TIME': 'ko_KR.UTF-8', 'GIT_ASKPASS': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass.sh', 'LD_LIBRARY_PATH': '/home/leh/test_ws/install/tutorial_interfaces/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib', 'SHLVL': '3', 'OLDPWD': '/home/leh', 'HOME': '/home/leh', 'TERM_PROGRAM_VERSION': '1.62.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-74861378-27d8-414f-bf01-1ff0431e3768.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ko_KR.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/leh/ros2_install', 'COLCON_PREFIX_PATH': '/home/leh/test_ws/install', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'leh', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '10', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/dashing/bin:/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/bin:/home/leh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4725f1253a.sock', 'AMENT_PREFIX_PATH': '/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_pubsub:/home/leh/test_ws/install/tutorial_interfaces:/opt/ros/dashing', 'LC_NAME': 'ko_KR.UTF-8', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/leh/test_ws/build/py_sign_srvcli', 'SSH_CONNECTION': '14.47.121.124 51004 172.30.1.23 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LC_NUMERIC': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/leh/test_ws/install/tutorial_interfaces'}, 'shell': False}
+[1.712745] (-) TimerEvent: {}
+[1.815340] (-) TimerEvent: {}
+[1.916021] (-) TimerEvent: {}
+[2.016781] (-) TimerEvent: {}
+[2.117504] (-) TimerEvent: {}
+[2.218313] (-) TimerEvent: {}
+[2.320069] (-) TimerEvent: {}
+[2.420796] (-) TimerEvent: {}
+[2.521515] (-) TimerEvent: {}
+[2.622262] (-) TimerEvent: {}
+[2.723484] (-) TimerEvent: {}
+[2.825842] (-) TimerEvent: {}
+[2.926749] (-) TimerEvent: {}
+[2.934192] (py_sign_srvcli) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[2.935207] (py_sign_srvcli) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[2.936009] (py_sign_srvcli) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[2.936690] (py_sign_srvcli) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[3.026879] (-) TimerEvent: {}
+[3.117379] (py_sign_srvcli) StdoutLine: {'line': b'running egg_info\n'}
+[3.118575] (py_sign_srvcli) StdoutLine: {'line': b'writing ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/PKG-INFO\n'}
+[3.120967] (py_sign_srvcli) StdoutLine: {'line': b'writing dependency_links to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/dependency_links.txt\n'}
+[3.121698] (py_sign_srvcli) StdoutLine: {'line': b'writing entry points to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/entry_points.txt\n'}
+[3.122432] (py_sign_srvcli) StdoutLine: {'line': b'writing requirements to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/requires.txt\n'}
+[3.123405] (py_sign_srvcli) StdoutLine: {'line': b'writing top-level names to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/top_level.txt\n'}
+[3.127062] (-) TimerEvent: {}
+[3.131106] (py_sign_srvcli) StdoutLine: {'line': b"reading manifest file '../../build/py_sign_srvcli/py_sign_srvcli.egg-info/SOURCES.txt'\n"}
+[3.138465] (py_sign_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_sign_srvcli/py_sign_srvcli.egg-info/SOURCES.txt'\n"}
+[3.139621] (py_sign_srvcli) StdoutLine: {'line': b'running build\n'}
+[3.140309] (py_sign_srvcli) StdoutLine: {'line': b'running build_py\n'}
+[3.141077] (py_sign_srvcli) StdoutLine: {'line': b'copying py_sign_srvcli/sign_client_member_function1.py -> /home/leh/test_ws/build/py_sign_srvcli/build/lib/py_sign_srvcli\n'}
+[3.141856] (py_sign_srvcli) StdoutLine: {'line': b'running install\n'}
+[3.142839] (py_sign_srvcli) StderrLine: {'line': b'/home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[3.143552] (py_sign_srvcli) StderrLine: {'line': b'  setuptools.SetuptoolsDeprecationWarning,\n'}
+[3.144481] (py_sign_srvcli) StdoutLine: {'line': b'running install_lib\n'}
+[3.149019] (py_sign_srvcli) StdoutLine: {'line': b'copying /home/leh/test_ws/build/py_sign_srvcli/build/lib/py_sign_srvcli/sign_client_member_function1.py -> /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli\n'}
+[3.151220] (py_sign_srvcli) StdoutLine: {'line': b'byte-compiling /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli/sign_client_member_function1.py to sign_client_member_function1.cpython-36.pyc\n'}
+[3.153274] (py_sign_srvcli) StdoutLine: {'line': b'running install_data\n'}
+[3.155860] (py_sign_srvcli) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.166910] (py_sign_srvcli) StdoutLine: {'line': b"removing '/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli-0.0.0-py3.6.egg-info' (and everything under it)\n"}
+[3.167715] (py_sign_srvcli) StdoutLine: {'line': b'Copying ../../build/py_sign_srvcli/py_sign_srvcli.egg-info to /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli-0.0.0-py3.6.egg-info\n'}
+[3.170411] (py_sign_srvcli) StdoutLine: {'line': b'running install_scripts\n'}
+[3.227532] (-) TimerEvent: {}
+[3.278491] (py_sign_srvcli) StdoutLine: {'line': b'Installing client script to /home/leh/test_ws/install/py_sign_srvcli/lib/py_sign_srvcli\n'}
+[3.280719] (py_sign_srvcli) StdoutLine: {'line': b'Installing service script to /home/leh/test_ws/install/py_sign_srvcli/lib/py_sign_srvcli\n'}
+[3.281474] (py_sign_srvcli) StdoutLine: {'line': b"writing list of installed files to '/home/leh/test_ws/build/py_sign_srvcli/install.log'\n"}
+[3.327786] (-) TimerEvent: {}
+[3.387438] (py_sign_srvcli) CommandEnded: {'returncode': 0}
+[3.431021] (-) TimerEvent: {}
+[3.457240] (py_sign_srvcli) JobEnded: {'identifier': 'py_sign_srvcli', 'rc': 0}
+[3.465271] (-) EventReactorShutdown: {}

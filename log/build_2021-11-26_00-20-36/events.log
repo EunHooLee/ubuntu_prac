@@ -1,0 +1,415 @@
+[0.000000] (-) TimerEvent: {}
+[0.001982] (tutorial_interfaces) JobQueued: {'identifier': 'tutorial_interfaces', 'dependencies': OrderedDict()}
+[0.002302] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict([('tutorial_interfaces', '/home/leh/test_ws/install/tutorial_interfaces')])}
+[0.002574] (py_sign_srvcli) JobQueued: {'identifier': 'py_sign_srvcli', 'dependencies': OrderedDict([('tutorial_interfaces', '/home/leh/test_ws/install/tutorial_interfaces')])}
+[0.005815] (py_srvcli) JobQueued: {'identifier': 'py_srvcli', 'dependencies': OrderedDict([('tutorial_interfaces', '/home/leh/test_ws/install/tutorial_interfaces')])}
+[0.007088] (py_two_pub_one_sub) JobQueued: {'identifier': 'py_two_pub_one_sub', 'dependencies': OrderedDict([('tutorial_interfaces', '/home/leh/test_ws/install/tutorial_interfaces')])}
+[0.007399] (tutorial_interfaces) JobStarted: {'identifier': 'tutorial_interfaces'}
+[0.070138] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'cmake'}
+[0.073978] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'build'}
+[0.078444] (tutorial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/leh/test_ws/build/tutorial_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/leh/test_ws/build/tutorial_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/leh'), ('USER', 'leh'), ('SSH_CLIENT', '14.47.121.124 49794 22'), ('LC_TIME', 'ko_KR.UTF-8'), ('GIT_ASKPASS', '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/home/leh/test_ws/install/tutorial_interfaces/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '3'), ('OLDPWD', '/home/leh'), ('HOME', '/home/leh'), ('TERM_PROGRAM_VERSION', '1.62.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f4b14898-e0ff-4239-b830-b5f0d18b1e97.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/leh/ros2_install'), ('COLCON_PREFIX_PATH', '/home/leh/test_ws/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'leh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '7'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/bin:/home/leh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4725f1253a.sock'), ('AMENT_PREFIX_PATH', '/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_pubsub:/home/leh/test_ws/install/tutorial_interfaces:/opt/ros/dashing'), ('LC_NAME', 'ko_KR.UTF-8'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/leh/test_ws/build/tutorial_interfaces'), ('SSH_CONNECTION', '14.47.121.124 49794 172.30.1.23 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/leh/test_ws/install/tutorial_interfaces:/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_pubsub:/opt/ros/dashing')]), 'shell': False}
+[0.100609] (-) TimerEvent: {}
+[0.203229] (-) TimerEvent: {}
+[0.298209] (tutorial_interfaces) StdoutLine: {'line': b'[  2%] Built target tutorial_interfaces__cpp\n'}
+[0.303417] (-) TimerEvent: {}
+[0.307107] (tutorial_interfaces) StdoutLine: {'line': b'[ 13%] Built target tutorial_interfaces__rosidl_generator_c\n'}
+[0.403634] (-) TimerEvent: {}
+[0.411289] (tutorial_interfaces) StdoutLine: {'line': b'[ 24%] Built target tutorial_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.432575] (tutorial_interfaces) StdoutLine: {'line': b'[ 35%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.450027] (tutorial_interfaces) StdoutLine: {'line': b'[ 46%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.503881] (-) TimerEvent: {}
+[0.565463] (tutorial_interfaces) StdoutLine: {'line': b'[ 68%] Built target tutorial_interfaces__rosidl_typesupport_cpp\n'}
+[0.566269] (tutorial_interfaces) StdoutLine: {'line': b'[ 68%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.609326] (-) TimerEvent: {}
+[0.681793] (tutorial_interfaces) StdoutLine: {'line': b'[ 80%] Built target tutorial_interfaces__rosidl_typesupport_c\n'}
+[0.709502] (-) TimerEvent: {}
+[0.767678] (tutorial_interfaces) StdoutLine: {'line': b'[ 80%] Built target tutorial_interfaces\n'}
+[0.809684] (-) TimerEvent: {}
+[0.845762] (tutorial_interfaces) StdoutLine: {'line': b'[ 82%] Built target tutorial_interfaces__py\n'}
+[0.909913] (-) TimerEvent: {}
+[0.960623] (tutorial_interfaces) StdoutLine: {'line': b'[ 91%] Built target tutorial_interfaces__python\n'}
+[1.010110] (-) TimerEvent: {}
+[1.084033] (tutorial_interfaces) StdoutLine: {'line': b'[ 95%] Built target tutorial_interfaces__rosidl_typesupport_c__pyext\n'}
+[1.097848] (tutorial_interfaces) StdoutLine: {'line': b'[100%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.110304] (-) TimerEvent: {}
+[1.142424] (tutorial_interfaces) CommandEnded: {'returncode': 0}
+[1.210610] (-) TimerEvent: {}
+[1.312088] (-) TimerEvent: {}
+[1.412878] (-) TimerEvent: {}
+[1.434687] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'install'}
+[1.477253] (tutorial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/leh/test_ws/build/tutorial_interfaces', '--target', 'install', '--', '-j4', '-l4'], 'cwd': '/home/leh/test_ws/build/tutorial_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/leh'), ('USER', 'leh'), ('SSH_CLIENT', '14.47.121.124 49794 22'), ('LC_TIME', 'ko_KR.UTF-8'), ('GIT_ASKPASS', '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass.sh'), ('LD_LIBRARY_PATH', '/home/leh/test_ws/install/tutorial_interfaces/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib'), ('SHLVL', '3'), ('OLDPWD', '/home/leh'), ('HOME', '/home/leh'), ('TERM_PROGRAM_VERSION', '1.62.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-f4b14898-e0ff-4239-b830-b5f0d18b1e97.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass-main.js'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/leh/ros2_install'), ('COLCON_PREFIX_PATH', '/home/leh/test_ws/install'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'leh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_ID', '7'), ('TERM', 'xterm-256color'), ('PATH', '/opt/ros/dashing/bin:/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/bin:/home/leh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4725f1253a.sock'), ('AMENT_PREFIX_PATH', '/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_pubsub:/home/leh/test_ws/install/tutorial_interfaces:/opt/ros/dashing'), ('LC_NAME', 'ko_KR.UTF-8'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/leh/test_ws/build/tutorial_interfaces'), ('SSH_CONNECTION', '14.47.121.124 49794 172.30.1.23 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/leh/test_ws/install/tutorial_interfaces:/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_pubsub:/opt/ros/dashing')]), 'shell': False}
+[1.513118] (-) TimerEvent: {}
+[1.614163] (-) TimerEvent: {}
+[1.700582] (tutorial_interfaces) StdoutLine: {'line': b'[  2%] Built target tutorial_interfaces__cpp\n'}
+[1.707016] (tutorial_interfaces) StdoutLine: {'line': b'[ 13%] Built target tutorial_interfaces__rosidl_generator_c\n'}
+[1.714358] (-) TimerEvent: {}
+[1.796841] (tutorial_interfaces) StdoutLine: {'line': b'[ 24%] Built target tutorial_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[1.809917] (tutorial_interfaces) StdoutLine: {'line': b'[ 35%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c\n'}
+[1.814549] (-) TimerEvent: {}
+[1.839600] (tutorial_interfaces) StdoutLine: {'line': b'[ 46%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[1.914736] (-) TimerEvent: {}
+[1.959263] (tutorial_interfaces) StdoutLine: {'line': b'[ 57%] Built target tutorial_interfaces__rosidl_typesupport_cpp\n'}
+[1.960090] (tutorial_interfaces) StdoutLine: {'line': b'[ 68%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[2.014920] (-) TimerEvent: {}
+[2.066380] (tutorial_interfaces) StdoutLine: {'line': b'[ 80%] Built target tutorial_interfaces__rosidl_typesupport_c\n'}
+[2.115106] (-) TimerEvent: {}
+[2.143960] (tutorial_interfaces) StdoutLine: {'line': b'[ 80%] Built target tutorial_interfaces\n'}
+[2.215295] (-) TimerEvent: {}
+[2.226198] (tutorial_interfaces) StdoutLine: {'line': b'[ 82%] Built target tutorial_interfaces__py\n'}
+[2.315490] (-) TimerEvent: {}
+[2.346240] (tutorial_interfaces) StdoutLine: {'line': b'[ 91%] Built target tutorial_interfaces__python\n'}
+[2.415715] (-) TimerEvent: {}
+[2.457635] (tutorial_interfaces) StdoutLine: {'line': b'[100%] Built target tutorial_interfaces__rosidl_typesupport_c__pyext\n'}
+[2.458466] (tutorial_interfaces) StdoutLine: {'line': b'[100%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.515960] (-) TimerEvent: {}
+[2.535021] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[2.571254] (tutorial_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.572260] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/ament_index/resource_index/rosidl_interfaces/tutorial_interfaces\n'}
+[2.573131] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so\n'}
+[2.574050] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.sh\n'}
+[2.574812] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so\n'}
+[2.575570] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces\n'}
+[2.576659] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg\n'}
+[2.578132] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_c.h\n'}
+[2.580251] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.581587] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__rosidl_typesupport_fastrtps_c.h\n'}
+[2.582345] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv\n'}
+[2.582884] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__rosidl_typesupport_fastrtps_c.h\n'}
+[2.583826] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[2.584713] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces\n'}
+[2.585351] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg\n'}
+[2.586600] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__functions.h\n'}
+[2.588195] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array.h\n'}
+[2.589596] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__functions.h\n'}
+[2.590584] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__functions.c\n'}
+[2.591456] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__functions.c\n'}
+[2.592444] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num.h\n'}
+[2.593740] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__struct.h\n'}
+[2.594637] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__struct.h\n'}
+[2.595357] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__type_support.h\n'}
+[2.596280] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.597122] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__type_support.h\n'}
+[2.598320] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv\n'}
+[2.599384] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__struct.h\n'}
+[2.604102] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__functions.h\n'}
+[2.605440] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__type_support.h\n'}
+[2.606500] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints.h\n'}
+[2.607790] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__functions.c\n'}
+[2.608841] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so\n'}
+[2.610196] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces\n'}
+[2.611208] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg\n'}
+[2.612289] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/dds_fastrtps\n'}
+[2.613407] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.614295] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.615294] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.616241] (-) TimerEvent: {}
+[2.619464] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv\n'}
+[2.620251] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/dds_fastrtps\n'}
+[2.620976] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.621955] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.622608] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces\n'}
+[2.623514] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg\n'}
+[2.624171] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__struct.hpp\n'}
+[2.624818] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__traits.hpp\n'}
+[2.625494] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__traits.hpp\n'}
+[2.626038] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__struct.hpp\n'}
+[2.626554] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array.hpp\n'}
+[2.627076] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num.hpp\n'}
+[2.627649] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv\n'}
+[2.628210] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__traits.hpp\n'}
+[2.628783] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints.hpp\n'}
+[2.629479] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__struct.hpp\n'}
+[2.630086] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces\n'}
+[2.630621] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg\n'}
+[2.631169] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.631736] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__rosidl_typesupport_introspection_c.h\n'}
+[2.632274] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__rosidl_typesupport_introspection_c.h\n'}
+[2.632858] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__type_support.c\n'}
+[2.633537] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__type_support.c\n'}
+[2.634147] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv\n'}
+[2.634702] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__type_support.c\n'}
+[2.635342] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__rosidl_typesupport_introspection_c.h\n'}
+[2.636253] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[2.637802] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces\n'}
+[2.638441] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg\n'}
+[2.638988] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.639622] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__type_support.cpp\n'}
+[2.640182] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.640714] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__type_support.cpp\n'}
+[2.641288] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv\n'}
+[2.641842] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.642428] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__type_support.cpp\n'}
+[2.643055] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[2.643676] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.sh\n'}
+[2.644274] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/__init__.py\n'}
+[2.716499] (-) TimerEvent: {}
+[2.791305] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/msg\n'}
+[2.792475] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/msg/_num.py\n'}
+[2.793220] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/msg/__init__.py\n'}
+[2.793889] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/msg/_num_s.c\n'}
+[2.794564] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/msg/_two_integers_array.py\n'}
+[2.795085] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/msg/_two_integers_array_s.c\n'}
+[2.795584] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/srv\n'}
+[2.796097] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/srv/__init__.py\n'}
+[2.796767] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/srv/_add_three_ints_s.c\n'}
+[2.797332] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/srv/_add_three_ints.py\n'}
+[2.798934] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[2.799858] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[2.805313] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__python.so\n'}
+[2.806147] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.idl\n'}
+[2.813197] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/TwoIntegersArray.idl\n'}
+[2.814302] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.idl\n'}
+[2.815077] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.msg\n'}
+[2.816023] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/TwoIntegersArray.msg\n'}
+[2.816742] (-) TimerEvent: {}
+[2.817372] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.srv\n'}
+[2.818198] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts_Request.msg\n'}
+[2.818933] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts_Response.msg\n'}
+[2.819675] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/ament_index/resource_index/package_run_dependencies/tutorial_interfaces\n'}
+[2.820345] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/ament_index/resource_index/parent_prefix_path/tutorial_interfaces\n'}
+[2.820975] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.sh\n'}
+[2.821659] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.sh\n'}
+[2.840861] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.bash\n'}
+[2.841667] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.sh\n'}
+[2.842377] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.zsh\n'}
+[2.843045] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/ament_index/resource_index/packages/tutorial_interfaces\n'}
+[2.843693] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[2.844325] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.844953] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.845806] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig.cmake\n'}
+[2.846503] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig-version.cmake\n'}
+[2.847102] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.xml\n'}
+[2.847690] (tutorial_interfaces) CommandEnded: {'returncode': 0}
+[2.918944] (-) TimerEvent: {}
+[3.021781] (-) TimerEvent: {}
+[3.124999] (-) TimerEvent: {}
+[3.226069] (-) TimerEvent: {}
+[3.329505] (-) TimerEvent: {}
+[3.430400] (-) TimerEvent: {}
+[3.501438] (tutorial_interfaces) JobEnded: {'identifier': 'tutorial_interfaces', 'rc': 0}
+[3.505044] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[3.538257] (-) TimerEvent: {}
+[3.555874] (py_sign_srvcli) JobStarted: {'identifier': 'py_sign_srvcli'}
+[3.600503] (py_srvcli) JobStarted: {'identifier': 'py_srvcli'}
+[3.639192] (-) TimerEvent: {}
+[3.643450] (py_two_pub_one_sub) JobStarted: {'identifier': 'py_two_pub_one_sub'}
+[3.739330] (-) TimerEvent: {}
+[3.840583] (-) TimerEvent: {}
+[3.941537] (-) TimerEvent: {}
+[4.042437] (-) TimerEvent: {}
+[4.143306] (-) TimerEvent: {}
+[4.244134] (-) TimerEvent: {}
+[4.345010] (-) TimerEvent: {}
+[4.445906] (-) TimerEvent: {}
+[4.546701] (-) TimerEvent: {}
+[4.647545] (-) TimerEvent: {}
+[4.748534] (-) TimerEvent: {}
+[4.849421] (-) TimerEvent: {}
+[4.950315] (-) TimerEvent: {}
+[5.051298] (-) TimerEvent: {}
+[5.152205] (-) TimerEvent: {}
+[5.253969] (-) TimerEvent: {}
+[5.359210] (-) TimerEvent: {}
+[5.464516] (-) TimerEvent: {}
+[5.565566] (-) TimerEvent: {}
+[5.666558] (-) TimerEvent: {}
+[5.772488] (-) TimerEvent: {}
+[5.874274] (-) TimerEvent: {}
+[5.975204] (-) TimerEvent: {}
+[6.077407] (-) TimerEvent: {}
+[6.179233] (-) TimerEvent: {}
+[6.280154] (-) TimerEvent: {}
+[6.382030] (-) TimerEvent: {}
+[6.482996] (-) TimerEvent: {}
+[6.583916] (-) TimerEvent: {}
+[6.686785] (-) TimerEvent: {}
+[6.787739] (-) TimerEvent: {}
+[6.888730] (-) TimerEvent: {}
+[6.989883] (-) TimerEvent: {}
+[7.095409] (-) TimerEvent: {}
+[7.196342] (-) TimerEvent: {}
+[7.297314] (-) TimerEvent: {}
+[7.398732] (-) TimerEvent: {}
+[7.499636] (-) TimerEvent: {}
+[7.600519] (-) TimerEvent: {}
+[7.703565] (-) TimerEvent: {}
+[7.804445] (-) TimerEvent: {}
+[7.905325] (-) TimerEvent: {}
+[8.008520] (-) TimerEvent: {}
+[8.109457] (-) TimerEvent: {}
+[8.212298] (-) TimerEvent: {}
+[8.313659] (-) TimerEvent: {}
+[8.414586] (-) TimerEvent: {}
+[8.515648] (-) TimerEvent: {}
+[8.623196] (-) TimerEvent: {}
+[8.724106] (-) TimerEvent: {}
+[8.825347] (-) TimerEvent: {}
+[8.926206] (-) TimerEvent: {}
+[9.027129] (-) TimerEvent: {}
+[9.132823] (-) TimerEvent: {}
+[9.233774] (-) TimerEvent: {}
+[9.336808] (-) TimerEvent: {}
+[9.438717] (-) TimerEvent: {}
+[9.541653] (-) TimerEvent: {}
+[9.644063] (-) TimerEvent: {}
+[9.745037] (-) TimerEvent: {}
+[9.847439] (-) TimerEvent: {}
+[9.948345] (-) TimerEvent: {}
+[10.050742] (-) TimerEvent: {}
+[10.151680] (-) TimerEvent: {}
+[10.235571] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/leh/test_ws/build/py_pubsub/build', 'install', '--prefix', '/home/leh/test_ws/install/py_pubsub', '--record', '/home/leh/test_ws/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/leh/test_ws/src/py_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/leh', 'USER': 'leh', 'SSH_CLIENT': '14.47.121.124 49794 22', 'LC_TIME': 'ko_KR.UTF-8', 'GIT_ASKPASS': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass.sh', 'LD_LIBRARY_PATH': '/home/leh/test_ws/install/tutorial_interfaces/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib', 'SHLVL': '3', 'OLDPWD': '/home/leh', 'HOME': '/home/leh', 'TERM_PROGRAM_VERSION': '1.62.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-f4b14898-e0ff-4239-b830-b5f0d18b1e97.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ko_KR.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/leh/ros2_install', 'COLCON_PREFIX_PATH': '/home/leh/test_ws/install', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'leh', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '7', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/dashing/bin:/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/bin:/home/leh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4725f1253a.sock', 'AMENT_PREFIX_PATH': '/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_pubsub:/home/leh/test_ws/install/tutorial_interfaces:/opt/ros/dashing', 'LC_NAME': 'ko_KR.UTF-8', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/leh/test_ws/build/py_pubsub', 'SSH_CONNECTION': '14.47.121.124 49794 172.30.1.23 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LC_NUMERIC': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/leh/test_ws/install/tutorial_interfaces'}, 'shell': False}
+[10.254114] (py_sign_srvcli) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_sign_srvcli', 'build', '--build-base', '/home/leh/test_ws/build/py_sign_srvcli/build', 'install', '--prefix', '/home/leh/test_ws/install/py_sign_srvcli', '--record', '/home/leh/test_ws/build/py_sign_srvcli/install.log', '--single-version-externally-managed'], 'cwd': '/home/leh/test_ws/src/py_sign_srvcli', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/leh', 'USER': 'leh', 'SSH_CLIENT': '14.47.121.124 49794 22', 'LC_TIME': 'ko_KR.UTF-8', 'GIT_ASKPASS': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass.sh', 'LD_LIBRARY_PATH': '/home/leh/test_ws/install/tutorial_interfaces/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib', 'SHLVL': '3', 'OLDPWD': '/home/leh', 'HOME': '/home/leh', 'TERM_PROGRAM_VERSION': '1.62.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-f4b14898-e0ff-4239-b830-b5f0d18b1e97.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ko_KR.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/leh/ros2_install', 'COLCON_PREFIX_PATH': '/home/leh/test_ws/install', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'leh', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '7', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/dashing/bin:/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/bin:/home/leh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4725f1253a.sock', 'AMENT_PREFIX_PATH': '/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_pubsub:/home/leh/test_ws/install/tutorial_interfaces:/opt/ros/dashing', 'LC_NAME': 'ko_KR.UTF-8', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/leh/test_ws/build/py_sign_srvcli', 'SSH_CONNECTION': '14.47.121.124 49794 172.30.1.23 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LC_NUMERIC': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/leh/test_ws/install/tutorial_interfaces'}, 'shell': False}
+[10.261308] (-) TimerEvent: {}
+[10.302660] (py_srvcli) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_srvcli', 'build', '--build-base', '/home/leh/test_ws/build/py_srvcli/build', 'install', '--prefix', '/home/leh/test_ws/install/py_srvcli', '--record', '/home/leh/test_ws/build/py_srvcli/install.log', '--single-version-externally-managed'], 'cwd': '/home/leh/test_ws/src/py_srvcli', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/leh', 'USER': 'leh', 'SSH_CLIENT': '14.47.121.124 49794 22', 'LC_TIME': 'ko_KR.UTF-8', 'GIT_ASKPASS': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass.sh', 'LD_LIBRARY_PATH': '/home/leh/test_ws/install/tutorial_interfaces/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib', 'SHLVL': '3', 'OLDPWD': '/home/leh', 'HOME': '/home/leh', 'TERM_PROGRAM_VERSION': '1.62.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-f4b14898-e0ff-4239-b830-b5f0d18b1e97.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ko_KR.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/leh/ros2_install', 'COLCON_PREFIX_PATH': '/home/leh/test_ws/install', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'leh', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '7', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/dashing/bin:/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/bin:/home/leh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4725f1253a.sock', 'AMENT_PREFIX_PATH': '/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_pubsub:/home/leh/test_ws/install/tutorial_interfaces:/opt/ros/dashing', 'LC_NAME': 'ko_KR.UTF-8', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/leh/test_ws/build/py_srvcli', 'SSH_CONNECTION': '14.47.121.124 49794 172.30.1.23 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LC_NUMERIC': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/leh/test_ws/install/tutorial_interfaces'}, 'shell': False}
+[10.342283] (py_two_pub_one_sub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_two_pub_one_sub', 'build', '--build-base', '/home/leh/test_ws/build/py_two_pub_one_sub/build', 'install', '--prefix', '/home/leh/test_ws/install/py_two_pub_one_sub', '--record', '/home/leh/test_ws/build/py_two_pub_one_sub/install.log', '--single-version-externally-managed'], 'cwd': '/home/leh/test_ws/src/py_two_pub_one_sub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/leh', 'USER': 'leh', 'SSH_CLIENT': '14.47.121.124 49794 22', 'LC_TIME': 'ko_KR.UTF-8', 'GIT_ASKPASS': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass.sh', 'LD_LIBRARY_PATH': '/home/leh/test_ws/install/tutorial_interfaces/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib', 'SHLVL': '3', 'OLDPWD': '/home/leh', 'HOME': '/home/leh', 'TERM_PROGRAM_VERSION': '1.62.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-f4b14898-e0ff-4239-b830-b5f0d18b1e97.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ko_KR.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/leh/ros2_install', 'COLCON_PREFIX_PATH': '/home/leh/test_ws/install', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'leh', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '7', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/dashing/bin:/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/bin:/home/leh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4725f1253a.sock', 'AMENT_PREFIX_PATH': '/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_pubsub:/home/leh/test_ws/install/tutorial_interfaces:/opt/ros/dashing', 'LC_NAME': 'ko_KR.UTF-8', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/leh/test_ws/build/py_two_pub_one_sub', 'SSH_CONNECTION': '14.47.121.124 49794 172.30.1.23 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LC_NUMERIC': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/leh/test_ws/install/tutorial_interfaces'}, 'shell': False}
+[10.361502] (-) TimerEvent: {}
+[10.462506] (-) TimerEvent: {}
+[10.564709] (-) TimerEvent: {}
+[10.665664] (-) TimerEvent: {}
+[10.766628] (-) TimerEvent: {}
+[10.867654] (-) TimerEvent: {}
+[10.969916] (-) TimerEvent: {}
+[11.070801] (-) TimerEvent: {}
+[11.171680] (-) TimerEvent: {}
+[11.272533] (-) TimerEvent: {}
+[11.373427] (-) TimerEvent: {}
+[11.477209] (-) TimerEvent: {}
+[11.581387] (-) TimerEvent: {}
+[11.682284] (-) TimerEvent: {}
+[11.783154] (-) TimerEvent: {}
+[11.884033] (-) TimerEvent: {}
+[11.988117] (-) TimerEvent: {}
+[12.054419] (py_sign_srvcli) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[12.055275] (py_sign_srvcli) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[12.058310] (py_sign_srvcli) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[12.059106] (py_sign_srvcli) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[12.088304] (-) TimerEvent: {}
+[12.189217] (-) TimerEvent: {}
+[12.281114] (py_sign_srvcli) StdoutLine: {'line': b'running egg_info\n'}
+[12.286087] (py_sign_srvcli) StdoutLine: {'line': b'writing ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/PKG-INFO\n'}
+[12.288993] (py_sign_srvcli) StdoutLine: {'line': b'writing dependency_links to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/dependency_links.txt\n'}
+[12.289710] (-) TimerEvent: {}
+[12.291071] (py_sign_srvcli) StdoutLine: {'line': b'writing entry points to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/entry_points.txt\n'}
+[12.293600] (py_sign_srvcli) StdoutLine: {'line': b'writing requirements to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/requires.txt\n'}
+[12.295178] (py_sign_srvcli) StdoutLine: {'line': b'writing top-level names to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/top_level.txt\n'}
+[12.303705] (py_pubsub) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[12.304578] (py_pubsub) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[12.312167] (py_sign_srvcli) StdoutLine: {'line': b"reading manifest file '../../build/py_sign_srvcli/py_sign_srvcli.egg-info/SOURCES.txt'\n"}
+[12.313794] (py_pubsub) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[12.314557] (py_pubsub) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[12.322324] (py_sign_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_sign_srvcli/py_sign_srvcli.egg-info/SOURCES.txt'\n"}
+[12.323861] (py_sign_srvcli) StdoutLine: {'line': b'running build\n'}
+[12.325086] (py_sign_srvcli) StdoutLine: {'line': b'running build_py\n'}
+[12.329278] (py_sign_srvcli) StdoutLine: {'line': b'copying py_sign_srvcli/sign_service_member_function.py -> /home/leh/test_ws/build/py_sign_srvcli/build/lib/py_sign_srvcli\n'}
+[12.331338] (py_sign_srvcli) StdoutLine: {'line': b'copying py_sign_srvcli/sign_client_member_function1.py -> /home/leh/test_ws/build/py_sign_srvcli/build/lib/py_sign_srvcli\n'}
+[12.333880] (py_sign_srvcli) StdoutLine: {'line': b'running install\n'}
+[12.335825] (py_sign_srvcli) StderrLine: {'line': b'/home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[12.336935] (py_sign_srvcli) StderrLine: {'line': b'  setuptools.SetuptoolsDeprecationWarning,\n'}
+[12.349286] (py_sign_srvcli) StdoutLine: {'line': b'running install_lib\n'}
+[12.354637] (py_sign_srvcli) StdoutLine: {'line': b'copying /home/leh/test_ws/build/py_sign_srvcli/build/lib/py_sign_srvcli/sign_service_member_function.py -> /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli\n'}
+[12.356690] (py_sign_srvcli) StdoutLine: {'line': b'copying /home/leh/test_ws/build/py_sign_srvcli/build/lib/py_sign_srvcli/sign_client_member_function1.py -> /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli\n'}
+[12.360135] (py_sign_srvcli) StdoutLine: {'line': b'byte-compiling /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli/sign_service_member_function.py to sign_service_member_function.cpython-36.pyc\n'}
+[12.363392] (py_sign_srvcli) StdoutLine: {'line': b'byte-compiling /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli/sign_client_member_function1.py to sign_client_member_function1.cpython-36.pyc\n'}
+[12.366400] (py_sign_srvcli) StdoutLine: {'line': b'running install_data\n'}
+[12.370138] (py_sign_srvcli) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.379376] (py_sign_srvcli) StdoutLine: {'line': b"removing '/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli-0.0.0-py3.6.egg-info' (and everything under it)\n"}
+[12.382194] (py_sign_srvcli) StdoutLine: {'line': b'Copying ../../build/py_sign_srvcli/py_sign_srvcli.egg-info to /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli-0.0.0-py3.6.egg-info\n'}
+[12.386876] (py_sign_srvcli) StdoutLine: {'line': b'running install_scripts\n'}
+[12.389901] (-) TimerEvent: {}
+[12.404565] (py_two_pub_one_sub) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[12.405424] (py_two_pub_one_sub) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[12.407284] (py_two_pub_one_sub) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[12.408599] (py_two_pub_one_sub) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[12.490076] (-) TimerEvent: {}
+[12.570623] (py_sign_srvcli) StdoutLine: {'line': b'Installing client script to /home/leh/test_ws/install/py_sign_srvcli/lib/py_sign_srvcli\n'}
+[12.572698] (py_sign_srvcli) StdoutLine: {'line': b'Installing service script to /home/leh/test_ws/install/py_sign_srvcli/lib/py_sign_srvcli\n'}
+[12.573787] (py_sign_srvcli) StdoutLine: {'line': b"writing list of installed files to '/home/leh/test_ws/build/py_sign_srvcli/install.log'\n"}
+[12.590259] (-) TimerEvent: {}
+[12.612955] (py_srvcli) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[12.613843] (py_srvcli) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[12.615114] (py_srvcli) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[12.615796] (py_srvcli) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[12.647756] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[12.653350] (py_two_pub_one_sub) StdoutLine: {'line': b'running egg_info\n'}
+[12.660883] (py_two_pub_one_sub) StdoutLine: {'line': b'writing ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/PKG-INFO\n'}
+[12.661707] (py_two_pub_one_sub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/dependency_links.txt\n'}
+[12.662295] (py_two_pub_one_sub) StdoutLine: {'line': b'writing entry points to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/entry_points.txt\n'}
+[12.662844] (py_two_pub_one_sub) StdoutLine: {'line': b'writing requirements to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/requires.txt\n'}
+[12.663392] (py_two_pub_one_sub) StdoutLine: {'line': b'writing top-level names to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/top_level.txt\n'}
+[12.672480] (py_two_pub_one_sub) StdoutLine: {'line': b"reading manifest file '../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/SOURCES.txt'\n"}
+[12.675656] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[12.676658] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[12.683727] (py_two_pub_one_sub) StdoutLine: {'line': b"writing manifest file '../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/SOURCES.txt'\n"}
+[12.685484] (py_two_pub_one_sub) StdoutLine: {'line': b'running build\n'}
+[12.686411] (py_two_pub_one_sub) StdoutLine: {'line': b'running build_py\n'}
+[12.687355] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[12.688360] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[12.689731] (py_two_pub_one_sub) StderrLine: {'line': b'/home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[12.690347] (-) TimerEvent: {}
+[12.691177] (py_two_pub_one_sub) StderrLine: {'line': b'  setuptools.SetuptoolsDeprecationWarning,\n'}
+[12.692023] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[12.693391] (py_two_pub_one_sub) StdoutLine: {'line': b'running install\n'}
+[12.695128] (py_two_pub_one_sub) StdoutLine: {'line': b'running install_lib\n'}
+[12.697213] (py_two_pub_one_sub) StdoutLine: {'line': b'running install_data\n'}
+[12.700175] (py_two_pub_one_sub) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.710091] (py_two_pub_one_sub) StdoutLine: {'line': b"removing '/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub-0.0.0-py3.6.egg-info' (and everything under it)\n"}
+[12.715296] (py_two_pub_one_sub) StdoutLine: {'line': b'Copying ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info to /home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub-0.0.0-py3.6.egg-info\n'}
+[12.716801] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[12.729099] (py_two_pub_one_sub) StdoutLine: {'line': b'running install_scripts\n'}
+[12.736106] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[12.737394] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[12.738082] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[12.759157] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[12.760101] (py_pubsub) StderrLine: {'line': b'/home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[12.760716] (py_pubsub) StderrLine: {'line': b'  setuptools.SetuptoolsDeprecationWarning,\n'}
+[12.761602] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[12.783452] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[12.790164] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.790940] (-) TimerEvent: {}
+[12.798659] (py_pubsub) StdoutLine: {'line': b"removing '/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub-0.0.0-py3.6.egg-info' (and everything under it)\n"}
+[12.800126] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub-0.0.0-py3.6.egg-info\n'}
+[12.816658] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[12.832906] (py_sign_srvcli) CommandEnded: {'returncode': 0}
+[12.888538] (py_two_pub_one_sub) StdoutLine: {'line': b'Installing actuator script to /home/leh/test_ws/install/py_two_pub_one_sub/lib/py_two_pub_one_sub\n'}
+[12.889882] (py_two_pub_one_sub) StdoutLine: {'line': b'Installing sensor1 script to /home/leh/test_ws/install/py_two_pub_one_sub/lib/py_two_pub_one_sub\n'}
+[12.891246] (-) TimerEvent: {}
+[12.907149] (py_two_pub_one_sub) StdoutLine: {'line': b'Installing sensor2 script to /home/leh/test_ws/install/py_two_pub_one_sub/lib/py_two_pub_one_sub\n'}
+[12.908046] (py_two_pub_one_sub) StdoutLine: {'line': b"writing list of installed files to '/home/leh/test_ws/build/py_two_pub_one_sub/install.log'\n"}
+[12.920646] (py_sign_srvcli) JobEnded: {'identifier': 'py_sign_srvcli', 'rc': 0}
+[12.991465] (-) TimerEvent: {}
+[13.007523] (py_srvcli) StdoutLine: {'line': b'running egg_info\n'}
+[13.019683] (py_srvcli) StdoutLine: {'line': b'writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO\n'}
+[13.026402] (py_srvcli) StdoutLine: {'line': b'writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt\n'}
+[13.034695] (py_two_pub_one_sub) CommandEnded: {'returncode': 0}
+[13.037062] (py_srvcli) StdoutLine: {'line': b'writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt\n'}
+[13.038552] (py_srvcli) StdoutLine: {'line': b'writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt\n'}
+[13.039478] (py_srvcli) StdoutLine: {'line': b'writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt\n'}
+[13.050456] (py_pubsub) StdoutLine: {'line': b'Installing listener script to /home/leh/test_ws/install/py_pubsub/lib/py_pubsub\n'}
+[13.053801] (py_pubsub) StdoutLine: {'line': b'Installing talker script to /home/leh/test_ws/install/py_pubsub/lib/py_pubsub\n'}
+[13.056363] (py_srvcli) StdoutLine: {'line': b"reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[13.086876] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/leh/test_ws/build/py_pubsub/install.log'\n"}
+[13.092477] (-) TimerEvent: {}
+[13.094511] (py_srvcli) StderrLine: {'line': b'/home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[13.095393] (py_srvcli) StderrLine: {'line': b'  setuptools.SetuptoolsDeprecationWarning,\n'}
+[13.096144] (py_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[13.096895] (py_srvcli) StdoutLine: {'line': b'running build\n'}
+[13.097922] (py_srvcli) StdoutLine: {'line': b'running build_py\n'}
+[13.098991] (py_srvcli) StdoutLine: {'line': b'running install\n'}
+[13.099690] (py_srvcli) StdoutLine: {'line': b'running install_lib\n'}
+[13.106355] (py_srvcli) StdoutLine: {'line': b'running install_data\n'}
+[13.126485] (py_srvcli) StdoutLine: {'line': b'running install_egg_info\n'}
+[13.128241] (py_srvcli) StdoutLine: {'line': b"removing '/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages/py_srvcli-0.0.0-py3.6.egg-info' (and everything under it)\n"}
+[13.129363] (py_srvcli) StdoutLine: {'line': b'Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages/py_srvcli-0.0.0-py3.6.egg-info\n'}
+[13.149376] (py_srvcli) StdoutLine: {'line': b'running install_scripts\n'}
+[13.157614] (py_two_pub_one_sub) JobEnded: {'identifier': 'py_two_pub_one_sub', 'rc': 0}
+[13.192707] (-) TimerEvent: {}
+[13.258819] (py_pubsub) CommandEnded: {'returncode': 0}
+[13.261764] (py_srvcli) StdoutLine: {'line': b'Installing client script to /home/leh/test_ws/install/py_srvcli/lib/py_srvcli\n'}
+[13.262694] (py_srvcli) StdoutLine: {'line': b'Installing service script to /home/leh/test_ws/install/py_srvcli/lib/py_srvcli\n'}
+[13.263419] (py_srvcli) StdoutLine: {'line': b"writing list of installed files to '/home/leh/test_ws/build/py_srvcli/install.log'\n"}
+[13.297017] (-) TimerEvent: {}
+[13.360626] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[13.381251] (py_srvcli) CommandEnded: {'returncode': 0}
+[13.400018] (-) TimerEvent: {}
+[13.425425] (py_srvcli) JobEnded: {'identifier': 'py_srvcli', 'rc': 0}
+[13.431584] (-) EventReactorShutdown: {}

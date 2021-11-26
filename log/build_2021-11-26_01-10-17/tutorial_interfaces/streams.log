@@ -1,0 +1,260 @@
+[0.072s] Invoking command in '/home/leh/test_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_pubsub:/opt/ros/dashing /usr/bin/cmake --build /home/leh/test_ws/build/tutorial_interfaces -- -j4 -l4
+[0.190s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[0.322s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[0.323s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.478s] -- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)
+[1.822s] -- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[2.280s] -- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+[3.167s] -- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c
+[3.194s] -- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp
+[3.663s] -- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+[3.802s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") 
+[3.807s] -- Found python_cmake_module: 0.7.11 (/opt/ros/dashing/share/python_cmake_module/cmake)
+[3.972s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.975s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m
+[3.975s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.6m.so
+[4.579s] -- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)
+[4.662s] -- Added test 'lint_cmake' to check CMake code style
+[4.669s] -- Added test 'xmllint' to check XML markup files
+[4.688s] -- Configuring done
+[4.948s] -- Generating done
+[4.968s] -- Build files have been written to: /home/leh/test_ws/build/tutorial_interfaces
+[5.156s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.244s] [35m[1mScanning dependencies of target tutorial_interfaces__cpp[0m
+[5.373s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[8.626s] [  3%] Built target tutorial_interfaces__cpp
+[8.697s] [  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[8.760s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[9.647s] [35m[1mScanning dependencies of target tutorial_interfaces__rosidl_generator_c[0m
+[9.772s] [  9%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/num__functions.c.o[0m
+[9.780s] [ 11%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/two_integers_array__functions.c.o[0m
+[10.452s] [ 13%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/judge_sign__functions.c.o[0m
+[10.465s] [ 15%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/add_three_ints__functions.c.o[0m
+[10.757s] [ 16%] [32m[1mLinking C shared library libtutorial_interfaces__rosidl_generator_c.so[0m
+[10.961s] [ 16%] Built target tutorial_interfaces__rosidl_generator_c
+[11.004s] [ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[11.952s] [35m[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_cpp[0m
+[12.018s] [ 20%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tutorial_interfaces/msg/num__type_support.cpp.o[0m
+[12.140s] [ 22%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tutorial_interfaces/msg/two_integers_array__type_support.cpp.o[0m
+[12.612s] [35m[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[12.748s] [ 24%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tutorial_interfaces/msg/dds_fastrtps/num__type_support.cpp.o[0m
+[13.789s] [ 26%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tutorial_interfaces/msg/dds_fastrtps/two_integers_array__type_support.cpp.o[0m
+[13.813s] [ 28%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tutorial_interfaces/srv/add_three_ints__type_support.cpp.o[0m
+[14.818s] [35m[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_c[0m
+[14.861s] [ 30%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tutorial_interfaces/srv/dds_fastrtps/add_three_ints__type_support.cpp.o[0m
+[14.977s] [ 32%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/msg/num__type_support.c.o[0m
+[15.164s] [ 33%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tutorial_interfaces/srv/judge_sign__type_support.cpp.o[0m
+[15.213s] [ 35%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/msg/two_integers_array__type_support.c.o[0m
+[15.436s] [ 37%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/srv/add_three_ints__type_support.c.o[0m
+[15.685s] [ 39%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/srv/judge_sign__type_support.c.o[0m
+[15.984s] [ 41%] [32m[1mLinking C shared library libtutorial_interfaces__rosidl_typesupport_introspection_c.so[0m
+[16.077s] [ 43%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tutorial_interfaces/srv/dds_fastrtps/judge_sign__type_support.cpp.o[0m
+[16.322s] [ 43%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c
+[16.453s] [ 45%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[16.683s] [ 45%] Built target tutorial_interfaces__rosidl_typesupport_introspection_cpp
+[17.869s] [ 47%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[18.215s] [ 47%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp
+[18.337s] [ 49%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[18.378s] [ 50%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[20.521s] [35m[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_cpp[0m
+[20.589s] [ 52%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tutorial_interfaces/msg/num__type_support.cpp.o[0m
+[20.592s] [ 54%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tutorial_interfaces/srv/add_three_ints__type_support.cpp.o[0m
+[20.614s] [ 56%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tutorial_interfaces/msg/two_integers_array__type_support.cpp.o[0m
+[21.698s] [35m[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_c[0m
+[21.853s] [ 58%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/num__type_support_c.cpp.o[0m
+[22.432s] [ 60%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/add_three_ints__type_support_c.cpp.o[0m
+[22.455s] [ 62%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tutorial_interfaces/srv/judge_sign__type_support.cpp.o[0m
+[22.457s] [ 64%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/two_integers_array__type_support_c.cpp.o[0m
+[23.765s] [ 66%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/judge_sign__type_support_c.cpp.o[0m
+[24.557s] [ 67%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_cpp.so[0m
+[24.882s] [ 67%] Built target tutorial_interfaces__rosidl_typesupport_cpp
+[25.196s] [ 69%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[25.507s] [ 69%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c
+[25.562s] [ 71%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[27.771s] [35m[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_c[0m
+[27.832s] [ 75%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tutorial_interfaces/msg/two_integers_array__type_support.cpp.o[0m
+[27.835s] [ 75%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tutorial_interfaces/srv/add_three_ints__type_support.cpp.o[0m
+[27.836s] [ 77%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tutorial_interfaces/srv/judge_sign__type_support.cpp.o[0m
+[27.852s] [ 79%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tutorial_interfaces/msg/num__type_support.cpp.o[0m
+[27.968s] [ 81%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_c.so[0m
+[28.144s] [ 81%] Built target tutorial_interfaces__rosidl_typesupport_c
+[28.220s] [ 81%] Built target tutorial_interfaces
+[28.259s] [35m[1mScanning dependencies of target tutorial_interfaces__py[0m
+[28.306s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[33.860s] [ 83%] Built target tutorial_interfaces__py
+[33.906s] [35m[1mScanning dependencies of target tutorial_interfaces__python[0m
+[34.019s] [ 84%] [32mBuilding C object CMakeFiles/tutorial_interfaces__python.dir/rosidl_generator_py/tutorial_interfaces/msg/_num_s.c.o[0m
+[34.046s] [ 86%] [32mBuilding C object CMakeFiles/tutorial_interfaces__python.dir/rosidl_generator_py/tutorial_interfaces/msg/_two_integers_array_s.c.o[0m
+[34.067s] [ 88%] [32mBuilding C object CMakeFiles/tutorial_interfaces__python.dir/rosidl_generator_py/tutorial_interfaces/srv/_judge_sign_s.c.o[0m
+[34.084s] [ 90%] [32mBuilding C object CMakeFiles/tutorial_interfaces__python.dir/rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints_s.c.o[0m
+[34.645s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/libtutorial_interfaces__python.so[0m
+[34.837s] [ 92%] Built target tutorial_interfaces__python
+[34.890s] [35m[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[34.899s] [35m[1mScanning dependencies of target tutorial_interfaces__rosidl_typesupport_c__pyext[0m
+[34.966s] [ 94%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[35.001s] [ 96%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[35.370s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-36m-aarch64-linux-gnu.so[0m
+[35.402s] [100%] [32m[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so[0m
+[35.586s] [100%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[35.604s] [100%] Built target tutorial_interfaces__rosidl_typesupport_c__pyext
+[35.652s] Invoked command in '/home/leh/test_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_pubsub:/opt/ros/dashing /usr/bin/cmake --build /home/leh/test_ws/build/tutorial_interfaces -- -j4 -l4
+[36.111s] Invoking command in '/home/leh/test_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_pubsub:/opt/ros/dashing /usr/bin/cmake --build /home/leh/test_ws/build/tutorial_interfaces --target install -- -j4 -l4
+[36.312s] [  1%] Built target tutorial_interfaces__cpp
+[36.331s] [ 13%] Built target tutorial_interfaces__rosidl_generator_c
+[36.432s] [ 24%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c
+[36.448s] [ 35%] Built target tutorial_interfaces__rosidl_typesupport_introspection_cpp
+[36.461s] [ 47%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp
+[36.582s] [ 58%] Built target tutorial_interfaces__rosidl_typesupport_cpp
+[36.593s] [ 69%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c
+[36.704s] [ 81%] Built target tutorial_interfaces__rosidl_typesupport_c
+[36.788s] [ 81%] Built target tutorial_interfaces
+[36.873s] [ 83%] Built target tutorial_interfaces__py
+[36.991s] [ 92%] Built target tutorial_interfaces__python
+[37.104s] [ 96%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[37.112s] [100%] Built target tutorial_interfaces__rosidl_typesupport_c__pyext
+[37.193s] [36mInstall the project...[0m
+[37.227s] -- Install configuration: ""
+[37.229s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/share/ament_index/resource_index/rosidl_interfaces/tutorial_interfaces
+[37.230s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so
+[37.232s] -- Set runtime path of "/home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so" to ""
+[37.233s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.sh
+[37.234s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so
+[37.236s] -- Set runtime path of "/home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so" to ""
+[37.237s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces
+[37.238s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg
+[37.242s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_c.h
+[37.246s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[37.249s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__rosidl_typesupport_fastrtps_c.h
+[37.250s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv
+[37.250s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__rosidl_typesupport_fastrtps_c.h
+[37.252s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign__rosidl_typesupport_fastrtps_c.h
+[37.254s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so
+[37.255s] -- Set runtime path of "/home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[37.256s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces
+[37.257s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg
+[37.260s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__functions.h
+[37.261s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array.h
+[37.262s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__functions.h
+[37.263s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__functions.c
+[37.264s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__functions.c
+[37.276s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num.h
+[37.280s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__struct.h
+[37.281s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__struct.h
+[37.283s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__type_support.h
+[37.286s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h
+[37.289s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__type_support.h
+[37.289s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv
+[37.290s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__struct.h
+[37.291s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign.h
+[37.291s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign__type_support.h
+[37.292s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__functions.h
+[37.293s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign__struct.h
+[37.293s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__type_support.h
+[37.294s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign__functions.c
+[37.294s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints.h
+[37.295s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign__functions.h
+[37.296s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__functions.c
+[37.296s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so
+[37.297s] -- Set runtime path of "/home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so" to ""
+[37.297s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces
+[37.298s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg
+[37.299s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/dds_fastrtps
+[37.299s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__rosidl_typesupport_fastrtps_cpp.hpp
+[37.300s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[37.300s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__rosidl_typesupport_fastrtps_cpp.hpp
+[37.301s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv
+[37.302s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/dds_fastrtps
+[37.302s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__rosidl_typesupport_fastrtps_cpp.hpp
+[37.303s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign__rosidl_typesupport_fastrtps_cpp.hpp
+[37.304s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[37.304s] -- Set runtime path of "/home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[37.305s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces
+[37.305s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg
+[37.306s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__struct.hpp
+[37.307s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__traits.hpp
+[37.307s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__traits.hpp
+[37.308s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__struct.hpp
+[37.309s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array.hpp
+[37.309s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num.hpp
+[37.310s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv
+[37.311s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign__struct.hpp
+[37.311s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign.hpp
+[37.312s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__traits.hpp
+[37.313s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign__traits.hpp
+[37.313s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints.hpp
+[37.314s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__struct.hpp
+[37.314s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces
+[37.315s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg
+[37.315s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[37.316s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__rosidl_typesupport_introspection_c.h
+[37.317s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__rosidl_typesupport_introspection_c.h
+[37.317s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__type_support.c
+[37.318s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__type_support.c
+[37.318s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv
+[37.319s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign__type_support.c
+[37.320s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__type_support.c
+[37.320s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__rosidl_typesupport_introspection_c.h
+[37.321s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign__rosidl_typesupport_introspection_c.h
+[37.321s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so
+[37.322s] -- Set runtime path of "/home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[37.323s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces
+[37.323s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg
+[37.324s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__rosidl_typesupport_introspection_cpp.hpp
+[37.324s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__type_support.cpp
+[37.325s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/two_integers_array__rosidl_typesupport_introspection_cpp.hpp
+[37.325s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/msg/num__type_support.cpp
+[37.326s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv
+[37.326s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign__type_support.cpp
+[37.327s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/judge_sign__rosidl_typesupport_introspection_cpp.hpp
+[37.327s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__rosidl_typesupport_introspection_cpp.hpp
+[37.328s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/include/tutorial_interfaces/srv/add_three_ints__type_support.cpp
+[37.328s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so
+[37.329s] -- Set runtime path of "/home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[37.330s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.sh
+[37.330s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/__init__.py
+[37.490s] Compiling '/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/__init__.py'...
+[37.513s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/msg
+[37.514s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/msg/_num.py
+[37.515s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/msg/__init__.py
+[37.516s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/msg/_num_s.c
+[37.516s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/msg/_two_integers_array.py
+[37.517s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/msg/_two_integers_array_s.c
+[37.518s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/srv
+[37.519s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/srv/__init__.py
+[37.519s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/srv/_add_three_ints_s.c
+[37.520s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/srv/_add_three_ints.py
+[37.521s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/srv/_judge_sign.py
+[37.521s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/srv/_judge_sign_s.c
+[37.522s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so
+[37.523s] -- Set runtime path of "/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so" to ""
+[37.523s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-36m-aarch64-linux-gnu.so
+[37.526s] -- Set runtime path of "/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-36m-aarch64-linux-gnu.so" to ""
+[37.526s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__python.so
+[37.529s] -- Set runtime path of "/home/leh/test_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__python.so" to ""
+[37.530s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.idl
+[37.531s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/TwoIntegersArray.idl
+[37.532s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.idl
+[37.532s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/JudgeSign.idl
+[37.533s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.msg
+[37.534s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/TwoIntegersArray.msg
+[37.535s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.srv
+[37.536s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts_Request.msg
+[37.537s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts_Response.msg
+[37.538s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/JudgeSign.srv
+[37.539s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/JudgeSign_Request.msg
+[37.539s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/JudgeSign_Response.msg
+[37.540s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/ament_index/resource_index/package_run_dependencies/tutorial_interfaces
+[37.541s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/share/ament_index/resource_index/parent_prefix_path/tutorial_interfaces
+[37.541s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.sh
+[37.542s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.sh
+[37.543s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.bash
+[37.543s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.sh
+[37.544s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.zsh
+[37.545s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/ament_index/resource_index/packages/tutorial_interfaces
+[37.548s] -- Installing: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake-extras.cmake
+[37.552s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[37.553s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[37.554s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig.cmake
+[37.555s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig-version.cmake
+[37.556s] -- Up-to-date: /home/leh/test_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.xml
+[37.558s] Invoked command in '/home/leh/test_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_pubsub:/opt/ros/dashing /usr/bin/cmake --build /home/leh/test_ws/build/tutorial_interfaces --target install -- -j4 -l4

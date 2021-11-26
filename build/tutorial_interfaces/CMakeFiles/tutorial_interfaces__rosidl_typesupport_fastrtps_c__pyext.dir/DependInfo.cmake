@@ -18,6 +18,15 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/opt/ros/dashing/include"
   "rosidl_generator_cpp"
   "rosidl_typesupport_fastrtps_cpp"
+  "/opt/ros/dashing/include/action_msgs/msg/dds_fastrtps_c"
+  "/opt/ros/dashing/include/action_msgs/srv/dds_fastrtps_c"
+  "/opt/ros/dashing/include/action_msgs/action/dds_fastrtps_c"
+  "/opt/ros/dashing/include/builtin_interfaces/msg/dds_fastrtps_c"
+  "/opt/ros/dashing/include/builtin_interfaces/srv/dds_fastrtps_c"
+  "/opt/ros/dashing/include/builtin_interfaces/action/dds_fastrtps_c"
+  "/opt/ros/dashing/include/unique_identifier_msgs/msg/dds_fastrtps_c"
+  "/opt/ros/dashing/include/unique_identifier_msgs/srv/dds_fastrtps_c"
+  "/opt/ros/dashing/include/unique_identifier_msgs/action/dds_fastrtps_c"
   )
 
 # Targets to which this target links.

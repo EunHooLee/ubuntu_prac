@@ -1,0 +1,29 @@
+[6.908s] Invoking command in '/home/leh/test_ws/src/py_two_pub_one_sub': PYTHONPATH=/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_two_pub_one_sub build --build-base /home/leh/test_ws/build/py_two_pub_one_sub/build install --prefix /home/leh/test_ws/install/py_two_pub_one_sub --record /home/leh/test_ws/build/py_two_pub_one_sub/install.log --single-version-externally-managed
+[8.646s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[8.652s]   % (opt, underscore_opt)
+[8.662s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[8.663s]   % (opt, underscore_opt)
+[9.000s] running egg_info
+[9.008s] writing ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/PKG-INFO
+[9.011s] writing dependency_links to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/dependency_links.txt
+[9.013s] writing entry points to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/entry_points.txt
+[9.014s] writing requirements to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/requires.txt
+[9.015s] writing top-level names to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/top_level.txt
+[9.055s] reading manifest file '../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/SOURCES.txt'
+[9.072s] writing manifest file '../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/SOURCES.txt'
+[9.075s] running build
+[9.076s] running build_py
+[9.084s] running install
+[9.086s] /home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[9.087s]   setuptools.SetuptoolsDeprecationWarning,
+[9.100s] running install_lib
+[9.100s] running install_data
+[9.101s] running install_egg_info
+[9.132s] removing '/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub-0.0.0-py3.6.egg-info' (and everything under it)
+[9.133s] Copying ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info to /home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub-0.0.0-py3.6.egg-info
+[9.134s] running install_scripts
+[9.240s] Installing actuator script to /home/leh/test_ws/install/py_two_pub_one_sub/lib/py_two_pub_one_sub
+[9.241s] Installing sensor1 script to /home/leh/test_ws/install/py_two_pub_one_sub/lib/py_two_pub_one_sub
+[9.241s] Installing sensor2 script to /home/leh/test_ws/install/py_two_pub_one_sub/lib/py_two_pub_one_sub
+[9.242s] writing list of installed files to '/home/leh/test_ws/build/py_two_pub_one_sub/install.log'
+[9.368s] Invoked command in '/home/leh/test_ws/src/py_two_pub_one_sub' returned '0': PYTHONPATH=/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_two_pub_one_sub build --build-base /home/leh/test_ws/build/py_two_pub_one_sub/build install --prefix /home/leh/test_ws/install/py_two_pub_one_sub --record /home/leh/test_ws/build/py_two_pub_one_sub/install.log --single-version-externally-managed

@@ -1,0 +1,50 @@
+[1.982s] Invoking command in '/home/leh/test_ws/src/py_sign_srvcli': PYTHONPATH=/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_sign_srvcli build --build-base /home/leh/test_ws/build/py_sign_srvcli/build install --prefix /home/leh/test_ws/install/py_sign_srvcli --record /home/leh/test_ws/build/py_sign_srvcli/install.log --single-version-externally-managed
+[3.486s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[3.487s]   % (opt, underscore_opt)
+[3.490s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[3.491s]   % (opt, underscore_opt)
+[3.755s] running egg_info
+[3.762s] creating ../../build/py_sign_srvcli/py_sign_srvcli.egg-info
+[3.764s] writing ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/PKG-INFO
+[3.767s] writing dependency_links to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/dependency_links.txt
+[3.769s] writing entry points to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/entry_points.txt
+[3.770s] writing requirements to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/requires.txt
+[3.772s] writing top-level names to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/top_level.txt
+[3.775s] writing manifest file '../../build/py_sign_srvcli/py_sign_srvcli.egg-info/SOURCES.txt'
+[3.792s] reading manifest file '../../build/py_sign_srvcli/py_sign_srvcli.egg-info/SOURCES.txt'
+[3.805s] writing manifest file '../../build/py_sign_srvcli/py_sign_srvcli.egg-info/SOURCES.txt'
+[3.805s] running build
+[3.806s] running build_py
+[3.807s] creating /home/leh/test_ws/build/py_sign_srvcli/build
+[3.808s] creating /home/leh/test_ws/build/py_sign_srvcli/build/lib
+[3.809s] creating /home/leh/test_ws/build/py_sign_srvcli/build/lib/py_sign_srvcli
+[3.809s] copying py_sign_srvcli/__init__.py -> /home/leh/test_ws/build/py_sign_srvcli/build/lib/py_sign_srvcli
+[3.810s] copying py_sign_srvcli/sign_client_member_function.py -> /home/leh/test_ws/build/py_sign_srvcli/build/lib/py_sign_srvcli
+[3.812s] copying py_sign_srvcli/sign_service_member_function.py -> /home/leh/test_ws/build/py_sign_srvcli/build/lib/py_sign_srvcli
+[3.815s] running install
+[3.822s] /home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.823s]   setuptools.SetuptoolsDeprecationWarning,
+[3.824s] running install_lib
+[3.835s] creating /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli
+[3.836s] copying /home/leh/test_ws/build/py_sign_srvcli/build/lib/py_sign_srvcli/__init__.py -> /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli
+[3.837s] copying /home/leh/test_ws/build/py_sign_srvcli/build/lib/py_sign_srvcli/sign_client_member_function.py -> /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli
+[3.838s] copying /home/leh/test_ws/build/py_sign_srvcli/build/lib/py_sign_srvcli/sign_service_member_function.py -> /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli
+[3.839s] byte-compiling /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli/__init__.py to __init__.cpython-36.pyc
+[3.842s] byte-compiling /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli/sign_client_member_function.py to sign_client_member_function.cpython-36.pyc
+[3.844s] byte-compiling /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli/sign_service_member_function.py to sign_service_member_function.cpython-36.pyc
+[3.848s]   File "/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli/sign_service_member_function.py", line 25
+[3.848s]     def main(args = None)
+[3.849s]                         ^
+[3.850s] SyntaxError: invalid syntax
+[3.851s] 
+[3.851s] running install_data
+[3.856s] creating /home/leh/test_ws/install/py_sign_srvcli/share/ament_index
+[3.856s] creating /home/leh/test_ws/install/py_sign_srvcli/share/ament_index/resource_index
+[3.861s] creating /home/leh/test_ws/install/py_sign_srvcli/share/ament_index/resource_index/packages
+[3.864s] copying resource/py_sign_srvcli -> /home/leh/test_ws/install/py_sign_srvcli/share/ament_index/resource_index/packages
+[3.867s] copying package.xml -> /home/leh/test_ws/install/py_sign_srvcli/share/py_sign_srvcli
+[3.869s] running install_egg_info
+[3.881s] Copying ../../build/py_sign_srvcli/py_sign_srvcli.egg-info to /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli-0.0.0-py3.6.egg-info
+[3.888s] running install_scripts
+[4.034s] writing list of installed files to '/home/leh/test_ws/build/py_sign_srvcli/install.log'
+[4.150s] Invoked command in '/home/leh/test_ws/src/py_sign_srvcli' returned '0': PYTHONPATH=/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_sign_srvcli build --build-base /home/leh/test_ws/build/py_sign_srvcli/build install --prefix /home/leh/test_ws/install/py_sign_srvcli --record /home/leh/test_ws/build/py_sign_srvcli/install.log --single-version-externally-managed

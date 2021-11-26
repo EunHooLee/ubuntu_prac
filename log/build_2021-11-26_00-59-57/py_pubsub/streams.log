@@ -1,0 +1,28 @@
+[7.272s] Invoking command in '/home/leh/test_ws/src/py_pubsub': AMENT_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces LD_LIBRARY_PATH=/home/leh/test_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/leh/test_ws/build/py_pubsub/build install --prefix /home/leh/test_ws/install/py_pubsub --record /home/leh/test_ws/build/py_pubsub/install.log --single-version-externally-managed
+[9.175s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[9.176s]   % (opt, underscore_opt)
+[9.177s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[9.177s]   % (opt, underscore_opt)
+[9.430s] running egg_info
+[9.434s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[9.436s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[9.437s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[9.437s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[9.438s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[9.448s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[9.455s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[9.456s] running build
+[9.457s] running build_py
+[9.458s] running install
+[9.459s] /home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[9.460s]   setuptools.SetuptoolsDeprecationWarning,
+[9.461s] running install_lib
+[9.467s] running install_data
+[9.470s] running install_egg_info
+[9.478s] removing '/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub-0.0.0-py3.6.egg-info' (and everything under it)
+[9.479s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub-0.0.0-py3.6.egg-info
+[9.484s] running install_scripts
+[9.588s] Installing listener script to /home/leh/test_ws/install/py_pubsub/lib/py_pubsub
+[9.592s] Installing talker script to /home/leh/test_ws/install/py_pubsub/lib/py_pubsub
+[9.594s] writing list of installed files to '/home/leh/test_ws/build/py_pubsub/install.log'
+[9.861s] Invoked command in '/home/leh/test_ws/src/py_pubsub' returned '0': AMENT_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces LD_LIBRARY_PATH=/home/leh/test_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/leh/test_ws/build/py_pubsub/build install --prefix /home/leh/test_ws/install/py_pubsub --record /home/leh/test_ws/build/py_pubsub/install.log --single-version-externally-managed

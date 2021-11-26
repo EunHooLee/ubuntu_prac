@@ -28,11 +28,16 @@ set(msg_files
   "msg/TwoIntegersArray.msg")
 
 set(srv_files
-  "srv/AddThreeInts.srv")
+  "srv/AddThreeInts.srv"
+  "srv/JudgeSign.srv")
+
+set(action_files
+  "action/Fibonacci.action")
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
-  ${srv_files})
+  ${srv_files}
+  ${action_files})
 
 
 if(BUILD_TESTING)

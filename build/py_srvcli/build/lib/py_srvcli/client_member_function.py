@@ -34,8 +34,8 @@ def main(args = None):
             except Exception as e:
                 minimal_client.get_logger().info('Service call faied {}'.format(e))
             else:
-                minimal_client.get_logger().info('Result of add_three_ints: for {} + {} + {} = {}'.format(
-                    minimal_client.req.a, minimal_client.req.b,minimal_client.req.c,response.sum
+                minimal_client.get_logger().info('Result of add_three_ints: for {} + {} + {} = {} ,{}'.format(
+                    minimal_client.req.a, minimal_client.req.b,minimal_client.req.c,response.sum,minimal_client.future.result
                 ))
             break
     

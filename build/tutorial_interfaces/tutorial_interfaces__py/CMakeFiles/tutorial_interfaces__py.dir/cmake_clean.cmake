@@ -5,11 +5,16 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/tutorial_interfaces/msg/_num.py"
   "../rosidl_generator_py/tutorial_interfaces/msg/_two_integers_array.py"
   "../rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints.py"
+  "../rosidl_generator_py/tutorial_interfaces/srv/_judge_sign.py"
+  "../rosidl_generator_py/tutorial_interfaces/action/_fibonacci.py"
   "../rosidl_generator_py/tutorial_interfaces/msg/__init__.py"
   "../rosidl_generator_py/tutorial_interfaces/srv/__init__.py"
+  "../rosidl_generator_py/tutorial_interfaces/action/__init__.py"
   "../rosidl_generator_py/tutorial_interfaces/msg/_num_s.c"
   "../rosidl_generator_py/tutorial_interfaces/msg/_two_integers_array_s.c"
   "../rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints_s.c"
+  "../rosidl_generator_py/tutorial_interfaces/srv/_judge_sign_s.c"
+  "../rosidl_generator_py/tutorial_interfaces/action/_fibonacci_s.c"
 )
 
 # Per-language clean rules from dependency scanning.

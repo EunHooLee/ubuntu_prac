@@ -1,0 +1,4 @@
+[console_scripts]
+sign_client = py_sign_srvcli.sign_client_member_function:main
+sign_service = py_sign_srvcli.sign_service_member_function:main
+

@@ -234,6 +234,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.6/site-packages/tutorial_interfaces/action" TYPE DIRECTORY FILES "/home/leh/test_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces/action/" REGEX "/[^/]*\\.py$")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so")
     file(RPATH_CHECK
@@ -245,7 +249,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so"
-         OLD_RPATH "/home/leh/test_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces:/home/leh/test_ws/build/tutorial_interfaces:/opt/ros/dashing/lib:"
+         OLD_RPATH "/home/leh/test_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces:/home/leh/test_ws/build/tutorial_interfaces:/opt/ros/dashing/lib:/opt/ros/dashing/share/action_msgs/cmake/../../../lib:/opt/ros/dashing/share/builtin_interfaces/cmake/../../../lib:/opt/ros/dashing/share/unique_identifier_msgs/cmake/../../../lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so")
@@ -265,7 +269,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-36m-aarch64-linux-gnu.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-36m-aarch64-linux-gnu.so"
-         OLD_RPATH "/home/leh/test_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces:/home/leh/test_ws/build/tutorial_interfaces:/opt/ros/dashing/lib:"
+         OLD_RPATH "/home/leh/test_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces:/home/leh/test_ws/build/tutorial_interfaces:/opt/ros/dashing/lib:/opt/ros/dashing/share/action_msgs/cmake/../../../lib:/opt/ros/dashing/share/builtin_interfaces/cmake/../../../lib:/opt/ros/dashing/share/unique_identifier_msgs/cmake/../../../lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.6/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-36m-aarch64-linux-gnu.so")
@@ -285,7 +289,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtutorial_interfaces__python.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtutorial_interfaces__python.so"
-         OLD_RPATH "/home/leh/test_ws/build/tutorial_interfaces:/opt/ros/dashing/lib:"
+         OLD_RPATH "/home/leh/test_ws/build/tutorial_interfaces:/opt/ros/dashing/share/action_msgs/cmake/../../../lib:/opt/ros/dashing/share/builtin_interfaces/cmake/../../../lib:/opt/ros/dashing/share/unique_identifier_msgs/cmake/../../../lib:/opt/ros/dashing/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libtutorial_interfaces__python.so")
@@ -306,6 +310,14 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/srv" TYPE FILE FILES "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/JudgeSign.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/action" TYPE FILE FILES "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/action/Fibonacci.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/msg" TYPE FILE FILES "/home/leh/test_ws/src/tutorial_interfaces/msg/Num.msg")
 endif()
 
@@ -323,6 +335,22 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/srv" TYPE FILE FILES "/home/leh/test_ws/build/tutorial_interfaces/rosidl_cmake/srv/AddThreeInts_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/srv" TYPE FILE FILES "/home/leh/test_ws/src/tutorial_interfaces/srv/JudgeSign.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/srv" TYPE FILE FILES "/home/leh/test_ws/build/tutorial_interfaces/rosidl_cmake/srv/JudgeSign_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/srv" TYPE FILE FILES "/home/leh/test_ws/build/tutorial_interfaces/rosidl_cmake/srv/JudgeSign_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/action" TYPE FILE FILES "/home/leh/test_ws/src/tutorial_interfaces/action/Fibonacci.action")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -359,6 +387,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/cmake" TYPE FILE FILES "/home/leh/test_ws/build/tutorial_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tutorial_interfaces/cmake" TYPE FILE FILES "/home/leh/test_ws/build/tutorial_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

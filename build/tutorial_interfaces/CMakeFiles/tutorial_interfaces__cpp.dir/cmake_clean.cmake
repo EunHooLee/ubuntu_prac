@@ -9,6 +9,12 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints__struct.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints__traits.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/srv/judge_sign.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/srv/judge_sign__struct.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/srv/judge_sign__traits.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/action/fibonacci.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/action/fibonacci__struct.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/action/fibonacci__traits.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

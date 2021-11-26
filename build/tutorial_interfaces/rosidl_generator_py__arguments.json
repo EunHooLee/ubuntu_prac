@@ -5,7 +5,18 @@
   "idl_tuples": [
     "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Num.idl",
     "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/TwoIntegersArray.idl",
-    "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl"
+    "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl",
+    "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/JudgeSign.idl",
+    "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:action/Fibonacci.idl"
+  ],
+  "ros_interface_dependencies": [
+    "action_msgs:/opt/ros/dashing/share/action_msgs/msg/GoalInfo.idl",
+    "action_msgs:/opt/ros/dashing/share/action_msgs/msg/GoalStatus.idl",
+    "action_msgs:/opt/ros/dashing/share/action_msgs/msg/GoalStatusArray.idl",
+    "action_msgs:/opt/ros/dashing/share/action_msgs/srv/CancelGoal.idl",
+    "builtin_interfaces:/opt/ros/dashing/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/dashing/share/builtin_interfaces/msg/Time.idl",
+    "unique_identifier_msgs:/opt/ros/dashing/share/unique_identifier_msgs/msg/UUID.idl"
   ],
   "target_dependencies": [
     "/opt/ros/dashing/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -23,6 +34,15 @@
     "/opt/ros/dashing/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
     "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Num.idl",
     "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/TwoIntegersArray.idl",
-    "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl"
+    "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl",
+    "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/JudgeSign.idl",
+    "/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/action/Fibonacci.idl",
+    "/opt/ros/dashing/share/action_msgs/msg/GoalInfo.idl",
+    "/opt/ros/dashing/share/action_msgs/msg/GoalStatus.idl",
+    "/opt/ros/dashing/share/action_msgs/msg/GoalStatusArray.idl",
+    "/opt/ros/dashing/share/action_msgs/srv/CancelGoal.idl",
+    "/opt/ros/dashing/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/dashing/share/builtin_interfaces/msg/Time.idl",
+    "/opt/ros/dashing/share/unique_identifier_msgs/msg/UUID.idl"
   ]
 }

@@ -1,0 +1,29 @@
+[7.023s] Invoking command in '/home/leh/test_ws/src/py_two_pub_one_sub': PYTHONPATH=/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_two_pub_one_sub build --build-base /home/leh/test_ws/build/py_two_pub_one_sub/build install --prefix /home/leh/test_ws/install/py_two_pub_one_sub --record /home/leh/test_ws/build/py_two_pub_one_sub/install.log --single-version-externally-managed
+[9.486s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[9.488s]   % (opt, underscore_opt)
+[9.493s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[9.494s]   % (opt, underscore_opt)
+[9.761s] running egg_info
+[9.775s] writing ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/PKG-INFO
+[9.777s] writing dependency_links to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/dependency_links.txt
+[9.777s] writing entry points to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/entry_points.txt
+[9.778s] writing requirements to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/requires.txt
+[9.778s] writing top-level names to ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/top_level.txt
+[9.784s] reading manifest file '../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/SOURCES.txt'
+[9.804s] /home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[9.805s]   setuptools.SetuptoolsDeprecationWarning,
+[9.806s] writing manifest file '../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info/SOURCES.txt'
+[9.806s] running build
+[9.807s] running build_py
+[9.807s] running install
+[9.808s] running install_lib
+[9.826s] running install_data
+[9.829s] running install_egg_info
+[9.839s] removing '/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub-0.0.0-py3.6.egg-info' (and everything under it)
+[9.839s] Copying ../../build/py_two_pub_one_sub/py_two_pub_one_sub.egg-info to /home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages/py_two_pub_one_sub-0.0.0-py3.6.egg-info
+[9.844s] running install_scripts
+[9.946s] Installing actuator script to /home/leh/test_ws/install/py_two_pub_one_sub/lib/py_two_pub_one_sub
+[9.947s] Installing sensor1 script to /home/leh/test_ws/install/py_two_pub_one_sub/lib/py_two_pub_one_sub
+[9.949s] Installing sensor2 script to /home/leh/test_ws/install/py_two_pub_one_sub/lib/py_two_pub_one_sub
+[9.954s] writing list of installed files to '/home/leh/test_ws/build/py_two_pub_one_sub/install.log'
+[10.092s] Invoked command in '/home/leh/test_ws/src/py_two_pub_one_sub' returned '0': PYTHONPATH=/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_two_pub_one_sub build --build-base /home/leh/test_ws/build/py_two_pub_one_sub/build install --prefix /home/leh/test_ws/install/py_two_pub_one_sub --record /home/leh/test_ws/build/py_two_pub_one_sub/install.log --single-version-externally-managed

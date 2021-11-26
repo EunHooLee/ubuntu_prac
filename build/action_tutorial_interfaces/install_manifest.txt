@@ -1,0 +1,11 @@
+/home/leh/test_ws/install/action_tutorial_interfaces/share/ament_index/resource_index/package_run_dependencies/action_tutorial_interfaces
+/home/leh/test_ws/install/action_tutorial_interfaces/share/ament_index/resource_index/parent_prefix_path/action_tutorial_interfaces
+/home/leh/test_ws/install/action_tutorial_interfaces/share/action_tutorial_interfaces/environment/ament_prefix_path.sh
+/home/leh/test_ws/install/action_tutorial_interfaces/share/action_tutorial_interfaces/environment/path.sh
+/home/leh/test_ws/install/action_tutorial_interfaces/share/action_tutorial_interfaces/local_setup.bash
+/home/leh/test_ws/install/action_tutorial_interfaces/share/action_tutorial_interfaces/local_setup.sh
+/home/leh/test_ws/install/action_tutorial_interfaces/share/action_tutorial_interfaces/local_setup.zsh
+/home/leh/test_ws/install/action_tutorial_interfaces/share/ament_index/resource_index/packages/action_tutorial_interfaces
+/home/leh/test_ws/install/action_tutorial_interfaces/share/action_tutorial_interfaces/cmake/action_tutorial_interfacesConfig.cmake
+/home/leh/test_ws/install/action_tutorial_interfaces/share/action_tutorial_interfaces/cmake/action_tutorial_interfacesConfig-version.cmake
+/home/leh/test_ws/install/action_tutorial_interfaces/share/action_tutorial_interfaces/package.xml
