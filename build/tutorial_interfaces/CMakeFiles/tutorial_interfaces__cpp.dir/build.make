@@ -59,6 +59,15 @@ CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/ms
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array.hpp
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__struct.hpp
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__traits.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/imu.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/imu__struct.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/imu__traits.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/encoder.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/encoder__struct.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/encoder__traits.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/rpm.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/rpm__struct.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/rpm__traits.hpp
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints.hpp
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints__struct.hpp
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints__traits.hpp
@@ -68,6 +77,9 @@ CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/sr
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/action/fibonacci.hpp
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/action/fibonacci__struct.hpp
 CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/action/fibonacci__traits.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/action/robot_coordinate.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/action/robot_coordinate__struct.hpp
+CMakeFiles/tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/action/robot_coordinate__traits.hpp
 
 
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: /opt/ros/dashing/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -82,9 +94,13 @@ rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: /opt/ros/dashing/share/ros
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: /opt/ros/dashing/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: rosidl_adapter/tutorial_interfaces/msg/Num.idl
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: rosidl_adapter/tutorial_interfaces/msg/TwoIntegersArray.idl
+rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: rosidl_adapter/tutorial_interfaces/msg/IMU.idl
+rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: rosidl_adapter/tutorial_interfaces/msg/Encoder.idl
+rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: rosidl_adapter/tutorial_interfaces/msg/RPM.idl
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: rosidl_adapter/tutorial_interfaces/srv/JudgeSign.idl
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: rosidl_adapter/tutorial_interfaces/action/Fibonacci.idl
+rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: rosidl_adapter/tutorial_interfaces/action/RobotCoordinate.idl
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: /opt/ros/dashing/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: /opt/ros/dashing/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp: /opt/ros/dashing/share/action_msgs/msg/GoalStatusArray.idl
@@ -109,6 +125,33 @@ rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__struct.hpp: ros
 
 rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__traits.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__traits.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/msg/imu.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/imu.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/msg/imu__struct.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/imu__struct.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/msg/imu__traits.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/imu__traits.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/msg/encoder.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/encoder.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/msg/encoder__struct.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/encoder__struct.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/msg/encoder__traits.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/encoder__traits.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/msg/rpm.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/rpm.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/msg/rpm__struct.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/rpm__struct.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/msg/rpm__traits.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/msg/rpm__traits.hpp
 
 rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints.hpp
@@ -137,6 +180,15 @@ rosidl_generator_cpp/tutorial_interfaces/action/fibonacci__struct.hpp: rosidl_ge
 rosidl_generator_cpp/tutorial_interfaces/action/fibonacci__traits.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/action/fibonacci__traits.hpp
 
+rosidl_generator_cpp/tutorial_interfaces/action/robot_coordinate.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/action/robot_coordinate.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/action/robot_coordinate__struct.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/action/robot_coordinate__struct.hpp
+
+rosidl_generator_cpp/tutorial_interfaces/action/robot_coordinate__traits.hpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tutorial_interfaces/action/robot_coordinate__traits.hpp
+
 tutorial_interfaces__cpp: CMakeFiles/tutorial_interfaces__cpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/num__struct.hpp
@@ -144,6 +196,15 @@ tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/num__trai
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array.hpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__struct.hpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/two_integers_array__traits.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/imu.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/imu__struct.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/imu__traits.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/encoder.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/encoder__struct.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/encoder__traits.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/rpm.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/rpm__struct.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/msg/rpm__traits.hpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints.hpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints__struct.hpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints__traits.hpp
@@ -153,6 +214,9 @@ tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/srv/judge_sig
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/action/fibonacci.hpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/action/fibonacci__struct.hpp
 tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/action/fibonacci__traits.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/action/robot_coordinate.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/action/robot_coordinate__struct.hpp
+tutorial_interfaces__cpp: rosidl_generator_cpp/tutorial_interfaces/action/robot_coordinate__traits.hpp
 tutorial_interfaces__cpp: CMakeFiles/tutorial_interfaces__cpp.dir/build.make
 
 .PHONY : tutorial_interfaces__cpp

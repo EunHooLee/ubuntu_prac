@@ -25,14 +25,18 @@ find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
   "msg/Num.msg"
-  "msg/TwoIntegersArray.msg")
+  "msg/TwoIntegersArray.msg"
+  "msg/IMU.msg"
+  "msg/Encoder.msg"
+  "msg/RPM.msg")
 
 set(srv_files
   "srv/AddThreeInts.srv"
   "srv/JudgeSign.srv")
 
 set(action_files
-  "action/Fibonacci.action")
+  "action/Fibonacci.action"
+  "action/RobotCoordinate.action")
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}

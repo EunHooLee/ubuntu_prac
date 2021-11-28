@@ -17,14 +17,15 @@ class FibonacciActionServer(Node):
         self.get_logger().info('Executing goal...')
 
         feedback_msg = Fibonacci.Feedback()
-        feedback_msg.partial_sequence = [0, 1]
+        feedback_msg.partial_sequence = [0.0]
 
-        for i in range(1,goal_handle.request.order):
-            feedback_msg.partial_sequence.append(feedback_msg.partial_sequence[i]+feedback_msg.partial_sequence[i-1])
+        for i in goal_handle.request.order:
+            feedback_msg.partial_sequence.append(float(i))
             self.get_logger().info('Feedback: {}'.format(feedback_msg.partial_sequence))
             goal_handle.publish_feedback(feedback_msg)
             time.sleep(1)
-
+        
+        self.get_logger().info('>>> {}'.format(feedback_msg.partial_sequence))
         goal_handle.succeed()
         result = Fibonacci.Result()
         result.sequence = feedback_msg.partial_sequence

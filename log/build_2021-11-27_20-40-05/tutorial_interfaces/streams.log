@@ -1,0 +1,47 @@
+[0.080s] Invoking command in '/home/leh/test_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/leh/test_ws/build/tutorial_interfaces -- -j4 -l4
+[0.250s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[0.375s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[0.376s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.509s] -- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)
+[1.847s] -- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[2.301s] -- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+[3.373s] CMake Error at /opt/ros/dashing/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[3.374s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[3.375s]   tutorial_interfaces --arguments-file
+[3.375s]   /home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter__arguments__tutorial_interfaces.json
+[3.376s]   --output-dir
+[3.376s]   /home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces
+[3.377s]   --output-file
+[3.392s]   /home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces.idls)
+[3.392s]   returned error code 1:
+[3.393s] 
+[3.396s]   Traceback (most recent call last):
+[3.400s] 
+[3.406s]     File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+[3.407s]       "__main__", mod_spec)
+[3.408s]     File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+[3.411s]       exec(code, run_globals)
+[3.413s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[3.413s]       sys.exit(main())
+[3.414s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/main.py", line 55, in main
+[3.415s]       pathlib.Path(relative_path), output_dir)
+[3.415s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/__init__.py", line 30, in convert_to_idl
+[3.416s]       package_dir, package_name, interface_file, output_dir / 'action')
+[3.417s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/action/__init__.py", line 28, in convert_action_to_idl
+[3.417s]       action = parse_action_string(package_name, input_file.stem, content)
+[3.418s]     File "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 869, in parse_action_string
+[3.428s]       ACTION_REQUEST_RESPONSE_SEPARATOR)
+[3.438s] 
+[3.442s]   rosidl_adapter.parser.InvalidActionSpecification: Number of '---'
+[3.443s]   separators nonconformant with action definition
+[3.444s] 
+[3.444s] Call Stack (most recent call first):
+[3.445s]   /opt/ros/dashing/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[3.446s]   CMakeLists.txt:41 (rosidl_generate_interfaces)
+[3.446s] 
+[3.447s] 
+[3.447s] -- Configuring incomplete, errors occurred!
+[3.448s] See also "/home/leh/test_ws/build/tutorial_interfaces/CMakeFiles/CMakeOutput.log".
+[3.455s] make: *** [cmake_check_build_system] Error 1
+[3.456s] Makefile:1650: recipe for target 'cmake_check_build_system' failed
+[3.457s] Invoked command in '/home/leh/test_ws/build/tutorial_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/leh/test_ws/build/tutorial_interfaces -- -j4 -l4

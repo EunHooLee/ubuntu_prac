@@ -33,7 +33,9 @@ cdr_serialize(
   eprosima::fastcdr::Cdr & cdr)
 {
   // Member: order
-  cdr << ros_message.order;
+  {
+    cdr << ros_message.order;
+  }
   return true;
 }
 
@@ -44,7 +46,9 @@ cdr_deserialize(
   tutorial_interfaces::action::Fibonacci_Goal & ros_message)
 {
   // Member: order
-  cdr >> ros_message.order;
+  {
+    cdr >> ros_message.order;
+  }
 
   return true;
 }
@@ -64,8 +68,12 @@ get_serialized_size(
 
   // Member: order
   {
-    size_t item_size = sizeof(ros_message.order);
-    current_alignment += item_size +
+    size_t array_size = ros_message.order.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.order[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -89,7 +97,10 @@ max_serialized_size_Fibonacci_Goal(
 
   // Member: order
   {
-    size_t array_size = 1;
+    size_t array_size = 0;
+    full_bounded = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));

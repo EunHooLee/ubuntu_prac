@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from tutorial_interfaces/action/RobotCoordinate.action
+// generated code does not contain a copyright notice
+
+
+module tutorial_interfaces {
+  module action {
+    struct RobotCoordinate_Goal {
+      sequence<float> x_coordinate_order;
+
+      sequence<float> y_coordinate_order;
+
+      sequence<float> z_coordinate_order;
+    };
+    struct RobotCoordinate_Result {
+      float rpm_result;
+    };
+    struct RobotCoordinate_Feedback {
+      float rpm_feedback;
+    };
+  };
+};

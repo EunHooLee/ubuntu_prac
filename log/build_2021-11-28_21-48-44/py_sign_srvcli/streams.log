@@ -1,0 +1,28 @@
+[6.647s] Invoking command in '/home/leh/test_ws/src/py_sign_srvcli': AMENT_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces LD_LIBRARY_PATH=/home/leh/test_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_sign_srvcli build --build-base /home/leh/test_ws/build/py_sign_srvcli/build install --prefix /home/leh/test_ws/install/py_sign_srvcli --record /home/leh/test_ws/build/py_sign_srvcli/install.log --single-version-externally-managed
+[8.718s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[8.718s]   % (opt, underscore_opt)
+[8.719s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[8.720s]   % (opt, underscore_opt)
+[9.008s] running egg_info
+[9.019s] writing ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/PKG-INFO
+[9.021s] writing dependency_links to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/dependency_links.txt
+[9.027s] writing entry points to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/entry_points.txt
+[9.030s] writing requirements to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/requires.txt
+[9.035s] writing top-level names to ../../build/py_sign_srvcli/py_sign_srvcli.egg-info/top_level.txt
+[9.045s] reading manifest file '../../build/py_sign_srvcli/py_sign_srvcli.egg-info/SOURCES.txt'
+[9.067s] writing manifest file '../../build/py_sign_srvcli/py_sign_srvcli.egg-info/SOURCES.txt'
+[9.069s] running build
+[9.071s] running build_py
+[9.076s] running install
+[9.077s] /home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[9.078s]   setuptools.SetuptoolsDeprecationWarning,
+[9.082s] running install_lib
+[9.094s] running install_data
+[9.100s] running install_egg_info
+[9.110s] removing '/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli-0.0.0-py3.6.egg-info' (and everything under it)
+[9.116s] Copying ../../build/py_sign_srvcli/py_sign_srvcli.egg-info to /home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages/py_sign_srvcli-0.0.0-py3.6.egg-info
+[9.123s] running install_scripts
+[9.242s] Installing sign_client script to /home/leh/test_ws/install/py_sign_srvcli/lib/py_sign_srvcli
+[9.243s] Installing sign_service script to /home/leh/test_ws/install/py_sign_srvcli/lib/py_sign_srvcli
+[9.244s] writing list of installed files to '/home/leh/test_ws/build/py_sign_srvcli/install.log'
+[9.437s] Invoked command in '/home/leh/test_ws/src/py_sign_srvcli' returned '0': AMENT_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces LD_LIBRARY_PATH=/home/leh/test_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_sign_srvcli build --build-base /home/leh/test_ws/build/py_sign_srvcli/build install --prefix /home/leh/test_ws/install/py_sign_srvcli --record /home/leh/test_ws/build/py_sign_srvcli/install.log --single-version-externally-managed

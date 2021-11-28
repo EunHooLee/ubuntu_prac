@@ -17,10 +17,14 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'order'
+#include "rosidl_generator_c/primitives_sequence.h"
+
 // Struct defined in action/Fibonacci in the package tutorial_interfaces.
 typedef struct tutorial_interfaces__action__Fibonacci_Goal
 {
-  int32_t order;
+  rosidl_generator_c__float__Sequence order;
 } tutorial_interfaces__action__Fibonacci_Goal;
 
 // Struct for a sequence of tutorial_interfaces__action__Fibonacci_Goal.
@@ -38,12 +42,13 @@ typedef struct tutorial_interfaces__action__Fibonacci_Goal__Sequence
 
 // Include directives for member types
 // Member 'sequence'
-#include "rosidl_generator_c/primitives_sequence.h"
+// already included above
+// #include "rosidl_generator_c/primitives_sequence.h"
 
 // Struct defined in action/Fibonacci in the package tutorial_interfaces.
 typedef struct tutorial_interfaces__action__Fibonacci_Result
 {
-  rosidl_generator_c__int32__Sequence sequence;
+  rosidl_generator_c__float__Sequence sequence;
 } tutorial_interfaces__action__Fibonacci_Result;
 
 // Struct for a sequence of tutorial_interfaces__action__Fibonacci_Result.
@@ -67,7 +72,7 @@ typedef struct tutorial_interfaces__action__Fibonacci_Result__Sequence
 // Struct defined in action/Fibonacci in the package tutorial_interfaces.
 typedef struct tutorial_interfaces__action__Fibonacci_Feedback
 {
-  rosidl_generator_c__int32__Sequence partial_sequence;
+  rosidl_generator_c__float__Sequence partial_sequence;
 } tutorial_interfaces__action__Fibonacci_Feedback;
 
 // Struct for a sequence of tutorial_interfaces__action__Fibonacci_Feedback.

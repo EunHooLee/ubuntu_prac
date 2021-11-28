@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "setup.py", line 3, in <module>
+    from setuptools import setup
+  File "/home/leh/.local/lib/python3.6/site-packages/setuptools/__init__.py", line 17, in <module>
+    import setuptools.version
+  File "/home/leh/.local/lib/python3.6/site-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 77, in <module>
+    __import__('pkg_resources.extern.packaging.specifiers')
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/packaging/specifiers.py", line 333, in <module>
+    class Specifier(_IndividualSpecifier):
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/packaging/specifiers.py", line 428, in Specifier
+    _regex = re.compile(r"^\s*" + _regex_str + r"\s*$", re.VERBOSE | re.IGNORECASE)
+  File "/usr/lib/python3.6/re.py", line 233, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.6/re.py", line 301, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.6/sre_compile.py", line 566, in compile
+    code = _code(p, flags)
+  File "/usr/lib/python3.6/sre_compile.py", line 551, in _code
+    _compile(code, p.data, flags)
+  File "/usr/lib/python3.6/sre_compile.py", line 146, in _compile
+    _compile(code, p, (flags | add_flags) & ~del_flags)
+  File "/usr/lib/python3.6/sre_compile.py", line 187, in _compile
+    _compile(code, av, flags)
+  File "/usr/lib/python3.6/sre_compile.py", line 146, in _compile
+    _compile(code, p, (flags | add_flags) & ~del_flags)
+  File "/usr/lib/python3.6/sre_compile.py", line 134, in _compile
+    _compile(code, av[2], flags)
+  File "/usr/lib/python3.6/sre_compile.py", line 146, in _compile
+    _compile(code, p, (flags | add_flags) & ~del_flags)
+  File "/usr/lib/python3.6/enum.py", line 800, in __or__
+    result = self.__class__(self._value_ | self.__class__(other)._value_)
+  File "/usr/lib/python3.6/enum.py", line 293, in __call__
+    return cls.__new__(cls, value)
+  File "/usr/lib/python3.6/enum.py", line 521, in __new__
+    if type(value) is cls:
+KeyboardInterrupt

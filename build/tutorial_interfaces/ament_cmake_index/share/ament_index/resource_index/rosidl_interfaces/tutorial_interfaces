@@ -1,7 +1,15 @@
 action/Fibonacci.action
 action/Fibonacci.idl
+action/RobotCoordinate.action
+action/RobotCoordinate.idl
+msg/Encoder.idl
+msg/Encoder.msg
+msg/IMU.idl
+msg/IMU.msg
 msg/Num.idl
 msg/Num.msg
+msg/RPM.idl
+msg/RPM.msg
 msg/TwoIntegersArray.idl
 msg/TwoIntegersArray.msg
 srv/AddThreeInts.idl

@@ -6,13 +6,13 @@
 module tutorial_interfaces {
   module action {
     struct Fibonacci_Goal {
-      int32 order;
+      sequence<float> order;
     };
     struct Fibonacci_Result {
-      sequence<int32> sequence;
+      sequence<float> sequence;
     };
     struct Fibonacci_Feedback {
-      sequence<int32> partial_sequence;
+      sequence<float> partial_sequence;
     };
   };
 };

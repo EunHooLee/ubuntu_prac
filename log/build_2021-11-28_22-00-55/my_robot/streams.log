@@ -1,0 +1,65 @@
+[1.693s] Invoking command in '/home/leh/test_ws/src/my_robot': PYTHONPATH=/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_robot build --build-base /home/leh/test_ws/build/my_robot/build install --prefix /home/leh/test_ws/install/my_robot --record /home/leh/test_ws/build/my_robot/install.log --single-version-externally-managed
+[2.996s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.997s]   % (opt, underscore_opt)
+[2.998s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[2.998s]   % (opt, underscore_opt)
+[3.029s] Traceback (most recent call last):
+[3.030s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3021, in _dep_map
+[3.031s]     return self.__dep_map
+[3.032s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2818, in __getattr__
+[3.036s]     raise AttributeError(attr)
+[3.037s] AttributeError: _DistInfoDistribution__dep_map
+[3.038s] 
+[3.038s] During handling of the above exception, another exception occurred:
+[3.039s] 
+[3.040s] Traceback (most recent call last):
+[3.040s]   File "setup.py", line 29, in <module>
+[3.041s]     'coordinate = my_robot.robot_coordinate_action_client:main'
+[3.042s]   File "/home/leh/.local/lib/python3.6/site-packages/setuptools/__init__.py", line 159, in setup
+[3.050s]     return distutils.core.setup(**attrs)
+[3.050s]   File "/usr/lib/python3.6/distutils/core.py", line 108, in setup
+[3.051s]     _setup_distribution = dist = klass(attrs)
+[3.055s]   File "/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py", line 457, in __init__
+[3.055s]     for k, v in attrs.items()
+[3.056s]   File "/usr/lib/python3.6/distutils/dist.py", line 281, in __init__
+[3.059s]     self.finalize_options()
+[3.059s]   File "/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py", line 830, in finalize_options
+[3.060s]     for ep in sorted(loaded, key=by_order):
+[3.061s]   File "/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py", line 829, in <lambda>
+[3.061s]     loaded = map(lambda e: e.load(), filtered)
+[3.062s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2454, in load
+[3.063s]     self.require(*args, **kwargs)
+[3.064s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2476, in require
+[3.064s]     reqs = self.dist.requires(self.extras)
+[3.065s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2739, in requires
+[3.065s]     dm = self._dep_map
+[3.066s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3023, in _dep_map
+[3.067s]     self.__dep_map = self._compute_dependencies()
+[3.067s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3033, in _compute_dependencies
+[3.068s]     reqs.extend(parse_requirements(req))
+[3.069s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3089, in parse_requirements
+[3.069s]     yield Requirement(line)
+[3.070s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3099, in __init__
+[3.071s]     super(Requirement, self).__init__(requirement_string)
+[3.072s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/packaging/requirements.py", line 98, in __init__
+[3.072s]     req = REQUIREMENT.parseString(requirement_string)
+[3.073s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1644, in parseString
+[3.084s]     loc, tokens = self._parse( instring, 0 )
+[3.085s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[3.091s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[3.092s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 3417, in parseImpl
+[3.093s]     loc, exprtokens = e._parse( instring, loc, doActions )
+[3.094s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[3.095s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[3.095s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 3739, in parseImpl
+[3.096s]     return self.expr._parse( instring, loc, doActions, callPreParse=False )
+[3.097s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[3.098s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[3.098s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 3400, in parseImpl
+[3.099s]     loc, resultlist = self.exprs[0]._parse( instring, loc, doActions, callPreParse=False )
+[3.100s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1410, in _parseNoCache
+[3.100s]     retTokens = ParseResults( tokens, self.resultsName, asList=self.saveAsList, modal=self.modalResults )
+[3.101s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 366, in __new__
+[3.102s]     retobj = object.__new__(cls)
+[3.103s] KeyboardInterrupt
+[3.189s] Invoked command in '/home/leh/test_ws/src/my_robot' returned '1': PYTHONPATH=/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_robot build --build-base /home/leh/test_ws/build/my_robot/build install --prefix /home/leh/test_ws/install/my_robot --record /home/leh/test_ws/build/my_robot/install.log --single-version-externally-managed

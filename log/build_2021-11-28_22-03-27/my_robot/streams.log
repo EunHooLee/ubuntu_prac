@@ -1,0 +1,40 @@
+[1.614s] Invoking command in '/home/leh/test_ws/src/my_robot': PYTHONPATH=/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_robot build --build-base /home/leh/test_ws/build/my_robot/build install --prefix /home/leh/test_ws/install/my_robot --record /home/leh/test_ws/build/my_robot/install.log --single-version-externally-managed
+[2.068s] Traceback (most recent call last):
+[2.069s]   File "setup.py", line 3, in <module>
+[2.070s]     from setuptools import setup
+[2.070s]   File "/home/leh/.local/lib/python3.6/site-packages/setuptools/__init__.py", line 17, in <module>
+[2.071s]     import setuptools.version
+[2.073s]   File "/home/leh/.local/lib/python3.6/site-packages/setuptools/version.py", line 1, in <module>
+[2.074s]     import pkg_resources
+[2.075s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 77, in <module>
+[2.075s]     __import__('pkg_resources.extern.packaging.specifiers')
+[2.076s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/packaging/specifiers.py", line 333, in <module>
+[2.077s]     class Specifier(_IndividualSpecifier):
+[2.078s]   File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/packaging/specifiers.py", line 428, in Specifier
+[2.079s]     _regex = re.compile(r"^\s*" + _regex_str + r"\s*$", re.VERBOSE | re.IGNORECASE)
+[2.080s]   File "/usr/lib/python3.6/re.py", line 233, in compile
+[2.081s]     return _compile(pattern, flags)
+[2.081s]   File "/usr/lib/python3.6/re.py", line 301, in _compile
+[2.082s]     p = sre_compile.compile(pattern, flags)
+[2.083s]   File "/usr/lib/python3.6/sre_compile.py", line 566, in compile
+[2.084s]     code = _code(p, flags)
+[2.085s]   File "/usr/lib/python3.6/sre_compile.py", line 551, in _code
+[2.085s]     _compile(code, p.data, flags)
+[2.086s]   File "/usr/lib/python3.6/sre_compile.py", line 146, in _compile
+[2.087s]     _compile(code, p, (flags | add_flags) & ~del_flags)
+[2.088s]   File "/usr/lib/python3.6/sre_compile.py", line 187, in _compile
+[2.088s]     _compile(code, av, flags)
+[2.089s]   File "/usr/lib/python3.6/sre_compile.py", line 146, in _compile
+[2.090s]     _compile(code, p, (flags | add_flags) & ~del_flags)
+[2.091s]   File "/usr/lib/python3.6/sre_compile.py", line 134, in _compile
+[2.091s]     _compile(code, av[2], flags)
+[2.092s]   File "/usr/lib/python3.6/sre_compile.py", line 146, in _compile
+[2.093s]     _compile(code, p, (flags | add_flags) & ~del_flags)
+[2.094s]   File "/usr/lib/python3.6/enum.py", line 800, in __or__
+[2.094s]     result = self.__class__(self._value_ | self.__class__(other)._value_)
+[2.095s]   File "/usr/lib/python3.6/enum.py", line 293, in __call__
+[2.096s]     return cls.__new__(cls, value)
+[2.096s]   File "/usr/lib/python3.6/enum.py", line 521, in __new__
+[2.097s]     if type(value) is cls:
+[2.098s] KeyboardInterrupt
+[2.131s] Invoked command in '/home/leh/test_ws/src/my_robot' returned '1': PYTHONPATH=/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_robot build --build-base /home/leh/test_ws/build/my_robot/build install --prefix /home/leh/test_ws/install/my_robot --record /home/leh/test_ws/build/my_robot/install.log --single-version-externally-managed

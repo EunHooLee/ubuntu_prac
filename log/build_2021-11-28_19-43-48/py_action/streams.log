@@ -1,0 +1,28 @@
+[6.733s] Invoking command in '/home/leh/test_ws/src/py_action': AMENT_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces LD_LIBRARY_PATH=/home/leh/test_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_action build --build-base /home/leh/test_ws/build/py_action/build install --prefix /home/leh/test_ws/install/py_action --record /home/leh/test_ws/build/py_action/install.log --single-version-externally-managed
+[8.952s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[8.953s]   % (opt, underscore_opt)
+[8.960s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[8.961s]   % (opt, underscore_opt)
+[9.257s] running egg_info
+[9.265s] writing ../../build/py_action/py_action.egg-info/PKG-INFO
+[9.266s] writing dependency_links to ../../build/py_action/py_action.egg-info/dependency_links.txt
+[9.268s] writing entry points to ../../build/py_action/py_action.egg-info/entry_points.txt
+[9.269s] writing requirements to ../../build/py_action/py_action.egg-info/requires.txt
+[9.270s] writing top-level names to ../../build/py_action/py_action.egg-info/top_level.txt
+[9.283s] reading manifest file '../../build/py_action/py_action.egg-info/SOURCES.txt'
+[9.307s] writing manifest file '../../build/py_action/py_action.egg-info/SOURCES.txt'
+[9.307s] running build
+[9.308s] running build_py
+[9.309s] running install
+[9.310s] running install_lib
+[9.310s] /home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[9.311s]   setuptools.SetuptoolsDeprecationWarning,
+[9.312s] running install_data
+[9.312s] running install_egg_info
+[9.318s] removing '/home/leh/test_ws/install/py_action/lib/python3.6/site-packages/py_action-0.0.0-py3.6.egg-info' (and everything under it)
+[9.320s] Copying ../../build/py_action/py_action.egg-info to /home/leh/test_ws/install/py_action/lib/python3.6/site-packages/py_action-0.0.0-py3.6.egg-info
+[9.330s] running install_scripts
+[9.430s] Installing fibonacci_client script to /home/leh/test_ws/install/py_action/lib/py_action
+[9.431s] Installing fibonacci_server script to /home/leh/test_ws/install/py_action/lib/py_action
+[9.434s] writing list of installed files to '/home/leh/test_ws/build/py_action/install.log'
+[11.132s] Invoked command in '/home/leh/test_ws/src/py_action' returned '0': AMENT_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces LD_LIBRARY_PATH=/home/leh/test_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_action build --build-base /home/leh/test_ws/build/py_action/build install --prefix /home/leh/test_ws/install/py_action --record /home/leh/test_ws/build/py_action/install.log --single-version-externally-managed

@@ -1,0 +1,6 @@
+[console_scripts]
+control = my_robot.motor_control_function:main
+coordinate = my_robot.robot_coordinate_action_client:main
+encoder = my_robot.encoder_publisher_function:main
+imu = my_robot.IMU_publisher_function:main
+

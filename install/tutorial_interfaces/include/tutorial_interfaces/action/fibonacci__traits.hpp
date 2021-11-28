@@ -21,11 +21,11 @@ inline const char * data_type<tutorial_interfaces::action::Fibonacci_Goal>()
 
 template<>
 struct has_fixed_size<tutorial_interfaces::action::Fibonacci_Goal>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<tutorial_interfaces::action::Fibonacci_Goal>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 }  // namespace rosidl_generator_traits
 

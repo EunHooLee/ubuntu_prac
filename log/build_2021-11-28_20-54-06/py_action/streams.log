@@ -1,0 +1,31 @@
+[1.695s] Invoking command in '/home/leh/test_ws/src/py_action': PYTHONPATH=/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_action build --build-base /home/leh/test_ws/build/py_action/build install --prefix /home/leh/test_ws/install/py_action --record /home/leh/test_ws/build/py_action/install.log --single-version-externally-managed
+[2.995s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.996s]   % (opt, underscore_opt)
+[2.997s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[2.998s]   % (opt, underscore_opt)
+[3.183s] running egg_info
+[3.187s] writing ../../build/py_action/py_action.egg-info/PKG-INFO
+[3.188s] writing dependency_links to ../../build/py_action/py_action.egg-info/dependency_links.txt
+[3.189s] writing entry points to ../../build/py_action/py_action.egg-info/entry_points.txt
+[3.190s] writing requirements to ../../build/py_action/py_action.egg-info/requires.txt
+[3.191s] writing top-level names to ../../build/py_action/py_action.egg-info/top_level.txt
+[3.200s] reading manifest file '../../build/py_action/py_action.egg-info/SOURCES.txt'
+[3.217s] writing manifest file '../../build/py_action/py_action.egg-info/SOURCES.txt'
+[3.218s] running build
+[3.218s] running build_py
+[3.219s] copying py_action/fibonacci_action_server.py -> /home/leh/test_ws/build/py_action/build/lib/py_action
+[3.222s] running install
+[3.223s] /home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.225s]   setuptools.SetuptoolsDeprecationWarning,
+[3.227s] running install_lib
+[3.229s] copying /home/leh/test_ws/build/py_action/build/lib/py_action/fibonacci_action_server.py -> /home/leh/test_ws/install/py_action/lib/python3.6/site-packages/py_action
+[3.236s] byte-compiling /home/leh/test_ws/install/py_action/lib/python3.6/site-packages/py_action/fibonacci_action_server.py to fibonacci_action_server.cpython-36.pyc
+[3.239s] running install_data
+[3.242s] running install_egg_info
+[3.242s] removing '/home/leh/test_ws/install/py_action/lib/python3.6/site-packages/py_action-0.0.0-py3.6.egg-info' (and everything under it)
+[3.243s] Copying ../../build/py_action/py_action.egg-info to /home/leh/test_ws/install/py_action/lib/python3.6/site-packages/py_action-0.0.0-py3.6.egg-info
+[3.244s] running install_scripts
+[3.339s] Installing fibonacci_client script to /home/leh/test_ws/install/py_action/lib/py_action
+[3.340s] Installing fibonacci_server script to /home/leh/test_ws/install/py_action/lib/py_action
+[3.341s] writing list of installed files to '/home/leh/test_ws/build/py_action/install.log'
+[3.450s] Invoked command in '/home/leh/test_ws/src/py_action' returned '0': PYTHONPATH=/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_action build --build-base /home/leh/test_ws/build/py_action/build install --prefix /home/leh/test_ws/install/py_action --record /home/leh/test_ws/build/py_action/install.log --single-version-externally-managed

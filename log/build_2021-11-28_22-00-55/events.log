@@ -1,0 +1,107 @@
+[0.000000] (-) TimerEvent: {}
+[0.003595] (-) JobUnselected: {'identifier': 'py_action'}
+[0.004015] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.004231] (-) JobUnselected: {'identifier': 'py_sign_srvcli'}
+[0.004440] (-) JobUnselected: {'identifier': 'py_srvcli'}
+[0.004777] (-) JobUnselected: {'identifier': 'py_two_pub_one_sub'}
+[0.005453] (-) JobUnselected: {'identifier': 'tutorial_interfaces'}
+[0.005842] (my_robot) JobQueued: {'identifier': 'my_robot', 'dependencies': OrderedDict([('tutorial_interfaces', '/home/leh/test_ws/install/tutorial_interfaces')])}
+[0.007456] (my_robot) JobStarted: {'identifier': 'my_robot'}
+[0.099545] (-) TimerEvent: {}
+[0.200578] (-) TimerEvent: {}
+[0.301942] (-) TimerEvent: {}
+[0.402726] (-) TimerEvent: {}
+[0.503557] (-) TimerEvent: {}
+[0.604311] (-) TimerEvent: {}
+[0.705012] (-) TimerEvent: {}
+[0.805783] (-) TimerEvent: {}
+[0.906493] (-) TimerEvent: {}
+[1.009311] (-) TimerEvent: {}
+[1.110069] (-) TimerEvent: {}
+[1.210848] (-) TimerEvent: {}
+[1.311575] (-) TimerEvent: {}
+[1.412283] (-) TimerEvent: {}
+[1.513109] (-) TimerEvent: {}
+[1.613849] (-) TimerEvent: {}
+[1.697262] (my_robot) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/my_robot', 'build', '--build-base', '/home/leh/test_ws/build/my_robot/build', 'install', '--prefix', '/home/leh/test_ws/install/my_robot', '--record', '/home/leh/test_ws/build/my_robot/install.log', '--single-version-externally-managed'], 'cwd': '/home/leh/test_ws/src/my_robot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/leh', 'USER': 'leh', 'SSH_CLIENT': '14.47.121.124 55952 22', 'LC_TIME': 'ko_KR.UTF-8', 'GIT_ASKPASS': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass.sh', 'LD_LIBRARY_PATH': '/home/leh/test_ws/install/tutorial_interfaces/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib', 'SHLVL': '3', 'OLDPWD': '/home/leh/test_ws/src/my_robot/my_robot', 'HOME': '/home/leh', 'TERM_PROGRAM_VERSION': '1.62.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-fd75a385-d459-4d0d-be36-a4c8d92fdc18.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/extensions/git/dist/askpass-main.js', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ko_KR.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/leh/ros2_install', 'COLCON_PREFIX_PATH': '/home/leh/test_ws/install', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'leh', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '5', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/dashing/bin:/home/leh/.vscode-server/bin/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247/bin:/home/leh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4725f1253a.sock', 'AMENT_PREFIX_PATH': '/home/leh/test_ws/install/py_two_pub_one_sub:/home/leh/test_ws/install/py_srvcli:/home/leh/test_ws/install/py_sign_srvcli:/home/leh/test_ws/install/py_pubsub:/home/leh/test_ws/install/py_action:/home/leh/test_ws/install/my_robot:/home/leh/test_ws/install/tutorial_interfaces:/home/leh/test_ws/install/action_tutorial_interfaces:/opt/ros/dashing', 'LC_NAME': 'ko_KR.UTF-8', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/leh/test_ws/build/my_robot', 'SSH_CONNECTION': '14.47.121.124 55952 172.30.1.23 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LC_NUMERIC': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/leh/test_ws/install/tutorial_interfaces:/home/leh/test_ws/install/action_tutorial_interfaces'}, 'shell': False}
+[1.714233] (-) TimerEvent: {}
+[1.818223] (-) TimerEvent: {}
+[1.919072] (-) TimerEvent: {}
+[2.019788] (-) TimerEvent: {}
+[2.121418] (-) TimerEvent: {}
+[2.222173] (-) TimerEvent: {}
+[2.323001] (-) TimerEvent: {}
+[2.423754] (-) TimerEvent: {}
+[2.524513] (-) TimerEvent: {}
+[2.625284] (-) TimerEvent: {}
+[2.726081] (-) TimerEvent: {}
+[2.827650] (-) TimerEvent: {}
+[2.928418] (-) TimerEvent: {}
+[3.003209] (my_robot) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[3.004242] (my_robot) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[3.004841] (my_robot) StderrLine: {'line': b"/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[3.005396] (my_robot) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[3.028642] (-) TimerEvent: {}
+[3.036379] (my_robot) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[3.037144] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3021, in _dep_map\n'}
+[3.038064] (my_robot) StderrLine: {'line': b'    return self.__dep_map\n'}
+[3.038731] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2818, in __getattr__\n'}
+[3.043111] (my_robot) StderrLine: {'line': b'    raise AttributeError(attr)\n'}
+[3.043957] (my_robot) StderrLine: {'line': b'AttributeError: _DistInfoDistribution__dep_map\n'}
+[3.044682] (my_robot) StderrLine: {'line': b'\n'}
+[3.045344] (my_robot) StderrLine: {'line': b'During handling of the above exception, another exception occurred:\n'}
+[3.046058] (my_robot) StderrLine: {'line': b'\n'}
+[3.046681] (my_robot) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[3.047419] (my_robot) StderrLine: {'line': b'  File "setup.py", line 29, in <module>\n'}
+[3.048132] (my_robot) StderrLine: {'line': b"    'coordinate = my_robot.robot_coordinate_action_client:main'\n"}
+[3.048858] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/setuptools/__init__.py", line 159, in setup\n'}
+[3.050878] (my_robot) StderrLine: {'line': b'    return distutils.core.setup(**attrs)\n'}
+[3.057548] (my_robot) StderrLine: {'line': b'  File "/usr/lib/python3.6/distutils/core.py", line 108, in setup\n'}
+[3.058243] (my_robot) StderrLine: {'line': b'    _setup_distribution = dist = klass(attrs)\n'}
+[3.061309] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py", line 457, in __init__\n'}
+[3.062268] (my_robot) StderrLine: {'line': b'    for k, v in attrs.items()\n'}
+[3.062859] (my_robot) StderrLine: {'line': b'  File "/usr/lib/python3.6/distutils/dist.py", line 281, in __init__\n'}
+[3.065185] (my_robot) StderrLine: {'line': b'    self.finalize_options()\n'}
+[3.066387] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py", line 830, in finalize_options\n'}
+[3.067094] (my_robot) StderrLine: {'line': b'    for ep in sorted(loaded, key=by_order):\n'}
+[3.067759] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py", line 829, in <lambda>\n'}
+[3.068367] (my_robot) StderrLine: {'line': b'    loaded = map(lambda e: e.load(), filtered)\n'}
+[3.069199] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2454, in load\n'}
+[3.069847] (my_robot) StderrLine: {'line': b'    self.require(*args, **kwargs)\n'}
+[3.070512] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2476, in require\n'}
+[3.071534] (my_robot) StderrLine: {'line': b'    reqs = self.dist.requires(self.extras)\n'}
+[3.072137] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2739, in requires\n'}
+[3.072642] (my_robot) StderrLine: {'line': b'    dm = self._dep_map\n'}
+[3.073101] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3023, in _dep_map\n'}
+[3.073569] (my_robot) StderrLine: {'line': b'    self.__dep_map = self._compute_dependencies()\n'}
+[3.074383] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3033, in _compute_dependencies\n'}
+[3.075042] (my_robot) StderrLine: {'line': b'    reqs.extend(parse_requirements(req))\n'}
+[3.075630] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3089, in parse_requirements\n'}
+[3.076367] (my_robot) StderrLine: {'line': b'    yield Requirement(line)\n'}
+[3.077000] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3099, in __init__\n'}
+[3.077820] (my_robot) StderrLine: {'line': b'    super(Requirement, self).__init__(requirement_string)\n'}
+[3.078520] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/packaging/requirements.py", line 98, in __init__\n'}
+[3.079320] (my_robot) StderrLine: {'line': b'    req = REQUIREMENT.parseString(requirement_string)\n'}
+[3.079944] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1644, in parseString\n'}
+[3.091370] (my_robot) StderrLine: {'line': b'    loc, tokens = self._parse( instring, 0 )\n'}
+[3.092115] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1402, in _parseNoCache\n'}
+[3.092761] (my_robot) StderrLine: {'line': b'    loc,tokens = self.parseImpl( instring, preloc, doActions )\n'}
+[3.099041] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 3417, in parseImpl\n'}
+[3.100112] (my_robot) StderrLine: {'line': b'    loc, exprtokens = e._parse( instring, loc, doActions )\n'}
+[3.100869] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1402, in _parseNoCache\n'}
+[3.101570] (my_robot) StderrLine: {'line': b'    loc,tokens = self.parseImpl( instring, preloc, doActions )\n'}
+[3.102283] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 3739, in parseImpl\n'}
+[3.103025] (my_robot) StderrLine: {'line': b'    return self.expr._parse( instring, loc, doActions, callPreParse=False )\n'}
+[3.103798] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1402, in _parseNoCache\n'}
+[3.104557] (my_robot) StderrLine: {'line': b'    loc,tokens = self.parseImpl( instring, preloc, doActions )\n'}
+[3.105298] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 3400, in parseImpl\n'}
+[3.106107] (my_robot) StderrLine: {'line': b'    loc, resultlist = self.exprs[0]._parse( instring, loc, doActions, callPreParse=False )\n'}
+[3.106815] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1410, in _parseNoCache\n'}
+[3.107559] (my_robot) StderrLine: {'line': b'    retTokens = ParseResults( tokens, self.resultsName, asList=self.saveAsList, modal=self.modalResults )\n'}
+[3.108219] (my_robot) StderrLine: {'line': b'  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 366, in __new__\n'}
+[3.108909] (my_robot) StderrLine: {'line': b'    retobj = object.__new__(cls)\n'}
+[3.109615] (my_robot) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[3.128887] (-) TimerEvent: {}
+[3.195328] (my_robot) CommandEnded: {'returncode': 1}
+[3.197737] (my_robot) JobEnded: {'identifier': 'my_robot', 'rc': 'SIGINT'}
+[3.207663] (-) EventReactorShutdown: {}

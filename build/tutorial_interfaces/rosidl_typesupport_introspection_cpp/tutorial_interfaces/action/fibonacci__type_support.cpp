@@ -25,21 +25,48 @@ namespace action
 namespace rosidl_typesupport_introspection_cpp
 {
 
+size_t size_function__Fibonacci_Goal__order(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<float> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__Fibonacci_Goal__order(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<float> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__Fibonacci_Goal__order(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<float> *>(untyped_member);
+  return &member[index];
+}
+
+void resize_function__Fibonacci_Goal__order(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<float> *>(untyped_member);
+  member->resize(size);
+}
+
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Fibonacci_Goal_message_member_array[1] = {
   {
     "order",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(tutorial_interfaces::action::Fibonacci_Goal, order),  // bytes offset in struct
     nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    NULL  // resize(index) function pointer
+    size_function__Fibonacci_Goal__order,  // size() function pointer
+    get_const_function__Fibonacci_Goal__order,  // get_const(index) function pointer
+    get_function__Fibonacci_Goal__order,  // get(index) function pointer
+    resize_function__Fibonacci_Goal__order  // resize(index) function pointer
   }
 };
 
@@ -130,35 +157,35 @@ namespace rosidl_typesupport_introspection_cpp
 
 size_t size_function__Fibonacci_Result__sequence(const void * untyped_member)
 {
-  const auto * member = reinterpret_cast<const std::vector<int32_t> *>(untyped_member);
+  const auto * member = reinterpret_cast<const std::vector<float> *>(untyped_member);
   return member->size();
 }
 
 const void * get_const_function__Fibonacci_Result__sequence(const void * untyped_member, size_t index)
 {
   const auto & member =
-    *reinterpret_cast<const std::vector<int32_t> *>(untyped_member);
+    *reinterpret_cast<const std::vector<float> *>(untyped_member);
   return &member[index];
 }
 
 void * get_function__Fibonacci_Result__sequence(void * untyped_member, size_t index)
 {
   auto & member =
-    *reinterpret_cast<std::vector<int32_t> *>(untyped_member);
+    *reinterpret_cast<std::vector<float> *>(untyped_member);
   return &member[index];
 }
 
 void resize_function__Fibonacci_Result__sequence(void * untyped_member, size_t size)
 {
   auto * member =
-    reinterpret_cast<std::vector<int32_t> *>(untyped_member);
+    reinterpret_cast<std::vector<float> *>(untyped_member);
   member->resize(size);
 }
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Fibonacci_Result_message_member_array[1] = {
   {
     "sequence",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array
@@ -260,35 +287,35 @@ namespace rosidl_typesupport_introspection_cpp
 
 size_t size_function__Fibonacci_Feedback__partial_sequence(const void * untyped_member)
 {
-  const auto * member = reinterpret_cast<const std::vector<int32_t> *>(untyped_member);
+  const auto * member = reinterpret_cast<const std::vector<float> *>(untyped_member);
   return member->size();
 }
 
 const void * get_const_function__Fibonacci_Feedback__partial_sequence(const void * untyped_member, size_t index)
 {
   const auto & member =
-    *reinterpret_cast<const std::vector<int32_t> *>(untyped_member);
+    *reinterpret_cast<const std::vector<float> *>(untyped_member);
   return &member[index];
 }
 
 void * get_function__Fibonacci_Feedback__partial_sequence(void * untyped_member, size_t index)
 {
   auto & member =
-    *reinterpret_cast<std::vector<int32_t> *>(untyped_member);
+    *reinterpret_cast<std::vector<float> *>(untyped_member);
   return &member[index];
 }
 
 void resize_function__Fibonacci_Feedback__partial_sequence(void * untyped_member, size_t size)
 {
   auto * member =
-    reinterpret_cast<std::vector<int32_t> *>(untyped_member);
+    reinterpret_cast<std::vector<float> *>(untyped_member);
   member->resize(size);
 }
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Fibonacci_Feedback_message_member_array[1] = {
   {
     "partial_sequence",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array

@@ -1,5 +1,9 @@
 /home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Num.idl
 /home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/TwoIntegersArray.idl
+/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/IMU.idl
+/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/Encoder.idl
+/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:msg/RPM.idl
 /home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl
 /home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:srv/JudgeSign.idl
 /home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:action/Fibonacci.idl
+/home/leh/test_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces:action/RobotCoordinate.idl

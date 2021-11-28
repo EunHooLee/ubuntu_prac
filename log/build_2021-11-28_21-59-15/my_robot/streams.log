@@ -1,0 +1,33 @@
+[1.697s] Invoking command in '/home/leh/test_ws/src/my_robot': PYTHONPATH=/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_robot build --build-base /home/leh/test_ws/build/my_robot/build install --prefix /home/leh/test_ws/install/my_robot --record /home/leh/test_ws/build/my_robot/install.log --single-version-externally-managed
+[3.004s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[3.004s]   % (opt, underscore_opt)
+[3.007s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[3.007s]   % (opt, underscore_opt)
+[3.190s] running egg_info
+[3.194s] writing ../../build/my_robot/my_robot.egg-info/PKG-INFO
+[3.195s] writing dependency_links to ../../build/my_robot/my_robot.egg-info/dependency_links.txt
+[3.196s] writing entry points to ../../build/my_robot/my_robot.egg-info/entry_points.txt
+[3.196s] writing requirements to ../../build/my_robot/my_robot.egg-info/requires.txt
+[3.197s] writing top-level names to ../../build/my_robot/my_robot.egg-info/top_level.txt
+[3.206s] reading manifest file '../../build/my_robot/my_robot.egg-info/SOURCES.txt'
+[3.213s] writing manifest file '../../build/my_robot/my_robot.egg-info/SOURCES.txt'
+[3.215s] running build
+[3.215s] running build_py
+[3.217s] copying my_robot/robot_coordinate_action_client.py -> /home/leh/test_ws/build/my_robot/build/lib/my_robot
+[3.217s] running install
+[3.218s] /home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.219s]   setuptools.SetuptoolsDeprecationWarning,
+[3.220s] running install_lib
+[3.223s] copying /home/leh/test_ws/build/my_robot/build/lib/my_robot/robot_coordinate_action_client.py -> /home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot
+[3.226s] byte-compiling /home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot/robot_coordinate_action_client.py to robot_coordinate_action_client.cpython-36.pyc
+[3.230s] running install_data
+[3.232s] running install_egg_info
+[3.248s] removing '/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot-0.0.0-py3.6.egg-info' (and everything under it)
+[3.255s] Copying ../../build/my_robot/my_robot.egg-info to /home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot-0.0.0-py3.6.egg-info
+[3.256s] running install_scripts
+[3.348s] Installing control script to /home/leh/test_ws/install/my_robot/lib/my_robot
+[3.349s] Installing coordinate script to /home/leh/test_ws/install/my_robot/lib/my_robot
+[3.350s] Installing encoder script to /home/leh/test_ws/install/my_robot/lib/my_robot
+[3.351s] Installing imu script to /home/leh/test_ws/install/my_robot/lib/my_robot
+[3.352s] writing list of installed files to '/home/leh/test_ws/build/my_robot/install.log'
+[3.465s] Invoked command in '/home/leh/test_ws/src/my_robot' returned '0': PYTHONPATH=/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_robot build --build-base /home/leh/test_ws/build/my_robot/build install --prefix /home/leh/test_ws/install/my_robot --record /home/leh/test_ws/build/my_robot/install.log --single-version-externally-managed

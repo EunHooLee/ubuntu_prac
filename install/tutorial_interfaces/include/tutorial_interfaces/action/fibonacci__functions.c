@@ -9,6 +9,10 @@
 #include <string.h>
 
 
+// Include directives for member types
+// Member `order`
+#include "rosidl_generator_c/primitives_sequence_functions.h"
+
 bool
 tutorial_interfaces__action__Fibonacci_Goal__init(tutorial_interfaces__action__Fibonacci_Goal * msg)
 {
@@ -16,6 +20,10 @@ tutorial_interfaces__action__Fibonacci_Goal__init(tutorial_interfaces__action__F
     return false;
   }
   // order
+  if (!rosidl_generator_c__float__Sequence__init(&msg->order, 0)) {
+    tutorial_interfaces__action__Fibonacci_Goal__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -26,6 +34,7 @@ tutorial_interfaces__action__Fibonacci_Goal__fini(tutorial_interfaces__action__F
     return;
   }
   // order
+  rosidl_generator_c__float__Sequence__fini(&msg->order);
 }
 
 tutorial_interfaces__action__Fibonacci_Goal *
@@ -140,7 +149,8 @@ tutorial_interfaces__action__Fibonacci_Goal__Sequence__destroy(tutorial_interfac
 
 // Include directives for member types
 // Member `sequence`
-#include "rosidl_generator_c/primitives_sequence_functions.h"
+// already included above
+// #include "rosidl_generator_c/primitives_sequence_functions.h"
 
 bool
 tutorial_interfaces__action__Fibonacci_Result__init(tutorial_interfaces__action__Fibonacci_Result * msg)
@@ -149,7 +159,7 @@ tutorial_interfaces__action__Fibonacci_Result__init(tutorial_interfaces__action_
     return false;
   }
   // sequence
-  if (!rosidl_generator_c__int32__Sequence__init(&msg->sequence, 0)) {
+  if (!rosidl_generator_c__float__Sequence__init(&msg->sequence, 0)) {
     tutorial_interfaces__action__Fibonacci_Result__fini(msg);
     return false;
   }
@@ -163,7 +173,7 @@ tutorial_interfaces__action__Fibonacci_Result__fini(tutorial_interfaces__action_
     return;
   }
   // sequence
-  rosidl_generator_c__int32__Sequence__fini(&msg->sequence);
+  rosidl_generator_c__float__Sequence__fini(&msg->sequence);
 }
 
 tutorial_interfaces__action__Fibonacci_Result *
@@ -288,7 +298,7 @@ tutorial_interfaces__action__Fibonacci_Feedback__init(tutorial_interfaces__actio
     return false;
   }
   // partial_sequence
-  if (!rosidl_generator_c__int32__Sequence__init(&msg->partial_sequence, 0)) {
+  if (!rosidl_generator_c__float__Sequence__init(&msg->partial_sequence, 0)) {
     tutorial_interfaces__action__Fibonacci_Feedback__fini(msg);
     return false;
   }
@@ -302,7 +312,7 @@ tutorial_interfaces__action__Fibonacci_Feedback__fini(tutorial_interfaces__actio
     return;
   }
   // partial_sequence
-  rosidl_generator_c__int32__Sequence__fini(&msg->partial_sequence);
+  rosidl_generator_c__float__Sequence__fini(&msg->partial_sequence);
 }
 
 tutorial_interfaces__action__Fibonacci_Feedback *

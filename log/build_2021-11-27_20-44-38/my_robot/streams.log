@@ -1,0 +1,52 @@
+[6.447s] Invoking command in '/home/leh/test_ws/src/my_robot': AMENT_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces LD_LIBRARY_PATH=/home/leh/test_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_robot build --build-base /home/leh/test_ws/build/my_robot/build install --prefix /home/leh/test_ws/install/my_robot --record /home/leh/test_ws/build/my_robot/install.log --single-version-externally-managed
+[8.123s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[8.123s]   % (opt, underscore_opt)
+[8.124s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[8.125s]   % (opt, underscore_opt)
+[8.387s] running egg_info
+[8.390s] creating ../../build/my_robot/my_robot.egg-info
+[8.391s] writing ../../build/my_robot/my_robot.egg-info/PKG-INFO
+[8.392s] writing dependency_links to ../../build/my_robot/my_robot.egg-info/dependency_links.txt
+[8.392s] writing entry points to ../../build/my_robot/my_robot.egg-info/entry_points.txt
+[8.393s] writing requirements to ../../build/my_robot/my_robot.egg-info/requires.txt
+[8.394s] writing top-level names to ../../build/my_robot/my_robot.egg-info/top_level.txt
+[8.396s] writing manifest file '../../build/my_robot/my_robot.egg-info/SOURCES.txt'
+[8.418s] reading manifest file '../../build/my_robot/my_robot.egg-info/SOURCES.txt'
+[8.436s] writing manifest file '../../build/my_robot/my_robot.egg-info/SOURCES.txt'
+[8.437s] running build
+[8.437s] running build_py
+[8.438s] creating /home/leh/test_ws/build/my_robot/build
+[8.439s] creating /home/leh/test_ws/build/my_robot/build/lib
+[8.439s] creating /home/leh/test_ws/build/my_robot/build/lib/my_robot
+[8.440s] copying my_robot/__init__.py -> /home/leh/test_ws/build/my_robot/build/lib/my_robot
+[8.441s] copying my_robot/encoder_publisher_function.py -> /home/leh/test_ws/build/my_robot/build/lib/my_robot
+[8.442s] copying my_robot/motor_control_function.py -> /home/leh/test_ws/build/my_robot/build/lib/my_robot
+[8.442s] copying my_robot/IMU_publisher_function.py -> /home/leh/test_ws/build/my_robot/build/lib/my_robot
+[8.443s] running install
+[8.454s] /home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[8.455s]   setuptools.SetuptoolsDeprecationWarning,
+[8.456s] running install_lib
+[8.463s] creating /home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot
+[8.464s] copying /home/leh/test_ws/build/my_robot/build/lib/my_robot/__init__.py -> /home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot
+[8.465s] copying /home/leh/test_ws/build/my_robot/build/lib/my_robot/encoder_publisher_function.py -> /home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot
+[8.465s] copying /home/leh/test_ws/build/my_robot/build/lib/my_robot/motor_control_function.py -> /home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot
+[8.466s] copying /home/leh/test_ws/build/my_robot/build/lib/my_robot/IMU_publisher_function.py -> /home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot
+[8.467s] byte-compiling /home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot/__init__.py to __init__.cpython-36.pyc
+[8.468s] byte-compiling /home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot/encoder_publisher_function.py to encoder_publisher_function.cpython-36.pyc
+[8.470s] byte-compiling /home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot/motor_control_function.py to motor_control_function.cpython-36.pyc
+[8.472s] byte-compiling /home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot/IMU_publisher_function.py to IMU_publisher_function.cpython-36.pyc
+[8.473s] running install_data
+[8.488s] creating /home/leh/test_ws/install/my_robot/share/ament_index
+[8.489s] creating /home/leh/test_ws/install/my_robot/share/ament_index/resource_index
+[8.489s] creating /home/leh/test_ws/install/my_robot/share/ament_index/resource_index/packages
+[8.490s] copying resource/my_robot -> /home/leh/test_ws/install/my_robot/share/ament_index/resource_index/packages
+[8.491s] copying package.xml -> /home/leh/test_ws/install/my_robot/share/my_robot
+[8.491s] copying launch/sensors.launch.py -> /home/leh/test_ws/install/my_robot/share/my_robot
+[8.492s] running install_egg_info
+[8.506s] Copying ../../build/my_robot/my_robot.egg-info to /home/leh/test_ws/install/my_robot/lib/python3.6/site-packages/my_robot-0.0.0-py3.6.egg-info
+[8.512s] running install_scripts
+[8.730s] Installing control script to /home/leh/test_ws/install/my_robot/lib/my_robot
+[8.731s] Installing encoder script to /home/leh/test_ws/install/my_robot/lib/my_robot
+[8.731s] Installing imu script to /home/leh/test_ws/install/my_robot/lib/my_robot
+[8.732s] writing list of installed files to '/home/leh/test_ws/build/my_robot/install.log'
+[9.118s] Invoked command in '/home/leh/test_ws/src/my_robot' returned '0': AMENT_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leh/test_ws/install/tutorial_interfaces LD_LIBRARY_PATH=/home/leh/test_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_robot build --build-base /home/leh/test_ws/build/my_robot/build install --prefix /home/leh/test_ws/install/my_robot --record /home/leh/test_ws/build/my_robot/install.log --single-version-externally-managed

@@ -1,0 +1,28 @@
+[6.149s] Invoking command in '/home/leh/test_ws/src/py_action': PYTHONPATH=/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_action build --build-base /home/leh/test_ws/build/py_action/build install --prefix /home/leh/test_ws/install/py_action --record /home/leh/test_ws/build/py_action/install.log --single-version-externally-managed
+[7.655s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[7.656s]   % (opt, underscore_opt)
+[7.659s] /home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[7.659s]   % (opt, underscore_opt)
+[7.893s] running egg_info
+[7.902s] writing ../../build/py_action/py_action.egg-info/PKG-INFO
+[7.902s] writing dependency_links to ../../build/py_action/py_action.egg-info/dependency_links.txt
+[7.906s] writing entry points to ../../build/py_action/py_action.egg-info/entry_points.txt
+[7.907s] writing requirements to ../../build/py_action/py_action.egg-info/requires.txt
+[7.915s] writing top-level names to ../../build/py_action/py_action.egg-info/top_level.txt
+[7.934s] reading manifest file '../../build/py_action/py_action.egg-info/SOURCES.txt'
+[7.936s] writing manifest file '../../build/py_action/py_action.egg-info/SOURCES.txt'
+[7.937s] running build
+[7.938s] running build_py
+[7.938s] running install
+[7.939s] /home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[7.940s]   setuptools.SetuptoolsDeprecationWarning,
+[7.951s] running install_lib
+[7.957s] running install_data
+[7.960s] running install_egg_info
+[7.981s] removing '/home/leh/test_ws/install/py_action/lib/python3.6/site-packages/py_action-0.0.0-py3.6.egg-info' (and everything under it)
+[7.982s] Copying ../../build/py_action/py_action.egg-info to /home/leh/test_ws/install/py_action/lib/python3.6/site-packages/py_action-0.0.0-py3.6.egg-info
+[7.989s] running install_scripts
+[8.115s] Installing fibonacci_client script to /home/leh/test_ws/install/py_action/lib/py_action
+[8.116s] Installing fibonacci_server script to /home/leh/test_ws/install/py_action/lib/py_action
+[8.117s] writing list of installed files to '/home/leh/test_ws/build/py_action/install.log'
+[8.323s] Invoked command in '/home/leh/test_ws/src/py_action' returned '0': PYTHONPATH=/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/tutorial_interfaces/lib/python3.6/site-packages:/home/leh/test_ws/install/py_two_pub_one_sub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_sign_srvcli/lib/python3.6/site-packages:/home/leh/test_ws/install/py_pubsub/lib/python3.6/site-packages:/home/leh/test_ws/install/py_action/lib/python3.6/site-packages:/home/leh/test_ws/install/my_robot/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_action build --build-base /home/leh/test_ws/build/py_action/build install --prefix /home/leh/test_ws/install/py_action --record /home/leh/test_ws/build/py_action/install.log --single-version-externally-managed

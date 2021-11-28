@@ -11,6 +11,10 @@
 #include "tutorial_interfaces/action/fibonacci__struct.h"
 
 
+// Include directives for member types
+// Member `order`
+#include "rosidl_generator_c/primitives_sequence_functions.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -19,10 +23,10 @@ extern "C"
 static rosidl_typesupport_introspection_c__MessageMember Fibonacci_Goal__rosidl_typesupport_introspection_c__Fibonacci_Goal_message_member_array[1] = {
   {
     "order",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(tutorial_interfaces__action__Fibonacci_Goal, order),  // bytes offset in struct
@@ -81,7 +85,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 
 // Include directives for member types
 // Member `sequence`
-#include "rosidl_generator_c/primitives_sequence_functions.h"
+// already included above
+// #include "rosidl_generator_c/primitives_sequence_functions.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -91,7 +96,7 @@ extern "C"
 static rosidl_typesupport_introspection_c__MessageMember Fibonacci_Result__rosidl_typesupport_introspection_c__Fibonacci_Result_message_member_array[1] = {
   {
     "sequence",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array
@@ -164,7 +169,7 @@ extern "C"
 static rosidl_typesupport_introspection_c__MessageMember Fibonacci_Feedback__rosidl_typesupport_introspection_c__Fibonacci_Feedback_message_member_array[1] = {
   {
     "partial_sequence",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array

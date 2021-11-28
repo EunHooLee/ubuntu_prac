@@ -1,0 +1,7 @@
+float32[] x_coordinate_order
+float32[] y_coordinate_order
+float32[] z_coordinate_order 
+---
+float32 rpm_result
+---
+float32 rpm_feedback

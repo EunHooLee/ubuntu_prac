@@ -41,10 +41,11 @@ class FibonacciActionClient(Node):
 
 def main(args = None):
     rclpy.init(args=args)
-
+    #goal = [[0.0],[1.0],[2.0],[3.0],[4.0],[5.0]]
+    goal = [0.0,1.0,2.0,3.0,4.0,5.0]
     action_client = FibonacciActionClient()
 
-    future = action_client.send_goal(10)
+    future = action_client.send_goal(goal)
 
     rclpy.spin(action_client)
 

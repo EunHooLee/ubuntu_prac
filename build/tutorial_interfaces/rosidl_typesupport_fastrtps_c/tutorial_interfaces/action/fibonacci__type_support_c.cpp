@@ -34,6 +34,8 @@ extern "C"
 {
 #endif
 
+#include "rosidl_generator_c/primitives_sequence.h"  // order
+#include "rosidl_generator_c/primitives_sequence_functions.h"  // order
 
 // forward declare type support functions
 
@@ -51,7 +53,10 @@ static bool _Fibonacci_Goal__cdr_serialize(
   const _Fibonacci_Goal__ros_msg_type * ros_message = static_cast<const _Fibonacci_Goal__ros_msg_type *>(untyped_ros_message);
   // Field name: order
   {
-    cdr << ros_message->order;
+    size_t size = ros_message->order.size;
+    auto array_ptr = ros_message->order.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
   }
 
   return true;
@@ -68,7 +73,17 @@ static bool _Fibonacci_Goal__cdr_deserialize(
   _Fibonacci_Goal__ros_msg_type * ros_message = static_cast<_Fibonacci_Goal__ros_msg_type *>(untyped_ros_message);
   // Field name: order
   {
-    cdr >> ros_message->order;
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->order.data) {
+      rosidl_generator_c__float__Sequence__fini(&ros_message->order);
+    }
+    if (!rosidl_generator_c__float__Sequence__init(&ros_message->order, size)) {
+      return "failed to create array for field 'order'";
+    }
+    auto array_ptr = ros_message->order.data;
+    cdr.deserializeArray(array_ptr, size);
   }
 
   return true;
@@ -90,8 +105,13 @@ size_t get_serialized_size_tutorial_interfaces__action__Fibonacci_Goal(
 
   // field.name order
   {
-    size_t item_size = sizeof(ros_message->order);
-    current_alignment += item_size +
+    size_t array_size = ros_message->order.size;
+    auto array_ptr = ros_message->order.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -120,7 +140,10 @@ size_t max_serialized_size_tutorial_interfaces__action__Fibonacci_Goal(
 
   // member: order
   {
-    size_t array_size = 1;
+    size_t array_size = 0;
+    full_bounded = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
@@ -200,8 +223,10 @@ extern "C"
 {
 #endif
 
-#include "rosidl_generator_c/primitives_sequence.h"  // sequence
-#include "rosidl_generator_c/primitives_sequence_functions.h"  // sequence
+// already included above
+// #include "rosidl_generator_c/primitives_sequence.h"  // sequence
+// already included above
+// #include "rosidl_generator_c/primitives_sequence_functions.h"  // sequence
 
 // forward declare type support functions
 
@@ -243,9 +268,9 @@ static bool _Fibonacci_Result__cdr_deserialize(
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
     if (ros_message->sequence.data) {
-      rosidl_generator_c__int32__Sequence__fini(&ros_message->sequence);
+      rosidl_generator_c__float__Sequence__fini(&ros_message->sequence);
     }
-    if (!rosidl_generator_c__int32__Sequence__init(&ros_message->sequence, size)) {
+    if (!rosidl_generator_c__float__Sequence__init(&ros_message->sequence, size)) {
       return "failed to create array for field 'sequence'";
     }
     auto array_ptr = ros_message->sequence.data;
@@ -434,9 +459,9 @@ static bool _Fibonacci_Feedback__cdr_deserialize(
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
     if (ros_message->partial_sequence.data) {
-      rosidl_generator_c__int32__Sequence__fini(&ros_message->partial_sequence);
+      rosidl_generator_c__float__Sequence__fini(&ros_message->partial_sequence);
     }
-    if (!rosidl_generator_c__int32__Sequence__init(&ros_message->partial_sequence, size)) {
+    if (!rosidl_generator_c__float__Sequence__init(&ros_message->partial_sequence, size)) {
       return "failed to create array for field 'partial_sequence'";
     }
     auto array_ptr = ros_message->partial_sequence.data;

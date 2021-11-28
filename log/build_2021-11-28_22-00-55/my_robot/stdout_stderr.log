@@ -1,0 +1,63 @@
+/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  % (opt, underscore_opt)
+/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+  % (opt, underscore_opt)
+Traceback (most recent call last):
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3021, in _dep_map
+    return self.__dep_map
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2818, in __getattr__
+    raise AttributeError(attr)
+AttributeError: _DistInfoDistribution__dep_map
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "setup.py", line 29, in <module>
+    'coordinate = my_robot.robot_coordinate_action_client:main'
+  File "/home/leh/.local/lib/python3.6/site-packages/setuptools/__init__.py", line 159, in setup
+    return distutils.core.setup(**attrs)
+  File "/usr/lib/python3.6/distutils/core.py", line 108, in setup
+    _setup_distribution = dist = klass(attrs)
+  File "/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py", line 457, in __init__
+    for k, v in attrs.items()
+  File "/usr/lib/python3.6/distutils/dist.py", line 281, in __init__
+    self.finalize_options()
+  File "/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py", line 830, in finalize_options
+    for ep in sorted(loaded, key=by_order):
+  File "/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py", line 829, in <lambda>
+    loaded = map(lambda e: e.load(), filtered)
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2454, in load
+    self.require(*args, **kwargs)
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2476, in require
+    reqs = self.dist.requires(self.extras)
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2739, in requires
+    dm = self._dep_map
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3023, in _dep_map
+    self.__dep_map = self._compute_dependencies()
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3033, in _compute_dependencies
+    reqs.extend(parse_requirements(req))
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3089, in parse_requirements
+    yield Requirement(line)
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/__init__.py", line 3099, in __init__
+    super(Requirement, self).__init__(requirement_string)
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/packaging/requirements.py", line 98, in __init__
+    req = REQUIREMENT.parseString(requirement_string)
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1644, in parseString
+    loc, tokens = self._parse( instring, 0 )
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1402, in _parseNoCache
+    loc,tokens = self.parseImpl( instring, preloc, doActions )
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 3417, in parseImpl
+    loc, exprtokens = e._parse( instring, loc, doActions )
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1402, in _parseNoCache
+    loc,tokens = self.parseImpl( instring, preloc, doActions )
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 3739, in parseImpl
+    return self.expr._parse( instring, loc, doActions, callPreParse=False )
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1402, in _parseNoCache
+    loc,tokens = self.parseImpl( instring, preloc, doActions )
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 3400, in parseImpl
+    loc, resultlist = self.exprs[0]._parse( instring, loc, doActions, callPreParse=False )
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 1410, in _parseNoCache
+    retTokens = ParseResults( tokens, self.resultsName, asList=self.saveAsList, modal=self.modalResults )
+  File "/home/leh/.local/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py", line 366, in __new__
+    retobj = object.__new__(cls)
+KeyboardInterrupt

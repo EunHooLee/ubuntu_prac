@@ -3,8 +3,12 @@
   "non_idl_tuples": [
     "/home/leh/test_ws/src/tutorial_interfaces:msg/Num.msg",
     "/home/leh/test_ws/src/tutorial_interfaces:msg/TwoIntegersArray.msg",
+    "/home/leh/test_ws/src/tutorial_interfaces:msg/IMU.msg",
+    "/home/leh/test_ws/src/tutorial_interfaces:msg/Encoder.msg",
+    "/home/leh/test_ws/src/tutorial_interfaces:msg/RPM.msg",
     "/home/leh/test_ws/src/tutorial_interfaces:srv/AddThreeInts.srv",
     "/home/leh/test_ws/src/tutorial_interfaces:srv/JudgeSign.srv",
-    "/home/leh/test_ws/src/tutorial_interfaces:action/Fibonacci.action"
+    "/home/leh/test_ws/src/tutorial_interfaces:action/Fibonacci.action",
+    "/home/leh/test_ws/src/tutorial_interfaces:action/RobotCoordinate.action"
   ]
 }

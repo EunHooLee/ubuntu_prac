@@ -44,31 +44,23 @@ struct Fibonacci_Goal_
 
   explicit Fibonacci_Goal_(rosidl_generator_cpp::MessageInitialization _init = rosidl_generator_cpp::MessageInitialization::ALL)
   {
-    if (rosidl_generator_cpp::MessageInitialization::ALL == _init ||
-      rosidl_generator_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->order = 0l;
-    }
+    (void)_init;
   }
 
   explicit Fibonacci_Goal_(const ContainerAllocator & _alloc, rosidl_generator_cpp::MessageInitialization _init = rosidl_generator_cpp::MessageInitialization::ALL)
   {
+    (void)_init;
     (void)_alloc;
-    if (rosidl_generator_cpp::MessageInitialization::ALL == _init ||
-      rosidl_generator_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->order = 0l;
-    }
   }
 
   // field types and members
   using _order_type =
-    int32_t;
+    std::vector<float, typename ContainerAllocator::template rebind<float>::other>;
   _order_type order;
 
   // setters for named parameter idiom
   Type & set__order(
-    const int32_t & _arg)
+    const std::vector<float, typename ContainerAllocator::template rebind<float>::other> & _arg)
   {
     this->order = _arg;
     return *this;
@@ -179,12 +171,12 @@ struct Fibonacci_Result_
 
   // field types and members
   using _sequence_type =
-    std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other>;
+    std::vector<float, typename ContainerAllocator::template rebind<float>::other>;
   _sequence_type sequence;
 
   // setters for named parameter idiom
   Type & set__sequence(
-    const std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other> & _arg)
+    const std::vector<float, typename ContainerAllocator::template rebind<float>::other> & _arg)
   {
     this->sequence = _arg;
     return *this;
@@ -295,12 +287,12 @@ struct Fibonacci_Feedback_
 
   // field types and members
   using _partial_sequence_type =
-    std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other>;
+    std::vector<float, typename ContainerAllocator::template rebind<float>::other>;
   _partial_sequence_type partial_sequence;
 
   // setters for named parameter idiom
   Type & set__partial_sequence(
-    const std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other> & _arg)
+    const std::vector<float, typename ContainerAllocator::template rebind<float>::other> & _arg)
   {
     this->partial_sequence = _arg;
     return *this;

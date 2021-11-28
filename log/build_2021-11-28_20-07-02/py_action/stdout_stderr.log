@@ -1,0 +1,29 @@
+/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  % (opt, underscore_opt)
+/home/leh/.local/lib/python3.6/site-packages/setuptools/dist.py:720: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+  % (opt, underscore_opt)
+running egg_info
+writing ../../build/py_action/py_action.egg-info/PKG-INFO
+writing dependency_links to ../../build/py_action/py_action.egg-info/dependency_links.txt
+writing entry points to ../../build/py_action/py_action.egg-info/entry_points.txt
+writing requirements to ../../build/py_action/py_action.egg-info/requires.txt
+writing top-level names to ../../build/py_action/py_action.egg-info/top_level.txt
+reading manifest file '../../build/py_action/py_action.egg-info/SOURCES.txt'
+writing manifest file '../../build/py_action/py_action.egg-info/SOURCES.txt'
+running build
+running build_py
+/home/leh/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  setuptools.SetuptoolsDeprecationWarning,
+copying py_action/fibonacci_action_client.py -> /home/leh/test_ws/build/py_action/build/lib/py_action
+running install
+running install_lib
+copying /home/leh/test_ws/build/py_action/build/lib/py_action/fibonacci_action_client.py -> /home/leh/test_ws/install/py_action/lib/python3.6/site-packages/py_action
+byte-compiling /home/leh/test_ws/install/py_action/lib/python3.6/site-packages/py_action/fibonacci_action_client.py to fibonacci_action_client.cpython-36.pyc
+running install_data
+running install_egg_info
+removing '/home/leh/test_ws/install/py_action/lib/python3.6/site-packages/py_action-0.0.0-py3.6.egg-info' (and everything under it)
+Copying ../../build/py_action/py_action.egg-info to /home/leh/test_ws/install/py_action/lib/python3.6/site-packages/py_action-0.0.0-py3.6.egg-info
+running install_scripts
+Installing fibonacci_client script to /home/leh/test_ws/install/py_action/lib/py_action
+Installing fibonacci_server script to /home/leh/test_ws/install/py_action/lib/py_action
+writing list of installed files to '/home/leh/test_ws/build/py_action/install.log'

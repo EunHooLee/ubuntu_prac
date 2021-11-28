@@ -5,6 +5,9 @@
 
 # Import statements for member types
 
+# Member 'order'
+import array  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -57,18 +60,18 @@ class Fibonacci_Goal(metaclass=Metaclass_Fibonacci_Goal):
     ]
 
     _fields_and_field_types = {
-        'order': 'int32',
+        'order': 'sequence<float>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.order = kwargs.get('order', int())
+        self.order = array.array('f', kwargs.get('order', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -115,19 +118,33 @@ class Fibonacci_Goal(metaclass=Metaclass_Fibonacci_Goal):
 
     @order.setter
     def order(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'order' array.array() must have the type code of 'f'"
+            self._order = value
+            return
         if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
             assert \
-                isinstance(value, int), \
-                "The 'order' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'order' field must be an integer in [-2147483648, 2147483647]"
-        self._order = value
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 True), \
+                "The 'order' field must be a set or sequence and each value of type 'float'"
+        self._order = array.array('f', value)
 
 
 # Import statements for member types
 
 # Member 'sequence'
-import array  # noqa: E402, I100
+# already imported above
+# import array
 
 # already imported above
 # import rosidl_parser.definition
@@ -182,18 +199,18 @@ class Fibonacci_Result(metaclass=Metaclass_Fibonacci_Result):
     ]
 
     _fields_and_field_types = {
-        'sequence': 'sequence<int32>',
+        'sequence': 'sequence<float>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('int32')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.sequence = array.array('i', kwargs.get('sequence', []))
+        self.sequence = array.array('f', kwargs.get('sequence', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -241,8 +258,8 @@ class Fibonacci_Result(metaclass=Metaclass_Fibonacci_Result):
     @sequence.setter
     def sequence(self, value):
         if isinstance(value, array.array):
-            assert value.typecode == 'i', \
-                "The 'sequence' array.array() must have the type code of 'i'"
+            assert value.typecode == 'f', \
+                "The 'sequence' array.array() must have the type code of 'f'"
             self._sequence = value
             return
         if __debug__:
@@ -256,10 +273,10 @@ class Fibonacci_Result(metaclass=Metaclass_Fibonacci_Result):
                   isinstance(value, UserList)) and
                  not isinstance(value, str) and
                  not isinstance(value, UserString) and
-                 all(isinstance(v, int) for v in value) and
-                 all(val >= -2147483648 and val < 2147483648 for val in value)), \
-                "The 'sequence' field must be a set or sequence and each value of type 'int' and each integer in [-2147483648, 2147483647]"
-        self._sequence = array.array('i', value)
+                 all(isinstance(v, float) for v in value) and
+                 True), \
+                "The 'sequence' field must be a set or sequence and each value of type 'float'"
+        self._sequence = array.array('f', value)
 
 
 # Import statements for member types
@@ -321,18 +338,18 @@ class Fibonacci_Feedback(metaclass=Metaclass_Fibonacci_Feedback):
     ]
 
     _fields_and_field_types = {
-        'partial_sequence': 'sequence<int32>',
+        'partial_sequence': 'sequence<float>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('int32')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.partial_sequence = array.array('i', kwargs.get('partial_sequence', []))
+        self.partial_sequence = array.array('f', kwargs.get('partial_sequence', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -380,8 +397,8 @@ class Fibonacci_Feedback(metaclass=Metaclass_Fibonacci_Feedback):
     @partial_sequence.setter
     def partial_sequence(self, value):
         if isinstance(value, array.array):
-            assert value.typecode == 'i', \
-                "The 'partial_sequence' array.array() must have the type code of 'i'"
+            assert value.typecode == 'f', \
+                "The 'partial_sequence' array.array() must have the type code of 'f'"
             self._partial_sequence = value
             return
         if __debug__:
@@ -395,10 +412,10 @@ class Fibonacci_Feedback(metaclass=Metaclass_Fibonacci_Feedback):
                   isinstance(value, UserList)) and
                  not isinstance(value, str) and
                  not isinstance(value, UserString) and
-                 all(isinstance(v, int) for v in value) and
-                 all(val >= -2147483648 and val < 2147483648 for val in value)), \
-                "The 'partial_sequence' field must be a set or sequence and each value of type 'int' and each integer in [-2147483648, 2147483647]"
-        self._partial_sequence = array.array('i', value)
+                 all(isinstance(v, float) for v in value) and
+                 True), \
+                "The 'partial_sequence' field must be a set or sequence and each value of type 'float'"
+        self._partial_sequence = array.array('f', value)
 
 
 # Import statements for member types

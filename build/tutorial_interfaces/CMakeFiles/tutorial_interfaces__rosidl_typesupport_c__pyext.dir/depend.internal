@@ -85,10 +85,22 @@ CMakeFiles/tutorial_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator
  rosidl_generator_c/tutorial_interfaces/action/fibonacci__functions.h
  rosidl_generator_c/tutorial_interfaces/action/fibonacci__struct.h
  rosidl_generator_c/tutorial_interfaces/action/fibonacci__type_support.h
+ rosidl_generator_c/tutorial_interfaces/action/robot_coordinate__functions.h
+ rosidl_generator_c/tutorial_interfaces/action/robot_coordinate__struct.h
+ rosidl_generator_c/tutorial_interfaces/action/robot_coordinate__type_support.h
+ rosidl_generator_c/tutorial_interfaces/msg/encoder__functions.h
+ rosidl_generator_c/tutorial_interfaces/msg/encoder__struct.h
+ rosidl_generator_c/tutorial_interfaces/msg/encoder__type_support.h
+ rosidl_generator_c/tutorial_interfaces/msg/imu__functions.h
+ rosidl_generator_c/tutorial_interfaces/msg/imu__struct.h
+ rosidl_generator_c/tutorial_interfaces/msg/imu__type_support.h
  rosidl_generator_c/tutorial_interfaces/msg/num__functions.h
  rosidl_generator_c/tutorial_interfaces/msg/num__struct.h
  rosidl_generator_c/tutorial_interfaces/msg/num__type_support.h
  rosidl_generator_c/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h
+ rosidl_generator_c/tutorial_interfaces/msg/rpm__functions.h
+ rosidl_generator_c/tutorial_interfaces/msg/rpm__struct.h
+ rosidl_generator_c/tutorial_interfaces/msg/rpm__type_support.h
  rosidl_generator_c/tutorial_interfaces/msg/two_integers_array__functions.h
  rosidl_generator_c/tutorial_interfaces/msg/two_integers_array__struct.h
  rosidl_generator_c/tutorial_interfaces/msg/two_integers_array__type_support.h

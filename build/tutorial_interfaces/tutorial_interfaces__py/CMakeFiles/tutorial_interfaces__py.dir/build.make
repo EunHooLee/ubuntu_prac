@@ -57,17 +57,25 @@ tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_num.py
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_two_integers_array.py
+tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_imu.py
+tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_encoder.py
+tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_rpm.py
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints.py
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/srv/_judge_sign.py
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/action/_fibonacci.py
+tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/action/_robot_coordinate.py
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/__init__.py
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/srv/__init__.py
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/action/__init__.py
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_num_s.c
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_two_integers_array_s.c
+tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_imu_s.c
+tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_encoder_s.c
+tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_rpm_s.c
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints_s.c
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/srv/_judge_sign_s.c
 tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/action/_fibonacci_s.c
+tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/action/_robot_coordinate_s.c
 
 
 rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: /opt/ros/dashing/lib/rosidl_generator_py/rosidl_generator_py
@@ -85,9 +93,13 @@ rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesup
 rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: /opt/ros/dashing/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_adapter/tutorial_interfaces/msg/Num.idl
 rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_adapter/tutorial_interfaces/msg/TwoIntegersArray.idl
+rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_adapter/tutorial_interfaces/msg/IMU.idl
+rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_adapter/tutorial_interfaces/msg/Encoder.idl
+rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_adapter/tutorial_interfaces/msg/RPM.idl
 rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl
 rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_adapter/tutorial_interfaces/srv/JudgeSign.idl
 rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_adapter/tutorial_interfaces/action/Fibonacci.idl
+rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_adapter/tutorial_interfaces/action/RobotCoordinate.idl
 rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: /opt/ros/dashing/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: /opt/ros/dashing/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c: /opt/ros/dashing/share/action_msgs/msg/GoalStatusArray.idl
@@ -107,6 +119,15 @@ rosidl_generator_py/tutorial_interfaces/msg/_num.py: rosidl_generator_py/tutoria
 rosidl_generator_py/tutorial_interfaces/msg/_two_integers_array.py: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/msg/_two_integers_array.py
 
+rosidl_generator_py/tutorial_interfaces/msg/_imu.py: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/msg/_imu.py
+
+rosidl_generator_py/tutorial_interfaces/msg/_encoder.py: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/msg/_encoder.py
+
+rosidl_generator_py/tutorial_interfaces/msg/_rpm.py: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/msg/_rpm.py
+
 rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints.py: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints.py
 
@@ -115,6 +136,9 @@ rosidl_generator_py/tutorial_interfaces/srv/_judge_sign.py: rosidl_generator_py/
 
 rosidl_generator_py/tutorial_interfaces/action/_fibonacci.py: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/action/_fibonacci.py
+
+rosidl_generator_py/tutorial_interfaces/action/_robot_coordinate.py: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/action/_robot_coordinate.py
 
 rosidl_generator_py/tutorial_interfaces/msg/__init__.py: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/msg/__init__.py
@@ -131,6 +155,15 @@ rosidl_generator_py/tutorial_interfaces/msg/_num_s.c: rosidl_generator_py/tutori
 rosidl_generator_py/tutorial_interfaces/msg/_two_integers_array_s.c: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/msg/_two_integers_array_s.c
 
+rosidl_generator_py/tutorial_interfaces/msg/_imu_s.c: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/msg/_imu_s.c
+
+rosidl_generator_py/tutorial_interfaces/msg/_encoder_s.c: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/msg/_encoder_s.c
+
+rosidl_generator_py/tutorial_interfaces/msg/_rpm_s.c: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/msg/_rpm_s.c
+
 rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints_s.c: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints_s.c
 
@@ -140,22 +173,33 @@ rosidl_generator_py/tutorial_interfaces/srv/_judge_sign_s.c: rosidl_generator_py
 rosidl_generator_py/tutorial_interfaces/action/_fibonacci_s.c: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/action/_fibonacci_s.c
 
+rosidl_generator_py/tutorial_interfaces/action/_robot_coordinate_s.c: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tutorial_interfaces/action/_robot_coordinate_s.c
+
 tutorial_interfaces__py: tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_num.py
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_two_integers_array.py
+tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_imu.py
+tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_encoder.py
+tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_rpm.py
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints.py
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/srv/_judge_sign.py
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/action/_fibonacci.py
+tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/action/_robot_coordinate.py
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/__init__.py
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/srv/__init__.py
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/action/__init__.py
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_num_s.c
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_two_integers_array_s.c
+tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_imu_s.c
+tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_encoder_s.c
+tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/msg/_rpm_s.c
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints_s.c
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/srv/_judge_sign_s.c
 tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/action/_fibonacci_s.c
+tutorial_interfaces__py: rosidl_generator_py/tutorial_interfaces/action/_robot_coordinate_s.c
 tutorial_interfaces__py: tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py.dir/build.make
 
 .PHONY : tutorial_interfaces__py
